@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/sys/process.cpp源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/sys/process.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="process_8cpp.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">process.cpp:      </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library source files</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Software, Inc.(2004 - 2005)</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         This file contains implementation of class Process</span>
+<a name="l00008"></a>00008 <span class="comment"></span>
+<a name="l00009"></a>00009 <span class="comment">Author:</span>
+<a name="l00010"></a>00010 <span class="comment">         韩欣 (han.xin@datatom.com)</span>
+<a name="l00011"></a>00011 <span class="comment">         </span>
+<a name="l00012"></a>00012 <span class="comment">Creating Time:</span>
+<a name="l00013"></a>00013 <span class="comment">         2012.1.17</span>
+<a name="l00014"></a>00014 <span class="comment">         </span>
+<a name="l00015"></a>00015 <span class="comment">         This library is free software; you can redistribute it and/or modify it under the terms of the </span>
+<a name="l00016"></a>00016 <span class="comment">         GNU Lesser General Public License as published by the Free Software Foundation; either version </span>
+<a name="l00017"></a>00017 <span class="comment">         2 of the License, or (at your option) any later version.</span>
+<a name="l00018"></a>00018 <span class="comment"> </span>
+<a name="l00019"></a>00019 <span class="comment">         This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without </span>
+<a name="l00020"></a>00020 <span class="comment">         even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser </span>
+<a name="l00021"></a>00021 <span class="comment">         General Public License for more details.</span>
+<a name="l00022"></a>00022 <span class="comment">         </span>
+<a name="l00023"></a>00023 <span class="comment">         You should have received a copy of the GNU Lesser General Public License along with this library; if </span>
+<a name="l00024"></a>00024 <span class="comment">         not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, </span>
+<a name="l00025"></a>00025 <span class="comment">         USA.</span>
+<a name="l00026"></a>00026 <span class="comment">         </span>
+<a name="l00027"></a>00027 <span class="comment">***************************************************************************************************/</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="preprocessor">#include &quot;../prec.h&quot;</span>
+<a name="l00030"></a>00030 <span class="preprocessor">#include &quot;../lang/string.h&quot;</span>
+<a name="l00031"></a>00031 <span class="preprocessor">#include &quot;../lang/int.h&quot;</span>
+<a name="l00032"></a>00032 <span class="preprocessor">#include &quot;../mono_base/processes.h&quot;</span>
+<a name="l00033"></a>00033 <span class="preprocessor">#include &quot;../mono_base/uglify.h&quot;</span>
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="preprocessor">#ifdef __SOLARIS__</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span><span class="preprocessor">         #include &lt;procfs.h&gt;</span>
+<a name="l00037"></a>00037 <span class="preprocessor">#endif</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span>
+<a name="l00039"></a>00039 <span class="preprocessor">#ifdef __WINDOWS__</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span><span class="preprocessor">         #include &quot;Tlhelp32.h&quot;</span>
+<a name="l00041"></a>00041 <span class="preprocessor">         #include &quot;Psapi.h&quot;</span>
+<a name="l00042"></a>00042 <span class="preprocessor">         #define           PSAPI_LIB_NAME                                        _T(&quot;psapi.dll&quot;)</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span><span class="preprocessor">         #define           ENUM_PROCESS_MODULES_NAME           _T(&quot;EnumProcessModules&quot;)</span>
+<a name="l00044"></a>00044 <span class="preprocessor"></span><span class="preprocessor">         #define           GET_MODULE_BASE_NAME                         _T(&quot;GetModuleBaseNameW&quot;)</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00046"></a>00046          <span class="comment">//</span>
+<a name="l00047"></a>00047          <span class="comment">// The EnumProcessModules function retrieves a handle for each module in the specified process.</span>
+<a name="l00048"></a>00048          <span class="comment">//</span>
+<a name="l00049"></a>00049          <span class="keyword">typedef</span> int (__stdcall * ENUM_PROCESS_MODULES_NAME_PROC)(<span class="keywordtype">void</span>*, 
+<a name="l00050"></a>00050                                                                                                                                          <span class="keywordtype">void</span>**, 
+<a name="l00051"></a>00051                                                                                                                                          <span class="keywordtype">unsigned</span> int, 
+<a name="l00052"></a>00052                                                                                                                                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*);
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054          <span class="comment">//</span>
+<a name="l00055"></a>00055          <span class="comment">// The EnumProcessModules function retrieves a handle for each module in the specified process.</span>
+<a name="l00056"></a>00056          <span class="comment">//</span>
+<a name="l00057"></a>00057          <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> int (__stdcall * GET_MODULE_BASE_NAME_PROC)(<span class="keywordtype">void</span>*,
+<a name="l00058"></a>00058                                                                                                                                 <span class="keywordtype">void</span>*,
+<a name="l00059"></a>00059                                                                                                                                 tchar_t*,
+<a name="l00060"></a>00060                                                                                                                                 <span class="keywordtype">unsigned</span> int);
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="preprocessor">#else</span>
+<a name="l00063"></a>00063 <span class="preprocessor"></span><span class="preprocessor">         #include &lt;fcntl.h&gt;</span>
+<a name="l00064"></a>00064 <span class="preprocessor">         #include &lt;unistd.h&gt;</span>
+<a name="l00065"></a>00065 <span class="preprocessor">         #include &quot;../sys/exception.h&quot;</span>
+<a name="l00066"></a>00066 <span class="preprocessor">         #include &quot;../io/file.h&quot;</span>
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="preprocessor">#endif // __WINDOWS__</span>
+<a name="l00069"></a>00069 <span class="preprocessor"></span>
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="preprocessor">#include &quot;<a class="code" href="process_8h.html">process.h</a>&quot;</span>
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="comment">// private ctor</span>
+<a name="l00075"></a><a class="code" href="class_process.html#a0fd371813d28f03ebfefe9a287dd33c0">00075</a> <a class="code" href="class_process.html#a0fd371813d28f03ebfefe9a287dd33c0">Process::Process</a> (pid_t pid, 
+<a name="l00076"></a>00076                                       <a class="code" href="process_8h.html#ace79d3794875e433cfd67b388ef4d57f">prcHandle</a> handle, 
+<a name="l00077"></a>00077                                       <span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;name<span class="comment">/* = String::EMPTY*/</span>)
+<a name="l00078"></a>00078          : _pid (pid)
+<a name="l00079"></a>00079          , _prcHandle (handle)
+<a name="l00080"></a>00080          , _name (name)
+<a name="l00081"></a>00081 #ifdef __SOLARIS__
+<a name="l00082"></a>00082          , _envVariables ()
+<a name="l00083"></a>00083 #else
+<a name="l00084"></a>00084          <span class="comment">//, _envVariables (less&lt;String&gt; (), pair&lt;const String, String&gt; ())</span>
+<a name="l00085"></a>00085 #endif
+<a name="l00086"></a>00086 {
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 }
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="comment">// public ctor</span>
+<a name="l00092"></a><a class="code" href="class_process.html#a1de4366a9898f37ad1f2ba405281510c">00092</a> <a class="code" href="class_process.html#a1de4366a9898f37ad1f2ba405281510c">Process::~Process</a> (<span class="keywordtype">void</span>)
+<a name="l00093"></a>00093 {
+<a name="l00094"></a>00094          <span class="comment">//</span>
+<a name="l00095"></a>00095     <span class="comment">// Close process and thread handles. </span>
+<a name="l00096"></a>00096     <span class="comment">//</span>
+<a name="l00097"></a>00097     ::CloseHandle (_prcHandle);     
+<a name="l00098"></a>00098 }
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <span class="comment">// public static </span>
+<a name="l00101"></a>00101 <a class="code" href="class_process.html">Process</a>* 
+<a name="l00102"></a><a class="code" href="class_process.html#a1533d23c240f5da8baeb6786917efa06">00102</a> <a class="code" href="class_process.html#a1533d23c240f5da8baeb6786917efa06">Process::getCurrentProcess</a> (<span class="keywordtype">void</span>)
+<a name="l00103"></a>00103 {        
+<a name="l00104"></a>00104          <a class="code" href="process_8h.html#ace79d3794875e433cfd67b388ef4d57f">prcHandle</a> handle = ::GetCurrentProcess ();
+<a name="l00105"></a>00105          
+<a name="l00106"></a>00106          pid_t pid = ::GetCurrentProcessId ();
+<a name="l00107"></a>00107          
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109          <span class="keywordflow">if</span> (!pid)
+<a name="l00110"></a>00110                   <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;GetCurrentProcessId Failed&quot;</span>, ::GetLastError ());
+<a name="l00111"></a>00111          
+<a name="l00112"></a>00112          <span class="keywordflow">return</span> (<span class="keyword">new</span> <a class="code" href="class_process.html">Process</a> (pid, handle));
+<a name="l00113"></a>00113 }
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 <span class="comment">// public static </span>
+<a name="l00116"></a>00116 <span class="keywordtype">void</span>
+<a name="l00117"></a><a class="code" href="class_process.html#ab00e7fc2f0a7d17bea4796258681564f">00117</a> <a class="code" href="class_process.html#ab00e7fc2f0a7d17bea4796258681564f">Process::GetAllProcesses</a> (vector &lt;Process*&gt;&amp; vec)
+<a name="l00118"></a>00118 {
+<a name="l00119"></a>00119 <span class="preprocessor">#ifdef __WINDOWS__</span>
+<a name="l00120"></a>00120 <span class="preprocessor"></span>         <span class="comment">//</span>
+<a name="l00121"></a>00121          <span class="comment">// 声明进程信息变量         </span>
+<a name="l00122"></a>00122          <span class="comment">//</span>
+<a name="l00123"></a>00123          PROCESSENTRY32 ProcessInfo;
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125          <span class="keywordtype">void</span>* SnapShot = ::CreateToolhelp32Snapshot (TH32CS_SNAPPROCESS, 0);
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127          <span class="comment">//</span>
+<a name="l00128"></a>00128          <span class="comment">// 设置ProcessInfo的大小</span>
+<a name="l00129"></a>00129          <span class="comment">// </span>
+<a name="l00130"></a>00130          ProcessInfo.dwSize = <span class="keyword">sizeof</span> (ProcessInfo);
+<a name="l00131"></a>00131          
+<a name="l00132"></a>00132          <span class="comment">//</span>
+<a name="l00133"></a>00133          <span class="comment">// 返回系统中第一个进程的信息</span>
+<a name="l00134"></a>00134          <span class="comment">//</span>
+<a name="l00135"></a>00135          <span class="keywordtype">int</span> Status = ::Process32First (SnapShot, &amp;ProcessInfo);
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137          <span class="keywordflow">while</span> (Status) {
+<a name="l00138"></a>00138                   <span class="keywordtype">void</span>* hProcess = ::OpenProcess( PROCESS_ALL_ACCESS, FALSE, ProcessInfo.th32ProcessID);
+<a name="l00139"></a>00139                   
+<a name="l00140"></a>00140                   vec.push_back (<span class="keyword">new</span> <a class="code" href="class_process.html">Process</a> (ProcessInfo.th32ProcessID, hProcess, <a class="code" href="class_string.html">String</a> (ProcessInfo.szExeFile)));
+<a name="l00141"></a>00141                   
+<a name="l00142"></a>00142                   <span class="comment">//</span>
+<a name="l00143"></a>00143                   <span class="comment">// 获取下一个进程的信息</span>
+<a name="l00144"></a>00144                   <span class="comment">//</span>
+<a name="l00145"></a>00145                   Status = ::Process32Next (SnapShot, &amp;ProcessInfo);
+<a name="l00146"></a>00146          }
+<a name="l00147"></a>00147          ::CloseHandle (SnapShot);
+<a name="l00148"></a>00148 <span class="preprocessor">#endif</span>
+<a name="l00149"></a>00149 <span class="preprocessor"></span>}
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 <span class="comment">// public </span>
+<a name="l00152"></a>00152 <span class="keywordtype">void</span> 
+<a name="l00153"></a><a class="code" href="class_process.html#afc955478e800f6e9db754ce8d52fff52">00153</a> <a class="code" href="class_process.html#afc955478e800f6e9db754ce8d52fff52">Process::getEnvVariable</a> (map&lt;String, String&gt;&amp; envVariables)
+<a name="l00154"></a>00154 {
+<a name="l00155"></a>00155 <span class="preprocessor">#ifdef __WINSOWS__</span>
+<a name="l00156"></a>00156 <span class="preprocessor"></span>         
+<a name="l00157"></a>00157          <span class="keyword">typedef</span> EnvVariableMap::value_type value_type;
+<a name="l00158"></a>00158          
+<a name="l00159"></a>00159          <span class="keywordflow">if</span> (_envVariables.empty ())
+<a name="l00160"></a>00160          {
+<a name="l00161"></a>00161                   LPVOID lpvEnv;
+<a name="l00162"></a>00162                   lpvEnv = ::GetEnvironmentStrings ();
+<a name="l00163"></a>00163                   
+<a name="l00164"></a>00164                   <span class="keywordflow">if</span> (!lpvEnv)
+<a name="l00165"></a>00165                            <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;GetEnvironmentStrings Failed&quot;</span>, ::GetLastError ());
+<a name="l00166"></a>00166                   
+<a name="l00167"></a>00167                   <span class="comment">//</span>
+<a name="l00168"></a>00168                   <span class="comment">// 处理并传入 map</span>
+<a name="l00169"></a>00169                   <span class="comment">//</span>
+<a name="l00170"></a>00170                   tchar_t* pPos;
+<a name="l00171"></a>00171                   <a class="code" href="class_string.html">String</a> strKey, strValue;
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173                   pPos = (tchar_t *) lpvEnv;
+<a name="l00174"></a>00174                   
+<a name="l00175"></a>00175                   <span class="keywordflow">while</span> (*pPos) {
+<a name="l00176"></a>00176                            strKey.<a class="code" href="class_string.html#ab5b0c43ae84247df8e5f9488a911587c">clear</a> ();
+<a name="l00177"></a>00177                            <span class="keywordflow">while</span> (*pPos != _T(<span class="charliteral">&#39;=&#39;</span>)) {
+<a name="l00178"></a>00178                                     strKey += *pPos;
+<a name="l00179"></a>00179                                     ++pPos;
+<a name="l00180"></a>00180                            }
+<a name="l00181"></a>00181                            
+<a name="l00182"></a>00182                            <span class="keywordflow">if</span> (*pPos == _T(<span class="charliteral">&#39;=&#39;</span>))
+<a name="l00183"></a>00183                                     ++pPos;
+<a name="l00184"></a>00184                            
+<a name="l00185"></a>00185                            <span class="keywordtype">int</span> value = 0;
+<a name="l00186"></a>00186                            <span class="keywordflow">while</span> (*pPos) {
+<a name="l00187"></a>00187                                     strKey += *pPos;
+<a name="l00188"></a>00188                                     ++pPos;
+<a name="l00189"></a>00189                            }
+<a name="l00190"></a>00190                            
+<a name="l00191"></a>00191                            <span class="comment">//       </span>
+<a name="l00192"></a>00192                            <span class="comment">// 传入 map 容器中</span>
+<a name="l00193"></a>00193                            <span class="comment">//</span>
+<a name="l00194"></a>00194                            envVariables.<a class="code" href="class_string.html#a26e3eff3c1ffea654cdd7da1d280d304">insert</a> (value_type (strKey, strValue));
+<a name="l00195"></a>00195                            
+<a name="l00196"></a>00196                            ++pPos;
+<a name="l00197"></a>00197                   }
+<a name="l00198"></a>00198                   <span class="comment">//</span>
+<a name="l00199"></a>00199                   <span class="comment">// End 处理</span>
+<a name="l00200"></a>00200                   <span class="comment">//</span>
+<a name="l00201"></a>00201                   <span class="keywordflow">if</span> (!::FreeEnvironmentStrings (tchar_t* (lpvEnv)))
+<a name="l00202"></a>00202                            <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;FreeEnvironmentStrings Failed&quot;</span>, ::GetLastError ());
+<a name="l00203"></a>00203                   <span class="keywordflow">return</span>;
+<a name="l00204"></a>00204          }
+<a name="l00205"></a>00205          
+<a name="l00206"></a>00206          envVariables.clear ();
+<a name="l00207"></a>00207          envVariables.insert (_envVariables.begin (), _envVariables.end ());
+<a name="l00208"></a>00208 <span class="preprocessor">#endif</span>
+<a name="l00209"></a>00209 <span class="preprocessor"></span>}
+<a name="l00210"></a>00210 
+<a name="l00211"></a>00211 <span class="comment">// public </span>
+<a name="l00212"></a>00212 <span class="keywordtype">void</span> 
+<a name="l00213"></a><a class="code" href="class_process.html#a02863ccc1b470fd1f165bebecc11ea9c">00213</a> <a class="code" href="class_process.html#a02863ccc1b470fd1f165bebecc11ea9c">Process::setEnvVariable</a> (<span class="keyword">const</span> <a class="code" href="struct_process_start_info.html#a753a5163c5eeabee5d2ab815d8219c0c">ProcessStartInfo::EnvVariableArray</a>&amp; envVariables)
+<a name="l00214"></a>00214 {
+<a name="l00215"></a>00215 <span class="preprocessor">#ifdef __WINDOWS__</span>
+<a name="l00216"></a>00216 <span class="preprocessor"></span>         <span class="keyword">typedef</span> ProcessStartInfo::EnvVariableArray::const_iterator iterator;
+<a name="l00217"></a>00217          <span class="keyword">typedef</span> EnvVariableMap::value_type value_type;
+<a name="l00218"></a>00218 
+<a name="l00219"></a>00219          iterator itend = envVariables.end();
+<a name="l00220"></a>00220          <span class="keywordflow">for</span> (iterator it = envVariables.begin(); it != itend; ++it) {
+<a name="l00221"></a>00221                   value_type value ((*it).first, (*it).second);
+<a name="l00222"></a>00222                   _envVariables.insert (value);
+<a name="l00223"></a>00223          }
+<a name="l00224"></a>00224 <span class="preprocessor">#else</span>
+<a name="l00225"></a>00225 <span class="preprocessor"></span>         <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (_T(<span class="stringliteral">&quot;setEnvVariable Not Implement&quot;</span>));
+<a name="l00226"></a>00226 <span class="preprocessor">#endif // __WINDOWS__</span>
+<a name="l00227"></a>00227 <span class="preprocessor"></span>}
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229 <span class="comment">// public </span>
+<a name="l00230"></a>00230 <a class="code" href="class_process.html">Process</a>*
+<a name="l00231"></a><a class="code" href="class_process.html#aba96c095737ef5217c68db3d0ce00cb0">00231</a> <a class="code" href="class_process.html#aba96c095737ef5217c68db3d0ce00cb0">Process::start</a> (<span class="keyword">const</span> <a class="code" href="struct_process_start_info.html">ProcessStartInfo</a>&amp; startInfo)
+<a name="l00232"></a>00232 {        
+<a name="l00233"></a>00233     STARTUPINFO si;
+<a name="l00234"></a>00234 
+<a name="l00235"></a>00235          memset (&amp;si, 0, <span class="keyword">sizeof</span> (si));
+<a name="l00236"></a>00236     si.cb = <span class="keyword">sizeof</span> (si);
+<a name="l00237"></a>00237     
+<a name="l00238"></a>00238     PROCESS_INFORMATION pi;
+<a name="l00239"></a>00239          
+<a name="l00240"></a>00240          <a class="code" href="class_string.html">String</a> strPath =_T(<span class="stringliteral">&quot;\&quot;&quot;</span>);
+<a name="l00241"></a>00241          strPath += startInfo.<a class="code" href="struct_process_start_info.html#abbe9aad124560be186271875cc63be98">appName</a>;
+<a name="l00242"></a>00242          strPath += _T(<span class="stringliteral">&quot;\&quot; &quot;</span>);
+<a name="l00243"></a>00243          strPath += startInfo.<a class="code" href="struct_process_start_info.html#a5aa8c35e991a0dac98b3eb0b11437097">arguments</a>;
+<a name="l00244"></a>00244 
+<a name="l00245"></a>00245          <a class="code" href="class_string.html">String</a> strEnvVariables;
+<a name="l00246"></a>00246          <span class="keywordflow">if</span> (!startInfo.<a class="code" href="struct_process_start_info.html#a26aaad0279bdd4ae378b083f006bc1a6">envVariables</a>.empty ()) {
+<a name="l00247"></a>00247                   <span class="keyword">typedef</span> ProcessStartInfo::EnvVariableArray::const_iterator iterator;
+<a name="l00248"></a>00248          
+<a name="l00249"></a>00249                   iterator itend = startInfo.<a class="code" href="struct_process_start_info.html#a26aaad0279bdd4ae378b083f006bc1a6">envVariables</a>.end();
+<a name="l00250"></a>00250                   <span class="keywordflow">for</span> (iterator it = startInfo.<a class="code" href="struct_process_start_info.html#a26aaad0279bdd4ae378b083f006bc1a6">envVariables</a>.begin(); it != itend; ++it) {
+<a name="l00251"></a>00251                            strEnvVariables += (*it).first;
+<a name="l00252"></a>00252                            strEnvVariables += _T(<span class="stringliteral">&quot;=&quot;</span>);
+<a name="l00253"></a>00253                            strEnvVariables += (*it).second;
+<a name="l00254"></a>00254                            
+<a name="l00255"></a>00255                            strEnvVariables += _T(<span class="charliteral">&#39;\0&#39;</span>);                          
+<a name="l00256"></a>00256                   }
+<a name="l00257"></a>00257                   strEnvVariables += _T(<span class="charliteral">&#39;\0&#39;</span>);
+<a name="l00258"></a>00258          }
+<a name="l00259"></a>00259          
+<a name="l00260"></a>00260          <span class="comment">//</span>
+<a name="l00261"></a>00261     <span class="comment">// Start the child process.</span>
+<a name="l00262"></a>00262     <span class="comment">//    </span>
+<a name="l00263"></a>00263          <span class="keywordflow">if</span> (::CreateProcess (NULL,
+<a name="l00264"></a>00264                                                        const_cast&lt;tchar_t *&gt; (strPath.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ()),
+<a name="l00265"></a>00265                                                        NULL,
+<a name="l00266"></a>00266                                                        NULL,
+<a name="l00267"></a>00267                                                        FALSE,
+<a name="l00268"></a>00268                                                        startInfo.<a class="code" href="struct_process_start_info.html#a93391655c9c5cdb6035365842f477145">flags</a> | CREATE_UNICODE_ENVIRONMENT,
+<a name="l00269"></a>00269                                                        (strEnvVariables.<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> () ? NULL : (<span class="keywordtype">void</span>*) (strEnvVariables.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ())),
+<a name="l00270"></a>00270                                                        (startInfo.<a class="code" href="struct_process_start_info.html#a88fe486cb3ea7205c3bf68c5a3748fab">workingPath</a>.<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> () ? NULL : startInfo.<a class="code" href="struct_process_start_info.html#a88fe486cb3ea7205c3bf68c5a3748fab">workingPath</a>.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ()),
+<a name="l00271"></a>00271                                                        &amp;si,
+<a name="l00272"></a>00272                                                        &amp;pi) == FALSE) 
+<a name="l00273"></a>00273          {
+<a name="l00274"></a>00274                   
+<a name="l00275"></a>00275                   
+<a name="l00276"></a>00276                   <a class="code" href="exception_8h.html#ac668a46e45952b702eb78fee47666a99">THROW_BY_HANDLER</a> (<a class="code" href="errorprovider_8h.html#ae1c15edb6b61ee23bcbe20b7eb931442">GET_SYSTEM_ERROR_HANDLER</a>-&gt;toString (::GetLastError ()), ::GetLastError (), <a class="code" href="class_system_error_handler.html#ac25663a0bb393c8ffc07ffb711fe1f10">SystemErrorHandler::getInstance</a> ());
+<a name="l00277"></a>00277          }
+<a name="l00278"></a>00278          
+<a name="l00279"></a>00279          <span class="keywordflow">if</span> (!::CloseHandle (pi.hThread)) {
+<a name="l00280"></a>00280                   <a class="code" href="class_string.html">String</a> error;
+<a name="l00281"></a>00281                   error.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;Start Process %s Failed!&quot;</span>, strPath.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+<a name="l00282"></a>00282                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (error);
+<a name="l00283"></a>00283          }
+<a name="l00284"></a>00284              
+<a name="l00285"></a>00285          <a class="code" href="class_process.html">Process</a>* process = <span class="keyword">new</span> <a class="code" href="class_process.html#a0fd371813d28f03ebfefe9a287dd33c0">Process</a> (pi.dwProcessId, pi.hProcess, startInfo.<a class="code" href="struct_process_start_info.html#abbe9aad124560be186271875cc63be98">appName</a>);
+<a name="l00286"></a>00286          
+<a name="l00287"></a>00287          <span class="keywordflow">if</span> (!process) {
+<a name="l00288"></a>00288                   <a class="code" href="class_string.html">String</a> error;
+<a name="l00289"></a>00289                   error.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(_T(<span class="stringliteral">&quot;Start Process %s Failed!&quot;</span>), strPath.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+<a name="l00290"></a>00290                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (error);
+<a name="l00291"></a>00291          }
+<a name="l00292"></a>00292          
+<a name="l00293"></a>00293          <span class="keywordflow">if</span> (!startInfo.<a class="code" href="struct_process_start_info.html#a26aaad0279bdd4ae378b083f006bc1a6">envVariables</a>.empty ())
+<a name="l00294"></a>00294                   process-&gt;<a class="code" href="class_process.html#a02863ccc1b470fd1f165bebecc11ea9c">setEnvVariable</a> (startInfo.<a class="code" href="struct_process_start_info.html#a26aaad0279bdd4ae378b083f006bc1a6">envVariables</a>);
+<a name="l00295"></a>00295          
+<a name="l00296"></a>00296          <span class="keywordflow">return</span> process;
+<a name="l00297"></a>00297 }
+<a name="l00298"></a>00298 
+<a name="l00299"></a>00299 <span class="comment">// public </span>
+<a name="l00300"></a>00300 pid_t 
+<a name="l00301"></a><a class="code" href="class_process.html#a799061978617232d4473b9dbc9522757">00301</a> <a class="code" href="class_process.html#a799061978617232d4473b9dbc9522757">Process::getProcessId</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00302"></a>00302 <span class="keyword"></span>{
+<a name="l00303"></a>00303          <span class="keywordflow">return</span> _pid;
+<a name="l00304"></a>00304 }
+<a name="l00305"></a>00305 
+<a name="l00306"></a>00306 <span class="comment">// public</span>
+<a name="l00307"></a>00307 <a class="code" href="class_string.html">String</a>
+<a name="l00308"></a><a class="code" href="class_process.html#a6acfc59f93da6ef00bb56ff5d520e398">00308</a> <a class="code" href="class_process.html#a6acfc59f93da6ef00bb56ff5d520e398">Process::getName</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00309"></a>00309 <span class="keyword"></span>{        
+<a name="l00310"></a>00310          <span class="keywordflow">if</span> (_name.<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> () == <span class="keyword">false</span>)
+<a name="l00311"></a>00311                   <span class="keywordflow">return</span> _name;
+<a name="l00312"></a>00312 
+<a name="l00313"></a>00313 <span class="preprocessor">#ifdef __WINDOWS__</span>
+<a name="l00314"></a>00314 <span class="preprocessor"></span>         <span class="keywordtype">void</span>* mod = 0;
+<a name="l00315"></a>00315          tchar_t name [MAX_PATH];
+<a name="l00316"></a>00316          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> needed, len;
+<a name="l00317"></a>00317 
+<a name="l00318"></a>00318          <span class="comment">// </span>
+<a name="l00319"></a>00319          <span class="comment">// 将 Psapi.dll 装载出来</span>
+<a name="l00320"></a>00320          <span class="comment">//</span>
+<a name="l00321"></a>00321          <span class="keywordtype">void</span>* PSAPI_Lib = 0;       <span class="comment">// 指向 psapi.dll 共享库。</span>
+<a name="l00322"></a>00322          PSAPI_Lib = Runtime::loadLibrary (PSAPI_LIB_NAME);
+<a name="l00323"></a>00323 
+<a name="l00324"></a>00324          ENUM_PROCESS_MODULES_NAME_PROC PSAPI_EnumProc = (ENUM_PROCESS_MODULES_NAME_PROC) Runtime::loadSymbol (PSAPI_Lib,
+<a name="l00325"></a>00325                                                                                                                                                                                                                                             <a class="code" href="class_string.html">String</a> (ENUM_PROCESS_MODULES_NAME));
+<a name="l00326"></a>00326 
+<a name="l00327"></a>00327          <span class="keywordflow">if</span> (!PSAPI_EnumProc (_prcHandle, &amp;mod, <span class="keyword">sizeof</span>(mod), &amp;needed)) {
+<a name="l00328"></a>00328                   Runtime::unloadLibrary (PSAPI_LIB_NAME);
+<a name="l00329"></a>00329                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (::GetLastError ());
+<a name="l00330"></a>00330          }
+<a name="l00331"></a>00331 
+<a name="l00332"></a>00332          GET_MODULE_BASE_NAME_PROC PSAPI_GetNameProc = (GET_MODULE_BASE_NAME_PROC) Runtime::loadSymbol (PSAPI_Lib,
+<a name="l00333"></a>00333                                                                                                                                                                                                                            <a class="code" href="class_string.html">String</a> (GET_MODULE_BASE_NAME));
+<a name="l00334"></a>00334 
+<a name="l00335"></a>00335          <span class="keywordflow">if</span> (!(len = PSAPI_GetNameProc (_prcHandle, mod, name, <span class="keyword">sizeof</span> (name)))) {
+<a name="l00336"></a>00336                   Runtime::unloadLibrary (PSAPI_LIB_NAME);
+<a name="l00337"></a>00337                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;Get Process Name failed&quot;</span>); 
+<a name="l00338"></a>00338          }
+<a name="l00339"></a>00339 
+<a name="l00340"></a>00340          <span class="comment">// lzma.dll 已经被装载，缷除。</span>
+<a name="l00341"></a>00341          Runtime::unloadLibrary (PSAPI_Lib);
+<a name="l00342"></a>00342 
+<a name="l00343"></a>00343          <span class="keyword">const_cast&lt;</span><a class="code" href="class_process.html">Process</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;_name.<a class="code" href="class_string.html#a854100ca04a95e6ef70754c37550d2af">assign</a> (name, len);
+<a name="l00344"></a>00344          <span class="keywordflow">return</span> _name;
+<a name="l00345"></a>00345          
+<a name="l00346"></a>00346 <span class="preprocessor">#elif defined(__SOLARIS__)</span>
+<a name="l00347"></a>00347 <span class="preprocessor"></span>         <span class="keyword">const_cast&lt;</span><a class="code" href="class_process.html">Process</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;_name = ::getexecname ();
+<a name="l00348"></a>00348          <span class="keywordflow">return</span> _name;
+<a name="l00349"></a>00349          
+<a name="l00350"></a>00350 <span class="preprocessor">#elif defined(__AIX__) || defined(__HPPA__)</span>
+<a name="l00351"></a>00351 <span class="preprocessor"></span>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pid = ::GetCurrentProcessId ();
+<a name="l00352"></a>00352                   
+<a name="l00353"></a>00353 <span class="preprocessor">         #define PATH_BUF_LEN                (1024)</span>
+<a name="l00354"></a>00354 <span class="preprocessor"></span>         <span class="keywordtype">char</span> *buf = <span class="keyword">new</span> <span class="keywordtype">char</span>[PATH_BUF_LEN]; 
+<a name="l00355"></a>00355     ::memset (buf, 0, PATH_BUF_LEN);                                                                        <span class="comment">// 初始化buf,以免后面写如乱码到文件中</span>
+<a name="l00356"></a>00356     
+<a name="l00357"></a>00357     <a class="code" href="class_string.html">String</a> cmd;
+<a name="l00358"></a>00358     
+<a name="l00359"></a>00359 <span class="preprocessor">#if defined(__SOLARIS__)</span>
+<a name="l00360"></a>00360 <span class="preprocessor"></span>         cmd.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a> (<span class="stringliteral">&quot;ps -e | grep %d | awk &#39;{print $5}&#39;&quot;</span>, pid);
+<a name="l00361"></a>00361 <span class="preprocessor">#elif defined(__HPPA__)</span>
+<a name="l00362"></a>00362 <span class="preprocessor"></span>         cmd.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a> (<span class="stringliteral">&quot;ps -e | grep %d | awk &#39;{print $4}&#39;&quot;</span>, pid);
+<a name="l00363"></a>00363 <span class="preprocessor">#else</span>
+<a name="l00364"></a>00364 <span class="preprocessor"></span>    cmd.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a> (<span class="stringliteral">&quot;ps -p %d -o args=&quot;</span>, pid);
+<a name="l00365"></a>00365 <span class="preprocessor">#endif</span>
+<a name="l00366"></a>00366 <span class="preprocessor"></span>
+<a name="l00367"></a>00367     FILE *stream = ::popen (cmd.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), <span class="stringliteral">&quot;r&quot;</span>);                                         <span class="comment">// 将 &quot;ps&quot; 命令的输出 通过管道读取 (&quot;pid&quot; 参数) 到 FILE* stream</span>
+<a name="l00368"></a>00368     <span class="keywordtype">size_t</span> len = ::fread (buf, <span class="keyword">sizeof</span> (<span class="keywordtype">char</span>), PATH_BUF_LEN, stream);                               <span class="comment">// 将刚刚 stream 的数据流读取到buf中</span>
+<a name="l00369"></a>00369     ::pclose (stream);  
+<a name="l00370"></a>00370     
+<a name="l00371"></a>00371     <span class="comment">//</span>
+<a name="l00372"></a>00372     <span class="comment">// 去除多余的换行符，防止上层使用时出错</span>
+<a name="l00373"></a>00373     <span class="comment">//</span>
+<a name="l00374"></a>00374          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; strlen (buf); ++i) {
+<a name="l00375"></a>00375                   <span class="comment">//</span>
+<a name="l00376"></a>00376                   <span class="comment">// 检查是否存在 \n 换行符，将换行符修改为 \0</span>
+<a name="l00377"></a>00377                   <span class="comment">//</span>
+<a name="l00378"></a>00378                   <span class="keywordflow">if</span> (buf[i] == <span class="charliteral">&#39;\n&#39;</span>) {
+<a name="l00379"></a>00379                            buf[i] = <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00380"></a>00380                            <span class="keywordflow">break</span>;
+<a name="l00381"></a>00381                   }
+<a name="l00382"></a>00382          }
+<a name="l00383"></a>00383          
+<a name="l00384"></a>00384     <a class="code" href="class_string.html">String</a> name (buf);
+<a name="l00385"></a>00385     name = name.<a class="code" href="class_string.html#a645d15bb22853e7859aceb01b5d3858f">trim</a> (<span class="charliteral">&#39;\n&#39;</span>);
+<a name="l00386"></a>00386     name = name.<a class="code" href="class_string.html#a645d15bb22853e7859aceb01b5d3858f">trim</a> (<span class="charliteral">&#39;\r&#39;</span>);
+<a name="l00387"></a>00387     <span class="keywordtype">size_t</span> pos = name.<a class="code" href="class_string.html#a33ee5b10c2c41bfc4523b9034d9e1b5e">rfind</a> (_T(<span class="charliteral">&#39;/&#39;</span>), name.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a> ());
+<a name="l00388"></a>00388     <span class="keywordflow">if</span> (pos != <a class="code" href="class_string.html#af66e58b34d30493c9db58d11f836d0d1">String::NO_POSITION</a>)
+<a name="l00389"></a>00389          name = name.<a class="code" href="class_string.html#a576aee8f0543d731496593bcb5608b81">subString</a> (pos + 1, name.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a> () - pos);
+<a name="l00390"></a>00390          
+<a name="l00391"></a>00391     <span class="comment">//printf (&quot;name: %s\n\n&quot;, name.getCStr ());</span>
+<a name="l00392"></a>00392          <span class="keyword">const_cast&lt;</span><a class="code" href="class_process.html">Process</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;_name = name;
+<a name="l00393"></a>00393     <span class="keywordflow">return</span> _name;
+<a name="l00394"></a>00394 <span class="preprocessor">#else</span>
+<a name="l00395"></a>00395 <span class="preprocessor"></span>         guint32 pid = GetCurrentProcessId ();
+<a name="l00396"></a>00396          <a class="code" href="class_string.html">String</a> fileName;
+<a name="l00397"></a>00397          fileName.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a> (_T(<span class="stringliteral">&quot;/proc/%d/cmdline&quot;</span>), pid);
+<a name="l00398"></a>00398          <span class="keywordtype">int</span> fd = open (fileName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), 0);
+<a name="l00399"></a>00399          <span class="keywordflow">if</span> (fd == -1) {
+<a name="l00400"></a>00400                   <a class="code" href="class_string.html">String</a> error;
+<a name="l00401"></a>00401                   error.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(_T(<span class="stringliteral">&quot;Get Process Name  %s Failed&quot;</span>), fileName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+<a name="l00402"></a>00402                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (error);
+<a name="l00403"></a>00403          }
+<a name="l00404"></a>00404 
+<a name="l00405"></a>00405          <span class="keywordtype">char</span> buf [1024];
+<a name="l00406"></a>00406          <a class="code" href="class_string.html">String</a> line;
+<a name="l00407"></a>00407 
+<a name="l00408"></a>00408          errno = 0;
+<a name="l00409"></a>00409          <span class="keywordtype">char</span>* ptr = buf;
+<a name="l00410"></a>00410          <span class="keywordflow">while</span> (<span class="keyword">true</span>) {
+<a name="l00411"></a>00411                   memset (ptr, 0, 1024);
+<a name="l00412"></a>00412                   <span class="keywordtype">size_t</span> len = read (fd, ptr, 1024);
+<a name="l00413"></a>00413                   <span class="keywordflow">if</span> (len &gt; SSIZE_MAX)
+<a name="l00414"></a>00414                            <span class="keywordflow">break</span>;
+<a name="l00415"></a>00415 
+<a name="l00416"></a>00416                   <span class="keywordflow">if</span> (len == 0)
+<a name="l00417"></a>00417                            <span class="keywordflow">break</span>;
+<a name="l00418"></a>00418 
+<a name="l00419"></a>00419                   line.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (ptr);
+<a name="l00420"></a>00420          }
+<a name="l00421"></a>00421 
+<a name="l00422"></a>00422          <span class="comment">//</span>
+<a name="l00423"></a>00423          <span class="comment">// 关闭打开的文件</span>
+<a name="l00424"></a>00424          <span class="comment">//</span>
+<a name="l00425"></a>00425          close (fd);
+<a name="l00426"></a>00426 
+<a name="l00427"></a>00427          <a class="code" href="class_file.html">File</a> file (line);
+<a name="l00428"></a>00428          <a class="code" href="class_string.html">String</a> prgname = file.<a class="code" href="class_file.html#a7fb21a555214c212afe5b2cb12da6d9b">getName</a> ();
+<a name="l00429"></a>00429          <span class="keyword">const_cast&lt;</span><a class="code" href="class_process.html">Process</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;_name.<a class="code" href="class_string.html#a854100ca04a95e6ef70754c37550d2af">assign</a> (prgname);
+<a name="l00430"></a>00430          <span class="keywordflow">return</span> _name;     
+<a name="l00431"></a>00431 <span class="preprocessor">#endif</span>
+<a name="l00432"></a>00432 <span class="preprocessor"></span>}
+<a name="l00433"></a>00433 
+<a name="l00434"></a>00434 <span class="comment">// public </span>
+<a name="l00435"></a>00435 <span class="keywordtype">void</span> 
+<a name="l00436"></a><a class="code" href="class_process.html#a35be4d7aa10f638b8da42c2430c87b95">00436</a> <a class="code" href="class_process.html#a35be4d7aa10f638b8da42c2430c87b95">Process::waitFor</a> (<span class="keywordtype">void</span>)
+<a name="l00437"></a>00437 {        
+<a name="l00438"></a>00438          <span class="comment">//</span>
+<a name="l00439"></a>00439     <span class="comment">// Wait until child process exits.</span>
+<a name="l00440"></a>00440     <span class="comment">//</span>
+<a name="l00441"></a>00441          <span class="keywordflow">if</span> (::WaitForSingleObject (_prcHandle, <a class="code" href="class_int.html#a36d78f476f539d27e522b1b995370130">Int::INFINITE_VALUE</a>) == WAIT_FAILED)
+<a name="l00442"></a>00442                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;WaitForSingleObject Error!&quot;</span>);
+<a name="l00443"></a>00443 }
+<a name="l00444"></a>00444 
+<a name="l00445"></a>00445 <span class="comment">// public </span>
+<a name="l00446"></a>00446 <span class="keywordtype">void</span> 
+<a name="l00447"></a><a class="code" href="class_process.html#a76a7d452257cca64e52bf3613c77a0b2">00447</a> <a class="code" href="class_process.html#a35be4d7aa10f638b8da42c2430c87b95">Process::waitFor</a> (<span class="keywordtype">int</span> timeout)
+<a name="l00448"></a>00448 {        
+<a name="l00449"></a>00449          <span class="comment">//</span>
+<a name="l00450"></a>00450     <span class="comment">// Wait until child process exits.</span>
+<a name="l00451"></a>00451     <span class="comment">//</span>
+<a name="l00452"></a>00452     <span class="keywordflow">if</span> (::WaitForSingleObject (_prcHandle, timeout) == WAIT_FAILED)
+<a name="l00453"></a>00453                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;WaitForSingleObject Error&quot;</span>);
+<a name="l00454"></a>00454 }
+<a name="l00455"></a>00455 
+<a name="l00456"></a>00456 <span class="comment">// public </span>
+<a name="l00457"></a>00457 <span class="keywordtype">void</span> 
+<a name="l00458"></a><a class="code" href="class_process.html#a99a7d466a84b9ad3ba9657b3c5de8f8c">00458</a> <a class="code" href="class_process.html#a99a7d466a84b9ad3ba9657b3c5de8f8c">Process::terminate</a> (<span class="keywordtype">int</span> exitCode)
+<a name="l00459"></a>00459 {        
+<a name="l00460"></a>00460          <span class="keywordflow">if</span> (!::TerminateProcess (_prcHandle, exitCode))
+<a name="l00461"></a>00461                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;TerminateProcess error&quot;</span>);
+<a name="l00462"></a>00462 }
+<a name="l00463"></a>00463 
+<a name="l00464"></a>00464 <span class="comment">// public </span>
+<a name="l00465"></a>00465 <span class="keywordtype">bool</span> 
+<a name="l00466"></a><a class="code" href="class_process.html#a46e310887b9a654648bb9914f41297f4">00466</a> <a class="code" href="class_process.html#a46e310887b9a654648bb9914f41297f4">Process::hasExited</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00467"></a>00467 <span class="keyword"></span>{        
+<a name="l00468"></a>00468          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> exitCode;
+<a name="l00469"></a>00469          <span class="keywordflow">if</span> (!::GetExitCodeProcess (_prcHandle, TO_DWORD_PTR(&amp;exitCode)))
+<a name="l00470"></a>00470                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;GetExitCodeProcess error&quot;</span>);
+<a name="l00471"></a>00471          
+<a name="l00472"></a>00472          <span class="keywordflow">if</span> (exitCode == STILL_ACTIVE)
+<a name="l00473"></a>00473                   <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00474"></a>00474          <span class="keywordflow">else</span>
+<a name="l00475"></a>00475                   <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00476"></a>00476 }
+<a name="l00477"></a>00477 
+<a name="l00478"></a>00478 <span class="comment">// public </span>
+<a name="l00479"></a>00479 <span class="keywordtype">int</span> 
+<a name="l00480"></a><a class="code" href="class_process.html#a426ab7831ddfaa37521a3ad8d47a7d9d">00480</a> <a class="code" href="class_process.html#a426ab7831ddfaa37521a3ad8d47a7d9d">Process::getExitCode</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00481"></a>00481 <span class="keyword"></span>{
+<a name="l00482"></a>00482          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> exitCode;
+<a name="l00483"></a>00483          <span class="keywordflow">if</span> (!::GetExitCodeProcess (_prcHandle, TO_DWORD_PTR(&amp;exitCode)))
+<a name="l00484"></a>00484                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;GetExitCodeProcess error&quot;</span>);
+<a name="l00485"></a>00485          
+<a name="l00486"></a>00486          <span class="keywordflow">if</span> (exitCode == STILL_ACTIVE) {
+<a name="l00487"></a>00487                   <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;InvalidOperation&quot;</span>);
+<a name="l00488"></a>00488          }
+<a name="l00489"></a>00489                            
+<a name="l00490"></a>00490          <span class="keywordflow">return</span> exitCode;
+<a name="l00491"></a>00491 }
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:42 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: EthernetMgm类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a>  </div>
+  <div class="headertitle">
+<div class="title">EthernetMgm类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="class_ethernet_mgm-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a11e08864c9c9c241aba87e286acff1e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#a11e08864c9c9c241aba87e286acff1e4">bondMultiEthernet</a> (int bondType, vector&lt; int &gt;ethernetIndexs, const <a class="el" href="class_string.html">String</a> &amp;bondIP, const <a class="el" href="class_string.html">String</a> &amp;bondMask, const <a class="el" href="class_string.html">String</a> &amp;bondGateway, int bondID)</td></tr>
+<tr class="memitem:a5eafcc7c27cc4c358637c4bad698d503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#a5eafcc7c27cc4c358637c4bad698d503">cancelBond</a> (const <a class="el" href="class_string.html">String</a> &amp;bondName)</td></tr>
+<tr class="memitem:adf0c5d75b20b15ead59c8285a1dbe98e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#adf0c5d75b20b15ead59c8285a1dbe98e">EthernetMgm</a> (void)</td></tr>
+<tr class="memitem:a9c8b12e728dd2b6b6e0ca35e908f0efa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#a9c8b12e728dd2b6b6e0ca35e908f0efa">getAllEthernetInfo</a> (vector&lt; <a class="el" href="struct_ethernet_info.html">EthernetInfo</a> &gt; &amp;eInfos)</td></tr>
+<tr class="memitem:ac4979cab7011e5a49679f83649003c9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#ac4979cab7011e5a49679f83649003c9d">getBondInfos</a> (vector&lt; <a class="el" href="struct_bond_info.html">BondInfo</a> &gt; &amp;bondInfos)</td></tr>
+<tr class="memitem:aca2db6e386a3d4e951ee765d8da690b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#aca2db6e386a3d4e951ee765d8da690b0">getBroadCastByIP</a> (const <a class="el" href="class_string.html">String</a> &amp;ip)</td></tr>
+<tr class="memitem:af9568fba090d3e26570bd36135854962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#af9568fba090d3e26570bd36135854962">getDNS</a> (<a class="el" href="class_string.html">String</a> &amp;firstDNS, <a class="el" href="class_string.html">String</a> &amp;secondDNS)</td></tr>
+<tr class="memitem:a35dc09954a07df5f74a921736534759d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#a35dc09954a07df5f74a921736534759d">netRestart</a> (void)</td></tr>
+<tr class="memitem:abe9f3379bedeb7c49d239e42d34ce57f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#abe9f3379bedeb7c49d239e42d34ce57f">setDNS</a> (const <a class="el" href="class_string.html">String</a> &amp;firstDNS, const <a class="el" href="class_string.html">String</a> &amp;secondDNS)</td></tr>
+<tr class="memitem:a900f287420113318a7b5107c38de0819"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#a900f287420113318a7b5107c38de0819">setEthernetInfo</a> (const <a class="el" href="class_string.html">String</a> &amp;ethernetName, const <a class="el" href="class_string.html">String</a> &amp;ip, const <a class="el" href="class_string.html">String</a> &amp;mask, const <a class="el" href="class_string.html">String</a> &amp;gateway)</td></tr>
+<tr class="memitem:ad84e1d5c2dfb7476f084391fa4a67d7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ethernet_mgm.html#ad84e1d5c2dfb7476f084391fa4a67d7e">~EthernetMgm</a> (void)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>网卡管理 </p>
+
+<p>在文件<a class="el" href="net_8h_source.html">net.h</a>第<a class="el" href="net_8h_source.html#l00083">83</a>行定义。</p>
+</div><hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="adf0c5d75b20b15ead59c8285a1dbe98e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ethernet_mgm.html#adf0c5d75b20b15ead59c8285a1dbe98e">EthernetMgm::EthernetMgm</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00037">37</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="comment">// Do nothing</span>
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ad84e1d5c2dfb7476f084391fa4a67d7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ethernet_mgm.html#ad84e1d5c2dfb7476f084391fa4a67d7e">EthernetMgm::~EthernetMgm</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00043">43</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="comment">// Do nothing</span>
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a11e08864c9c9c241aba87e286acff1e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ethernet_mgm.html#a11e08864c9c9c241aba87e286acff1e4">EthernetMgm::bondMultiEthernet</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bondType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>ethernetIndexs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>bondIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>bondMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>bondGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bondID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>绑定多网卡</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bondType</td><td>绑定类型， 0 多重访问， other 故障冗余 </td></tr>
+    <tr><td class="paramname">ethernetIndexs</td><td>网卡编号， eths 0, 1, 2... </td></tr>
+    <tr><td class="paramname">bondIP</td><td>绑定IP </td></tr>
+    <tr><td class="paramname">bondMask</td><td>绑定后的掩码 </td></tr>
+    <tr><td class="paramname">bondGateway</td><td>绑定后的网关 </td></tr>
+    <tr><td class="paramname">bondID</td><td>bonds (绑定多网卡后，要重启service network 才能生效) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd></dd></dl>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00237">237</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (<a class="code" href="class_tools.html#ab227a0e21e286150f2a8c02dd1e5bb1b">Tools::Ping</a>(bondIP.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>()))
+         {
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;地址已经存在&quot;</span>);
+         }
+         <span class="keywordflow">if</span> (INADDR_NONE == inet_addr(bondIP.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>()))
+         {        
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;不合法地址&quot;</span>);
+         }
+         <span class="keywordflow">if</span> (INADDR_NONE == inet_addr(bondMask.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>()))
+         {        
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;不合法子网掩码&quot;</span>);
+         }
+         <span class="keywordflow">if</span> (INADDR_NONE == inet_addr(bondGateway.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>()))
+         {        
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;不合法网关&quot;</span>);
+         }
+         <span class="keywordflow">if</span>(ethernetIndexs.size() == 0)
+         {
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;绑定列表为空&quot;</span>);
+         }
+         <a class="code" href="class_string.html">String</a> path(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-bond0&quot;</span>);
+         <a class="code" href="class_file.html">File</a> file(path);
+
+         <span class="keywordflow">if</span> (!file.exists())
+         {
+                  file.create();
+         }
+         
+         <a class="code" href="class_stream_writer.html">StreamWriter</a> write(path);
+         
+         vector&lt;String&gt; strline;
+
+         <a class="code" href="class_string.html">String</a> ini;
+         ini.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;DEVICE=bond%d\nONBOOT=yes\nBOOTPROTO=static\nIPADDR=%s\nNETMASK=%s\nGATEWAY=%s&quot;</span>
+                                             ,bondID,bondIP.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>(),bondMask.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>(),bondGateway.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() );
+         strline.push_back(ini);
+         write.writeLines(strline);
+
+         <a class="code" href="class_string.html">String</a> strDevice;
+         strDevice.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;bond%d&quot;</span>, bondID);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;DEVICE&quot;</span>), strDevice, path, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;ONBOOT&quot;</span>), _T(<span class="stringliteral">&quot;yes&quot;</span>), path, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;BOOTPROTO&quot;</span>), _T(<span class="stringliteral">&quot;static&quot;</span>), path, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;IPADDR&quot;</span>), bondIP, path, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;NETMASK&quot;</span>), bondMask, path, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;GATEWAY&quot;</span>), bondGateway, path, 1);
+
+
+         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;(int)ethernetIndexs.size();i++)
+         {        
+                  <a class="code" href="class_string.html">String</a> strTmp;
+                  strTmp.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-eth%d&quot;</span>,ethernetIndexs[i]);
+
+                  <a class="code" href="class_file.html">File</a> cfgFile(strTmp);
+                  <span class="keywordflow">if</span> (!cfgFile.exists())
+                  {
+                           <span class="keywordflow">continue</span>;
+                  }
+
+                  <a class="code" href="class_string.html">String</a> strBondID;
+                  strBondID.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;bond%d&quot;</span>, bondID);
+                  <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;SLAVE&quot;</span>), _T(<span class="stringliteral">&quot;yes&quot;</span>), strTmp, 1);                 
+                  <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(_T(<span class="stringliteral">&quot;MASTER&quot;</span>), strBondID, strTmp, 1);       
+         }
+         
+         <a class="code" href="class_string.html">String</a> file1(<span class="stringliteral">&quot;/etc/modprobe.conf&quot;</span>);
+         <a class="code" href="class_string.html">String</a> line1;
+         line1.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;alias bond%d bonding&quot;</span>,bondID);
+         <a class="code" href="class_string.html">String</a> line2;
+         line2.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;options bond%d miimon=100 mode=%d&quot;</span>,bondID,bondType);
+         <a class="code" href="class_stream_writer.html">StreamWriter</a> put(file1,<span class="keyword">true</span>);
+         put.writeLine(line1);
+         put.writeLine(line2);
+         put.close();
+         
+         <a class="code" href="class_string.html">String</a> file2(<span class="stringliteral">&quot;/etc/rc.d/rc.local&quot;</span>);
+         <a class="code" href="class_string.html">String</a> line3;
+         line3.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;ifenslave bond%d &quot;</span>,bondID);
+         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;(int)ethernetIndexs.size();j++)
+         {
+                  <a class="code" href="class_string.html">String</a> append;
+                  append.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;eth%d &quot;</span>,ethernetIndexs[j]);
+                  line3.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a>(append);
+         }
+         <a class="code" href="class_string.html">String</a> line4;
+         line4.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;route add -net %s netmask %s bond%d&quot;</span>,bondIP.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>(),bondMask.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>(),bondID);
+         <a class="code" href="class_stream_writer.html">StreamWriter</a> in(file2,<span class="keyword">true</span>);
+         in.writeLine(line3);
+         in.writeLine(line4);
+         in.close();
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a5eafcc7c27cc4c358637c4bad698d503"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ethernet_mgm.html#a5eafcc7c27cc4c358637c4bad698d503">EthernetMgm::cancelBond</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>bondName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取消网卡绑定 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bondName</td><td>网卡绑定的名称 @ （解绑后要重启系统，才能真正解绑）  return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00337">337</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <a class="code" href="class_stream_reader.html">StreamReader</a> read(<span class="stringliteral">&quot;/etc/modprobe.conf&quot;</span>);
+         vector&lt;String&gt; lines;
+         read.readLines(lines);
+         vector&lt;String&gt;::iterator it;
+         <span class="keywordflow">for</span>(it = lines.begin();it != lines.end();it++)
+         {
+                  <a class="code" href="class_string.html">String</a> alias;
+                  alias.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;alias %s bonding&quot;</span>,bondName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+                  <a class="code" href="class_string.html">String</a> options;
+                  options.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;options %s&quot;</span>,bondName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+                  <span class="keywordflow">if</span>(alias.<a class="code" href="class_string.html#a3d0d2e6aed0fcf0f7c4d77d27a4c6edd">compare</a>((*it))==0||options.<a class="code" href="class_string.html#a3d0d2e6aed0fcf0f7c4d77d27a4c6edd">compare</a>((*it).subString(0,13))==0)
+                  {
+                           (*it).erase();
+                  }
+         }
+         read.close();
+         
+         <a class="code" href="class_stream_writer.html">StreamWriter</a> write(<span class="stringliteral">&quot;/etc/modprobe.conf&quot;</span>);
+         write.writeLines(lines);
+         write.close();
+         lines.clear();
+
+         <a class="code" href="class_stream_reader.html">StreamReader</a> reads(<span class="stringliteral">&quot;/etc/rc.d/rc.local&quot;</span>);
+         vector&lt;String&gt; rlines;
+         reads.readLines(rlines);
+         vector&lt;String&gt;::iterator its;
+         <span class="keywordflow">for</span>(its = rlines.begin();its != rlines.end();its++)
+         {
+                  <a class="code" href="class_string.html">String</a> ifenslave;
+                  ifenslave.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;ifenslave %s&quot;</span>,bondName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+                  <a class="code" href="class_string.html">String</a> bond(bondName.<a class="code" href="class_string.html#a576aee8f0543d731496593bcb5608b81">subString</a>(4,1));
+                  <span class="keywordflow">if</span>((*its).getLength() &gt; 15)
+                  {
+                           <span class="keywordflow">if</span>(ifenslave.<a class="code" href="class_string.html#a3d0d2e6aed0fcf0f7c4d77d27a4c6edd">compare</a>((*its).subString(0,15))== 0||bond.compare((*its).rightString(1)) ==0)
+                           {
+                                    (*its).<a class="code" href="class_string.html#a7b43df37280cf75340088a68b53c7469">erase</a>();
+                           }
+                  }
+         }
+         
+         reads.close();
+         <a class="code" href="class_stream_writer.html">StreamWriter</a> input(<span class="stringliteral">&quot;/etc/rc.d/rc.local&quot;</span>);
+         input.writeLines(rlines);
+         input.close();
+         rlines.clear();
+
+         <a class="code" href="class_string.html">String</a> path;
+         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="tools_8h.html#a468563d8a795d770cf6ada3e24457570">MAX_ETH</a>; i++)
+         {
+                  path.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-eth%d&quot;</span>,i);
+                  <a class="code" href="class_file.html">File</a> file(path);
+                  <span class="keywordflow">if</span>(!file.exists())
+                  {
+                           <span class="keywordflow">continue</span>;
+                  }
+                  
+                  vector&lt;String&gt; vec;
+                  <a class="code" href="class_stream_reader.html">StreamReader</a> read(path);
+                  read.readLines(vec);
+                  
+                  vector&lt;String&gt;::iterator it;
+                  <span class="keywordflow">for</span>(it = vec.begin();it != vec.end();it++)
+                  {
+                           <a class="code" href="class_string.html">String</a> str;
+                           str.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;MASTER=%s&quot;</span>,bondName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>());
+                           <span class="keywordflow">if</span>(str.<a class="code" href="class_string.html#a3d0d2e6aed0fcf0f7c4d77d27a4c6edd">compare</a>((*it))==0)
+                           {
+                                    it = vec.erase(it);
+                                    vec.erase(it);
+                                    <span class="keywordflow">break</span>;
+                           }
+                  }
+                  read.close();
+                  <a class="code" href="class_stream_writer.html">StreamWriter</a> write(path);
+                  write.writeLines(vec);
+                  write.close();
+                  vec.clear();
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9c8b12e728dd2b6b6e0ca35e908f0efa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_ethernet_mgm.html#a9c8b12e728dd2b6b6e0ca35e908f0efa">EthernetMgm::getAllEthernetInfo</a> </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_ethernet_info.html">EthernetInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>eInfos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取网卡信息</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eInfos</td><td>获取到的所有网卡信息保存到 eInfos vector中</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>size of eInfos </dd></dl>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00050">50</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordtype">int</span> len;
+         <span class="keywordtype">char</span> *ifreq_pointer;
+         len = 10*<span class="keyword">sizeof</span>(<span class="keyword">struct </span>ifreq);
+         ifreq_pointer = (<span class="keywordtype">char</span> *)malloc(len);
+
+         <span class="keyword">struct </span>ifconf get_info;
+         get_info.ifc_len = len;
+         get_info.ifc_ifcu.ifcu_buf = ifreq_pointer;
+
+         <span class="keywordtype">int</span> sockfd;
+         sockfd = socket(PF_INET,SOCK_STREAM,0);
+         ioctl(sockfd,SIOCGIFCONF,&amp;get_info);
+
+         <span class="keywordtype">int</span> count;
+         count = get_info.ifc_len / <span class="keyword">sizeof</span>(<span class="keyword">struct </span>ifreq);
+
+         <span class="keyword">struct </span>ifreq * result = (<span class="keyword">struct </span>ifreq *)ifreq_pointer;
+
+         <span class="keyword">struct </span>ifreq tmp;
+         <span class="keywordtype">int</span> s;
+         <span class="keywordflow">if</span>((s = socket(PF_INET,SOCK_STREAM,0)) &lt; 0)
+         {
+                  perror(<span class="stringliteral">&quot;Socket&quot;</span>);
+                  <span class="keywordflow">return</span> 0;
+         }
+         
+         
+         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i&lt;count;i++)
+         {
+                  <a class="code" href="struct_ethernet_info.html">EthernetInfo</a> ethinfo;
+                  strcpy(tmp.ifr_name,result[i].ifr_name);
+                  <span class="keywordflow">if</span>(ioctl(s,SIOCGIFFLAGS,&amp;tmp) &lt; 0)
+                  {
+                           perror(<span class="stringliteral">&quot;ioctl&quot;</span>);
+                           <span class="keywordflow">continue</span>;
+                  }
+                  <span class="keywordflow">if</span>((tmp.ifr_ifru.ifru_flags &amp; IFF_UP) == 0)
+                           <span class="keywordflow">continue</span>;
+                  <span class="keywordflow">if</span> (0 == strcmp(tmp.ifr_name,<span class="stringliteral">&quot;lo&quot;</span>))
+                  {
+                           <span class="keywordflow">continue</span>;
+                  }
+                  
+                  ethinfo.<a class="code" href="struct_ethernet_info.html#aaa82b2b6c1f428f66a337ee11c13e8a4">_device</a> += tmp.ifr_name;
+                  <a class="code" href="class_tools.html#ae02a3cf3e42485fd70da0cbe7e217d06">Tools::getIp</a>(tmp.ifr_name,ethinfo.<a class="code" href="struct_ethernet_info.html#a8d94f0fa68c92e484a942393e3e4c848">_ip</a> );
+                  <a class="code" href="class_tools.html#ab1629087759e07c646b270bbf5476d5b">Tools::getNetmask</a>(tmp.ifr_name,ethinfo.<a class="code" href="struct_ethernet_info.html#a6b56c5dc83afb377014712bc2c0a5d8f">_netmask</a> );             
+                  <a class="code" href="class_tools.html#a74730710f131e0852c239168bedfd710">Tools::getBroadcast</a>(tmp.ifr_name,ethinfo.<a class="code" href="struct_ethernet_info.html#a811af33ed437a2295a89ca36f4589683">_broadcast</a> );                  
+                  <a class="code" href="class_tools.html#ac965efe918a09d3d74f5875424a93ee2">Tools::getMac</a>(tmp.ifr_name,ethinfo.<a class="code" href="struct_ethernet_info.html#a0c935420b78bc61107392bc0436c4bb5">_macAddress</a> );
+                  <a class="code" href="class_tools.html#af77181f52cc03015d2175b828ed2ec6a">Tools::getNettype</a>(tmp.ifr_name,ethinfo.<a class="code" href="struct_ethernet_info.html#a087198cc7c1b8cabfb6ac3e4686c934d">_type</a> );
+
+                  vector&lt;String&gt; strFileValue;
+                  <a class="code" href="class_string.html">String</a> strPath;
+                  strPath.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-%s&quot;</span>,tmp.ifr_name);
+                  <a class="code" href="class_string.html">String</a> str(<span class="stringliteral">&quot;GATEWAY&quot;</span>);
+                  <span class="keywordflow">if</span> (<a class="code" href="class_tools.html#ac7c49224a1318a711d5d1906a20227d3">Tools::getFileValue</a>(str,strFileValue,strPath))
+                  {
+                           <span class="keywordflow">if</span> (0 != strFileValue.size() )
+                           {
+                                    ethinfo.<a class="code" href="struct_ethernet_info.html#a17f1458d8f701931225b91b98f5f6eb6">_gateway</a> += strFileValue.<a class="code" href="class_string.html#a3cc4ba2ebce66dba733bcc763e05a227">at</a>(0);
+                           }
+                  }
+         
+                  <span class="keywordflow">if</span> (ethinfo.<a class="code" href="struct_ethernet_info.html#aaa82b2b6c1f428f66a337ee11c13e8a4">_device</a>.<a class="code" href="class_string.html#a576aee8f0543d731496593bcb5608b81">subString</a>(0,1) == <a class="code" href="class_string.html">String</a>(<span class="stringliteral">&quot;b&quot;</span>) )
+                  {
+                           str = <span class="stringliteral">&quot;bindtype&quot;</span>;
+                           <a class="code" href="class_string.html">String</a> str1 = <a class="code" href="class_string.html">String</a>(<a class="code" href="tools_8h.html#a2a03d5cb4ea27fed40b5b01388dba304">SYSCONFIG</a>);
+                           <span class="keywordflow">if</span>(<a class="code" href="class_tools.html#ac7c49224a1318a711d5d1906a20227d3">Tools::getFileValue</a>(str,strFileValue,str1))
+                           {
+                                    <span class="keywordflow">if</span>(0 != strFileValue.size() )
+                                    {
+                                             ethinfo.<a class="code" href="struct_ethernet_info.html#a05d11951208c4333591108af8ea330c0">_bondType</a> = atoi(strFileValue.at(0).getCStr());
+                                    }
+                           }
+                  }
+                  str = <span class="stringliteral">&quot;MASTER&quot;</span>;
+                  <span class="keywordflow">if</span>(<a class="code" href="class_tools.html#ac7c49224a1318a711d5d1906a20227d3">Tools::getFileValue</a>(str,strFileValue,strPath))
+                  {
+                           <span class="keywordflow">if</span>( 0 != strFileValue.size() )
+                           {
+                                    ethinfo.<a class="code" href="struct_ethernet_info.html#ac191e0943d5f4f1ef5c8200959d20f2c">_master</a> += strFileValue.<a class="code" href="class_string.html#a3cc4ba2ebce66dba733bcc763e05a227">at</a>(0);
+                           }
+                  }
+
+                  ethinfo.<a class="code" href="struct_ethernet_info.html#a51e6ddd05967ab8aed544967fde8f4ae">_status</a> = 1;
+                  eInfos.push_back(ethinfo);
+         }
+         <span class="keywordflow">return</span> eInfos.size();
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ac4979cab7011e5a49679f83649003c9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ethernet_mgm.html#ac4979cab7011e5a49679f83649003c9d">EthernetMgm::getBondInfos</a> </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_bond_info.html">BondInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bondInfos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获得所有绑定网卡的信息 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bondInfos</td><td>返回网卡绑定的信息结构体</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>return </p>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00420">420</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <a class="code" href="class_string.html">String</a> strBindFile;
+         <a class="code" href="class_string.html">String</a> strEthFile;
+
+         bondInfos.<a class="code" href="class_string.html#ab5b0c43ae84247df8e5f9488a911587c">clear</a>();
+
+         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="tools_8h.html#a468563d8a795d770cf6ada3e24457570">MAX_ETH</a>;i++)
+         {
+                  strBindFile.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-bond%d&quot;</span>,i);
+
+                  <a class="code" href="struct_bond_info.html">BondInfo</a> bondinfo;
+
+                  <a class="code" href="class_file.html">File</a> file(strBindFile);
+                  <span class="keywordflow">if</span>(!file.exists())
+                  {
+                           <span class="keywordflow">continue</span>;
+                  }
+
+                  <span class="keywordflow">if</span>(!file.getLength())
+                  {
+                           file.remove();
+                           <span class="keywordflow">continue</span>;
+                  }
+                  
+                  vector&lt;String&gt; strValue;
+                  bondinfo.<a class="code" href="struct_bond_info.html#a7be2ed3182fb8fcaae493825304cd60b">_bondName</a>.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;bond%d&quot;</span>,i);
+                  <a class="code" href="class_string.html">String</a> str = <span class="stringliteral">&quot;IPADDR&quot;</span>;
+                  <span class="keywordflow">if</span>(!<a class="code" href="class_tools.html#ac7c49224a1318a711d5d1906a20227d3">Tools::getFileValue</a>(str,strValue,strBindFile))
+                  {
+                           <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> ( <span class="stringliteral">&quot;绑定IP获取失败&quot;</span> );
+                  }
+                  bondinfo.<a class="code" href="struct_bond_info.html#aa5a02a63d14cf7f954ba4320af774472">_bondIP</a> = strValue.<a class="code" href="class_string.html#a3cc4ba2ebce66dba733bcc763e05a227">at</a>(0);
+                  
+                  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;<a class="code" href="tools_8h.html#a468563d8a795d770cf6ada3e24457570">MAX_ETH</a>;j++)
+                  {
+                           vector&lt;String&gt; strValue;
+                           strEthFile.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-eth%d&quot;</span>,j);
+
+                           <a class="code" href="class_file.html">File</a> ethFile(strEthFile);
+                           <span class="keywordflow">if</span> (!ethFile.exists())
+                           {
+                                    <span class="keywordflow">continue</span>;
+                           }
+                           
+                           <span class="keywordflow">if</span> (<a class="code" href="class_tools.html#ac7c49224a1318a711d5d1906a20227d3">Tools::getFileValue</a>(<a class="code" href="class_string.html">String</a>(<span class="stringliteral">&quot;MASTER&quot;</span>),strValue,strEthFile))
+                           {
+                                    <a class="code" href="class_string.html">String</a> strSource;
+                                    strSource.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;bond%d&quot;</span>,i);
+
+                                    <span class="keywordflow">if</span>( 0 == strSource.<a class="code" href="class_string.html#a3d0d2e6aed0fcf0f7c4d77d27a4c6edd">compare</a> (strValue.at(0).trim()) )
+                                    {
+                                             <a class="code" href="class_string.html">String</a> temp;
+                                             temp.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;eth%d&quot;</span>,j);
+                                             bondinfo.<a class="code" href="struct_bond_info.html#ad1581f898a1ab3ca170384d3bc2c59ae">_bondEthernets</a>.push_back(temp);
+                                    }
+                           }
+                  }
+                  bondInfos.push_back (bondinfo);
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aca2db6e386a3d4e951ee765d8da690b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> <a class="el" href="class_ethernet_mgm.html#aca2db6e386a3d4e951ee765d8da690b0">EthernetMgm::getBroadCastByIP</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>ip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获得广播地址，最后为 255的地址</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>ip地址</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>broadcast addresss </dd></dl>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00172">172</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <a class="code" href="class_string.html">String</a> szIP = ip;
+         <a class="code" href="class_string.html">String</a> strBroadcast;
+         std::vector&lt;String&gt; vecs;
+         szIP.<a class="code" href="class_string.html#a1709ede3642599e33acd1b5a8685c05b">split</a> (<span class="charliteral">&#39;.&#39;</span>, vecs);
+         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;(int)vecs.size();i++)
+         {
+                  <span class="keywordflow">if</span> (0!=i &amp;&amp; i != (<span class="keywordtype">int</span>)vecs.size() -1 )
+                  {
+                           strBroadcast.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;%s.%s&quot;</span>,strBroadcast.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() ,vecs[i].getCStr() );
+                  }
+                  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( 0 == i)
+                  {
+                           strBroadcast.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;%s&quot;</span>,vecs[i].getCStr() );
+                  }
+                  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == (<span class="keywordtype">int</span>)vecs.size() -1)
+                  {
+                           strBroadcast.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;%s.255&quot;</span>,strBroadcast.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() );
+                  }
+         }
+         <span class="keywordflow">return</span> strBroadcast;
+
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af9568fba090d3e26570bd36135854962"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ethernet_mgm.html#af9568fba090d3e26570bd36135854962">EthernetMgm::getDNS</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>firstDNS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>secondDNS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获得DNS配置</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">firstDNS</td><td>首选DNS设置 </td></tr>
+    <tr><td class="paramname">secondDNS</td><td>备用DNS设置</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>broadcast addresss </dd></dl>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00198">198</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         vector&lt;String&gt; strValue;
+         <a class="code" href="class_string.html">String</a> strFilePath(<span class="stringliteral">&quot;/etc/resolv.conf&quot;</span>);
+         <a class="code" href="class_string.html">String</a> str = <span class="stringliteral">&quot;nameserver&quot;</span>;
+         <span class="keywordflow">if</span>(!<a class="code" href="class_tools.html#ac7c49224a1318a711d5d1906a20227d3">Tools::getFileValue</a>(str,strValue,strFilePath))
+         {
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a>(<span class="stringliteral">&quot;获取DNS失败&quot;</span>);
+         }
+         
+         <span class="keywordflow">if</span>(strValue.size()&gt;=1)
+         {
+                  firstDNS.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;%s&quot;</span> ,strValue.at(0).trim().getCStr());
+         }
+         
+         <span class="keywordflow">if</span>(strValue.size()&gt;=2)
+         {
+                  secondDNS.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;%s&quot;</span>, strValue.at(1).trim().getCStr());
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a35dc09954a07df5f74a921736534759d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ethernet_mgm.html#a35dc09954a07df5f74a921736534759d">EthernetMgm::netRestart</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>重启网卡 </p>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00483">483</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <a class="code" href="struct_process_start_info.html">ProcessStartInfo</a> startInfo2;
+         startInfo2.<a class="code" href="struct_process_start_info.html#a93391655c9c5cdb6035365842f477145">flags</a> = 0;
+         startInfo2.<a class="code" href="struct_process_start_info.html#abbe9aad124560be186271875cc63be98">appName</a> = _T(<span class="stringliteral">&quot;service&quot;</span>);
+         startInfo2.<a class="code" href="struct_process_start_info.html#a5aa8c35e991a0dac98b3eb0b11437097">arguments</a> = _T(<span class="stringliteral">&quot;network restart&quot;</span>);
+         startInfo2.<a class="code" href="struct_process_start_info.html#a88fe486cb3ea7205c3bf68c5a3748fab">workingPath</a> = _T(<a class="code" href="class_path.html#a933126c4808e163d31d24a302cacbea0">Path::getCurrentPath</a>());
+         <a class="code" href="class_process.html#aba96c095737ef5217c68db3d0ce00cb0">Process::start</a> (startInfo2);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="abe9f3379bedeb7c49d239e42d34ce57f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ethernet_mgm.html#abe9f3379bedeb7c49d239e42d34ce57f">EthernetMgm::setDNS</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>firstDNS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>secondDNS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00220">220</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <a class="code" href="class_string.html">String</a> strTmp;
+         strTmp.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;echo &#39;nameserver  %s &#39; &gt; /etc/resolv.conf&quot;</span>,firstDNS.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() );
+         <span class="keywordflow">if</span>(system(strTmp.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() ) != 0)
+         {
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;设置首选DNS失败&quot;</span>);
+         }
+         
+         strTmp.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;echo &#39;nameserver  %s &#39; &gt;&gt; /etc/resolv.conf&quot;</span>,secondDNS.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() );
+         <span class="keywordflow">if</span>(system(strTmp.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() ) != 0)
+         {
+                  <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;设置备选DNS失败&quot;</span>);
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a900f287420113318a7b5107c38de0819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_ethernet_mgm.html#a900f287420113318a7b5107c38de0819">EthernetMgm::setEthernetInfo</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>ethernetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>gateway</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>修改网卡的 Ip，网关等</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ethernetName</td><td>修改的网卡名称 </td></tr>
+    <tr><td class="paramname">ip</td><td>新Ip地址 </td></tr>
+    <tr><td class="paramname">mask</td><td>子网掩码 </td></tr>
+    <tr><td class="paramname">gateway</td><td>网关</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd></dd></dl>
+
+<p>在文件<a class="el" href="net_8cpp_source.html">net.cpp</a>第<a class="el" href="net_8cpp_source.html#l00142">142</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (<a class="code" href="class_tools.html#ab227a0e21e286150f2a8c02dd1e5bb1b">Tools::Ping</a>(ip.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>()))
+         {
+                  <span class="keywordflow">return</span> 0;
+         }
+         <span class="keywordflow">if</span> (     INADDR_NONE == inet_addr(ip.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() ) ||
+                           INADDR_NONE == inet_addr(mask.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() ) ||
+                           INADDR_NONE == inet_addr(gateway.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() )
+                  )
+         {        
+                  <span class="keywordflow">return</span> 0;
+         }
+
+         <a class="code" href="class_string.html">String</a> strFilePath;
+         strFilePath.<a class="code" href="class_string.html#a9b2570592509f03fe0d34567a1f82936">format</a>(<span class="stringliteral">&quot;/etc/sysconfig/network-scripts/ifcfg-%s&quot;</span>,ethernetName.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a>() );
+         
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;IPADDR&quot;</span>, ip, strFilePath, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;NETMASK&quot;</span>, mask, strFilePath, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;GATEWAY&quot;</span>, gateway, strFilePath, 1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;BOOTPROTO&quot;</span>, <span class="stringliteral">&quot;static&quot;</span>, strFilePath, 1);
+         <a class="code" href="class_string.html">String</a> strBroadcast;
+         <a class="code" href="class_tools.html#a50d7c097aeb75a01447e3cd437322c1c">Tools::setBrodcast</a>(ip,strBroadcast);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;BROADCAST&quot;</span>,strBroadcast,strFilePath,1);
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;MASTER&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,strFilePath,1) ;
+         <a class="code" href="class_tools.html#ac5d8b027ac4a5a9857322709a00618ef">Tools::setFileValue</a>(<span class="stringliteral">&quot;SLAVE&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,strFilePath,1);
+         <span class="keywordflow">return</span> 1;
+}
+</pre></div>
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>E:/code/trunk/src/common/dtl/net/<a class="el" href="net_8h_source.html">net.h</a></li>
+<li>E:/code/trunk/src/common/dtl/net/<a class="el" href="net_8cpp_source.html">net.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:46 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

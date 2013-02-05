@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['bahamas',['BAHAMAS',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a526ebe12696ff754b2b9165934ea89b9',1,'locale.h']]],
+  ['bahrain',['BAHRAIN',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a8335d5f5a712546625e628bbfe50b371',1,'locale.h']]],
+  ['bangladesh',['BANGLADESH',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2add513f006e25f3506a1bcfef14a9afdc',1,'locale.h']]],
+  ['barbados',['BARBADOS',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a6c83f1a33e1f5bc88b0108ca5ece89b4',1,'locale.h']]],
+  ['begin_5forigin',['BEGIN_ORIGIN',['../comdef_8h.html#ab40796a2fafb5d9d3fda7510d7aea5b0aa8f472a737e5382bf647744309e664c6',1,'comdef.h']]],
+  ['belgium',['BELGIUM',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a38bf4c6e661293132e00de539c0d8333',1,'locale.h']]],
+  ['belize',['BELIZE',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a6c5643cabf6cdfbc163f0634ba6919b2',1,'locale.h']]],
+  ['benin',['BENIN',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2aea62b1fa9efe92afdda0623347f2babc',1,'locale.h']]],
+  ['bermuda',['BERMUDA',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2af22abcd3504009e90e8ae64f22f75116',1,'locale.h']]],
+  ['bhutan',['BHUTAN',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a544ccd198abc39f6c6fdc8a26fca9abb',1,'locale.h']]],
+  ['bolivia',['BOLIVIA',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2aad96ed20d50d26373d870e8548b4c33d',1,'locale.h']]],
+  ['botswana',['BOTSWANA',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a15b269ec39c597732986026ab24b1b88',1,'locale.h']]],
+  ['bouvetoya',['BOUVETOYA',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2ae987f3787d76bd7d95509cfd4fdcd7c9',1,'locale.h']]],
+  ['brazil',['BRAZIL',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2ada780042045d2c825a5fdb4f22600148',1,'locale.h']]],
+  ['brunei',['BRUNEI',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2aef62d18f2b7df61d421bebd673eef9bc',1,'locale.h']]],
+  ['bulgaria',['BULGARIA',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2ac99f9db836ca447c55788ab0a19a1a0d',1,'locale.h']]],
+  ['burkina_5ffaso',['BURKINA_FASO',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2a6cf2fe01073a2bfc790852a3393a6988',1,'locale.h']]],
+  ['burundi',['BURUNDI',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2afe25573c717083fed59a8b534becb8b3',1,'locale.h']]],
+  ['byelorussia',['BYELORUSSIA',['../locale_8h.html#aa0fcedeee76b0d6d030772c21e009aa2ad51a38f363f9b5f9e8840120907e7313',1,'locale.h']]]
+];

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/io/streamreader.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/io/streamreader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="streamreader_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">streamreader.h</span>
+<a name="l00003"></a>00003 <span class="comment">         Copyright (c) Datatom Co., Ltd.(2012 - 2013), All rights reserved.</span>
+<a name="l00004"></a>00004 <span class="comment"></span>
+<a name="l00005"></a>00005 <span class="comment">Purpose:</span>
+<a name="l00006"></a>00006 <span class="comment">         streamreader 文本读</span>
+<a name="l00007"></a>00007 <span class="comment">         </span>
+<a name="l00008"></a>00008 <span class="comment">Auther:</span>
+<a name="l00009"></a>00009 <span class="comment">         刘佳陆 (liu.jialu@datatom.com)</span>
+<a name="l00010"></a>00010 <span class="comment"></span>
+<a name="l00011"></a>00011 <span class="comment">Created Time:</span>
+<a name="l00012"></a>00012 <span class="comment">         2012-01-29</span>
+<a name="l00013"></a>00013 <span class="comment">***************************************************************************************************/</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef __STREAMREADER_HEAD_H__</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define __STREAMREADER_HEAD_H__</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="preprocessor">#if PRAGMA_ONCE</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#        pragma once</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a><a class="code" href="class_stream_reader.html">00022</a> <span class="keyword">class </span><a class="code" href="class_stream_reader.html">StreamReader</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024 <span class="keyword">public</span>:  
+<a name="l00029"></a>00029          <a class="code" href="class_stream_reader.html#ac9f65e7b8e736eef2260471f60be90b9">StreamReader</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;file);
+<a name="l00030"></a>00030          
+<a name="l00031"></a>00031 <span class="keyword">public</span>:
+<a name="l00038"></a>00038          <span class="keywordtype">void</span> <a class="code" href="class_stream_reader.html#a8e82964c9dc8abc2c8138183de6edaaf">readLines</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;path, vector&lt;String&gt; &amp;filelines);
+<a name="l00039"></a>00039          
+<a name="l00045"></a>00045     <span class="keywordtype">void</span> <a class="code" href="class_stream_reader.html#a8e82964c9dc8abc2c8138183de6edaaf">readLines</a> (vector&lt;String&gt; &amp;lines);
+<a name="l00046"></a>00046          
+<a name="l00052"></a>00052     <span class="keywordtype">char</span> <a class="code" href="class_stream_reader.html#a00879ab068bf1e26fbbb8cee8aac920f">readChar</a> (<span class="keywordtype">void</span>); 
+<a name="l00053"></a>00053          
+<a name="l00058"></a>00058     <a class="code" href="class_string.html">String</a> <a class="code" href="class_stream_reader.html#a21e55af2bc616499070e9add46623154">readLine</a> (<span class="keywordtype">void</span>); 
+<a name="l00059"></a>00059     
+<a name="l00065"></a>00065          <span class="keywordtype">void</span> <a class="code" href="class_stream_reader.html#aea83c9172f202b9162078e09c4c4b7a8">skipLine</a> (<span class="keywordtype">size_t</span> &amp;count);      
+<a name="l00066"></a>00066 
+<a name="l00071"></a>00071          <a class="code" href="class_string.html">String</a> <a class="code" href="class_stream_reader.html#a917b85338c22bb816c289ecfc47f10b4">read</a> ();
+<a name="l00072"></a>00072 
+<a name="l00077"></a>00077          <a class="code" href="class_string.html">String</a> <a class="code" href="class_stream_reader.html#ae31d53af8e9308ab6dede685af429f01">readString</a> (<span class="keywordtype">char</span> endChar = <span class="charliteral">&#39; &#39;</span>);
+<a name="l00078"></a>00078 
+<a name="l00084"></a>00084     <a class="code" href="class_string.html">String</a> <a class="code" href="class_stream_reader.html#ae31d53af8e9308ab6dede685af429f01">readString</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; anyEndChars);  
+<a name="l00085"></a>00085          
+<a name="l00090"></a>00090     <span class="keywordtype">bool</span> <a class="code" href="class_stream_reader.html#afd28a2d575f37c00cb1786e9f7b7c21e">hasMore</a> (<span class="keywordtype">void</span>);
+<a name="l00091"></a>00091 
+<a name="l00095"></a>00095     <span class="keywordtype">void</span> <a class="code" href="class_stream_reader.html#a1ba135f01b3f9181ebf05200fc6295a0">close</a> (<span class="keywordtype">void</span>);     
+<a name="l00096"></a>00096          
+<a name="l00097"></a>00097 <span class="keyword">private</span>:
+<a name="l00098"></a>00098          FILE        *_file;
+<a name="l00099"></a>00099          <a class="code" href="class_string.html">String</a>            _path;
+<a name="l00100"></a>00100 };
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 <span class="preprocessor">#endif //  __STREAMREADER_HEAD_H__</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:40 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

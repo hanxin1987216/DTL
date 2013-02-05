@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/io/path.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/io/path.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="path_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">Path.h:  </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library header Paths</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Software, Inc.(2011)</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         This Path contain the declaration of classes:</span>
+<a name="l00008"></a>00008 <span class="comment"></span>
+<a name="l00009"></a>00009 <span class="comment">Author:</span>
+<a name="l00010"></a>00010 <span class="comment">         韩欣 (han.xin@datatom.com)</span>
+<a name="l00011"></a>00011 <span class="comment"></span>
+<a name="l00012"></a>00012 <span class="comment">Creating Time:</span>
+<a name="l00013"></a>00013 <span class="comment">         2011-10-10</span>
+<a name="l00014"></a>00014 <span class="comment">***************************************************************************************************/</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#ifndef __DTL__PATH_H__</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#define __DTL__PATH_H__</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00019"></a>00019 <span class="preprocessor">#if PRAGMA_ONCE</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#        pragma once</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span>
+<a name="l00026"></a><a class="code" href="class_path.html">00026</a> <span class="keyword">class </span><a class="code" href="prec_8h.html#ad8c2d068705a970928afad755b449b15">DTL_DLLEXPORT</a> <a class="code" href="class_path.html">Path</a>
+<a name="l00027"></a>00027 {
+<a name="l00028"></a>00028 <span class="keyword">public</span>:
+<a name="l00029"></a>00029          <a class="code" href="class_path.html">Path</a> (<span class="keywordtype">void</span>);
+<a name="l00030"></a>00030          ~<a class="code" href="class_path.html">Path</a> (<span class="keywordtype">void</span>);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="comment">// Static public members</span>
+<a name="l00033"></a>00033 <span class="keyword">public</span>:
+<a name="l00034"></a>00034 <span class="preprocessor">#ifdef __WINDOWS__                   </span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>         <span class="keyword">static</span> <span class="keyword">const</span> tchar_t separator;                                                  <span class="comment">// The system-dependent default name-separator character. </span>
+<a name="l00036"></a>00036          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t altSeparator;                                      <span class="comment">// Provides a platform-specific alternate character used to separate directory </span>
+<a name="l00037"></a>00037                                                                                                                               <span class="comment">// levels in a path string that reflects a hierarchical file system organization.</span>
+<a name="l00038"></a>00038                                                                                                                               
+<a name="l00039"></a>00039          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t volumeSeparator;                                   <span class="comment">// Provides a platform-specific volume separator character.</span>
+<a name="l00040"></a>00040          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t pathSeparator;                                     <span class="comment">// A platform-specific separator character used to separate path strings</span>
+<a name="l00041"></a>00041                                                                                                                               <span class="comment">// in environment variables.</span>
+<a name="l00042"></a>00042 <span class="preprocessor">#else</span>
+<a name="l00043"></a><a class="code" href="class_path.html#a60d685a7553583b2ac23952e2f0bdeea">00043</a> <span class="preprocessor"></span>         <span class="keyword">static</span> <span class="keyword">const</span> tchar_t <a class="code" href="class_path.html#a60d685a7553583b2ac23952e2f0bdeea">separator</a>;                                                  <span class="comment">// The system-dependent default name-separator character. </span>
+<a name="l00044"></a>00044          
+<a name="l00045"></a><a class="code" href="class_path.html#ad53176e071277be381ccb2d7549293e0">00045</a>          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t <a class="code" href="class_path.html#ad53176e071277be381ccb2d7549293e0">altSeparator</a>;                                      <span class="comment">// Provides a platform-specific alternate character used to separate directory </span>
+<a name="l00046"></a>00046                                                                                                                               <span class="comment">// levels in a path string that reflects a hierarchical file system organization</span>
+<a name="l00047"></a><a class="code" href="class_path.html#a7f8d28e9b93be036f76f1cf31bf92dd8">00047</a>          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t <a class="code" href="class_path.html#a7f8d28e9b93be036f76f1cf31bf92dd8">volumeSeparator</a>;                                   <span class="comment">// Provides a platform-specific volume separator character.</span>
+<a name="l00048"></a><a class="code" href="class_path.html#ac648dc8d7ef3c0c25715499ab0aeb28d">00048</a>          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t <a class="code" href="class_path.html#ac648dc8d7ef3c0c25715499ab0aeb28d">pathSeparator</a>;                                     <span class="comment">// A platform-specific separator character used to separate path strings</span>
+<a name="l00049"></a>00049                                                                                                                               <span class="comment">// in environment variables.</span>
+<a name="l00050"></a>00050 <span class="preprocessor">#endif</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span>
+<a name="l00056"></a><a class="code" href="class_path.html#adb8b4a7c76417001d51faf756de70a6f">00056</a>          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t invalidPathChars[];
+<a name="l00057"></a>00057          
+<a name="l00061"></a><a class="code" href="class_path.html#a36a1d6861c17515f19017a474bf8e81c">00061</a>          <span class="keyword">static</span> <span class="keyword">const</span> tchar_t separatorChars[];
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="keyword">public</span>:
+<a name="l00074"></a>00074          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> combine (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path1, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path2);
+<a name="l00075"></a>00075 
+<a name="l00084"></a>00084          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> makeFullPath (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00085"></a>00085 
+<a name="l00093"></a>00093          <span class="keyword">static</span> <span class="keywordtype">bool</span> isAbsolutePath (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00094"></a>00094 
+<a name="l00100"></a>00100          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getCurrentPath (<span class="keywordtype">void</span>);
+<a name="l00101"></a>00101 
+<a name="l00109"></a>00109          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getDirectoryName (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00110"></a>00110 
+<a name="l00120"></a>00120          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getFileName (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122 
+<a name="l00131"></a>00131          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getPathRoot (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00132"></a>00132 
+<a name="l00142"></a>00142          <span class="keyword">static</span> <span class="keywordtype">void</span> changeExtension (<a class="code" href="class_string.html">String</a>&amp; path, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; extension);
+<a name="l00143"></a>00143 
+<a name="l00152"></a>00152          <span class="keyword">static</span> <span class="keywordtype">void</span> addExtension (<a class="code" href="class_string.html">String</a>&amp; path, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; extension);
+<a name="l00153"></a>00153 
+<a name="l00158"></a>00158          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getExtensionName (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00159"></a>00159 
+<a name="l00160"></a>00160 
+<a name="l00168"></a>00168          <span class="keyword">static</span> <span class="keywordtype">bool</span> isValidPath (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00169"></a>00169 
+<a name="l00173"></a>00173          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getCurrentModulePath (<span class="keywordtype">void</span>);
+<a name="l00174"></a>00174                   
+<a name="l00178"></a>00178          <span class="keyword">static</span> <span class="keywordtype">bool</span> equal (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path1, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path2);
+<a name="l00179"></a>00179 
+<a name="l00186"></a>00186          <span class="keyword">static</span> <span class="keywordtype">bool</span> isParentPath (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path1, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path2);    
+<a name="l00187"></a>00187 
+<a name="l00188"></a>00188 
+<a name="l00192"></a>00192          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getInvalidPathChars (<span class="keywordtype">void</span>);
+<a name="l00193"></a>00193          
+<a name="l00197"></a>00197          <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> getSeparatorChars (<span class="keywordtype">void</span>);
+<a name="l00198"></a>00198          
+<a name="l00213"></a>00213     <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> adaptSep(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path);
+<a name="l00214"></a>00214     
+<a name="l00224"></a>00224     <span class="keyword">static</span> <span class="keywordtype">void</span> split(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path, <a class="code" href="class_string.html">String</a> &amp;dir, <a class="code" href="class_string.html">String</a> &amp;file);
+<a name="l00225"></a>00225 }; <span class="comment">// End class Path</span>
+<a name="l00226"></a>00226 
+<a name="l00227"></a>00227 <span class="preprocessor">#endif // __DTL__PATH_H__</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:40 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

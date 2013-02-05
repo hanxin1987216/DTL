@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/io/directory.cpp源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/io/directory.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="directory_8cpp.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">directory.cpp:    </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library header files</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Software, Inc.(2011)</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         This file contain the declaration of classes:</span>
+<a name="l00008"></a>00008 <span class="comment"></span>
+<a name="l00009"></a>00009 <span class="comment">Author:</span>
+<a name="l00010"></a>00010 <span class="comment">         韩欣</span>
+<a name="l00011"></a>00011 <span class="comment"></span>
+<a name="l00012"></a>00012 <span class="comment">Creating Time:</span>
+<a name="l00013"></a>00013 <span class="comment">         2011-10-10</span>
+<a name="l00014"></a>00014 <span class="comment">***************************************************************************************************/</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;../prec.h&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;../mono_base/uglify.h&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;../lang/string.h&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;../sys/exception.h&quot;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="preprocessor">#include &quot;<a class="code" href="comdef_8h.html">comdef.h</a>&quot;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &quot;<a class="code" href="basefile_8h.html">basefile.h</a>&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &quot;<a class="code" href="file_8h.html">file.h</a>&quot;</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &quot;<a class="code" href="path_8h.html">path.h</a>&quot;</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <span class="preprocessor">#include &quot;<a class="code" href="directory_8h.html">directory.h</a>&quot;</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="preprocessor">#ifndef __WINDOWS__</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">         #include &lt;sys/stat.h&gt;</span>
+<a name="l00031"></a>00031 <span class="preprocessor">         #include &lt;sys/types.h&gt;</span>
+<a name="l00032"></a>00032 <span class="preprocessor">         #include &lt;stdlib.h&gt;</span>
+<a name="l00033"></a>00033 <span class="preprocessor">         #include &lt;dirent.h&gt;</span>
+<a name="l00034"></a>00034 <span class="preprocessor">         #include &lt;unistd.h&gt;</span>
+<a name="l00035"></a>00035 <span class="preprocessor">#endif</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span>
+<a name="l00037"></a>00037 <span class="preprocessor">#ifdef __WINDOWS__</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span><span class="preprocessor">#define t_strnlen wcsncmp</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00040"></a><a class="code" href="directory_8cpp.html#a4ce098586a258d4341c9dbe2038e055f">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define t_strnlen strncmp</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 
+<a name="l00044"></a><a class="code" href="directory_8cpp.html#a1ac1db8490c2e1412576c8eede377813">00044</a> <span class="preprocessor">#define PATH_ERROR_ID  2</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="comment">// public dtor</span>
+<a name="l00048"></a><a class="code" href="class_directory.html#ad37730f414da17187f03968a7e57c4f5">00048</a> <a class="code" href="class_directory.html#ad37730f414da17187f03968a7e57c4f5">Directory::~Directory</a> (<span class="keywordtype">void</span>)
+<a name="l00049"></a>00049 {
+<a name="l00050"></a>00050          <span class="comment">// Do nothing</span>
+<a name="l00051"></a>00051 }
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <a class="code" href="class_string.html">String</a>
+<a name="l00055"></a><a class="code" href="class_directory.html#ac1f2948dd3f59a1e7e322b5698f09242">00055</a> <a class="code" href="class_directory.html#ac1f2948dd3f59a1e7e322b5698f09242">Directory::getName</a> ()<span class="keyword"> const</span>
+<a name="l00056"></a>00056 <span class="keyword"></span>{
+<a name="l00057"></a>00057          <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path = <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059          <span class="comment">//String name = Path::getFileName (path);</span>
+<a name="l00060"></a>00060          <span class="comment">//if (name.isEmpty () == false)</span>
+<a name="l00061"></a>00061          <span class="comment">//       return name;</span>
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063          <span class="comment">//return path;</span>
+<a name="l00064"></a>00064     <span class="keywordflow">return</span> <a class="code" href="class_path.html#a462f1b559c98d2db871fe6047f83f270">Path::getFileName</a>(path);
+<a name="l00065"></a>00065 }
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="keywordtype">void</span>
+<a name="l00068"></a><a class="code" href="class_directory.html#ad3566bccb6104c0068a535b2b38c13fb">00068</a> <a class="code" href="class_directory.html#ad3566bccb6104c0068a535b2b38c13fb">Directory::create</a> (<span class="keywordtype">void</span>)
+<a name="l00069"></a>00069 {
+<a name="l00070"></a>00070          <a class="code" href="class_string.html">String</a> fullPath = <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>;
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072          <span class="keywordflow">if</span> (fullPath.<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> ())
+<a name="l00073"></a>00073                   <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;IDS_PATH_IS_NULL&quot;</span>, <a class="code" href="directory_8cpp.html#a1ac1db8490c2e1412576c8eede377813">PATH_ERROR_ID</a>);
+<a name="l00074"></a>00074                            
+<a name="l00075"></a>00075          <span class="keywordflow">if</span> (fullPath.<a class="code" href="class_string.html#af8551204583f13ec1915ed6f63fde029">findAny</a> (<a class="code" href="class_path.html#a1bf684306773e4d301a2c4616265648b">Path::getInvalidPathChars</a> ()) != <a class="code" href="class_string.html#af66e58b34d30493c9db58d11f836d0d1">String::NO_POSITION</a>)
+<a name="l00076"></a>00076                   <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;IDS_ILLEGAL_PATH&quot;</span>, <a class="code" href="directory_8cpp.html#a1ac1db8490c2e1412576c8eede377813">PATH_ERROR_ID</a>);
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078          <span class="keywordflow">if</span> (fullPath.<a class="code" href="class_string.html#a645d15bb22853e7859aceb01b5d3858f">trim</a> ().<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> ())
+<a name="l00079"></a>00079                   <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;IDS_BLANK_CHARS_IN_DIR&quot;</span>, <a class="code" href="directory_8cpp.html#a1ac1db8490c2e1412576c8eede377813">PATH_ERROR_ID</a>);
+<a name="l00080"></a>00080          
+<a name="l00081"></a>00081          <span class="keywordflow">if</span> (!<a class="code" href="class_directory.html#ac658bf0cbfe2612420e5d7dd4f6eb9a5">isRoot</a> ()) {
+<a name="l00082"></a>00082                   <a class="code" href="class_directory.html">Directory</a> parent = this-&gt;<a class="code" href="class_directory.html#a599cd2db5aa542a50a8f9e08d66c8859">getParent</a> ();
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084                   <span class="comment">// Make sure the parent directory exists</span>
+<a name="l00085"></a>00085                   <span class="keywordflow">if</span> (!parent.<a class="code" href="class_directory.html#ac658bf0cbfe2612420e5d7dd4f6eb9a5">isRoot</a> () &amp;&amp; !parent.<a class="code" href="class_directory.html#a716a130cd6579b89513ce09e23699841">exists</a> ())
+<a name="l00086"></a>00086                            parent.<a class="code" href="class_directory.html#ad3566bccb6104c0068a535b2b38c13fb">create</a> ();
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088                   <span class="keywordflow">if</span> (!::CreateDirectory (fullPath.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), 0)) {
+<a name="l00089"></a>00089                            <span class="keywordtype">unsigned</span> error = ::GetLastError ();
+<a name="l00090"></a>00090                            <span class="keywordflow">if</span> (error != ERROR_ALREADY_EXISTS)
+<a name="l00091"></a>00091                                     <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;CreateDirectory Failed&quot;</span>, error);
+<a name="l00092"></a>00092                   }
+<a name="l00093"></a>00093                   <span class="keywordflow">else</span>
+<a name="l00094"></a>00094                            <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">true</span>;
+<a name="l00095"></a>00095          } 
+<a name="l00096"></a>00096 }
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 <span class="keywordtype">void</span>
+<a name="l00100"></a><a class="code" href="class_directory.html#aa5f3de00c47b33a1f23cecca3dae9536">00100</a> <a class="code" href="class_directory.html#aa5f3de00c47b33a1f23cecca3dae9536">Directory::remove</a> (<span class="keywordtype">void</span>)
+<a name="l00101"></a>00101 {        
+<a name="l00102"></a>00102          <span class="keywordtype">int</span> ret = ::RemoveDirectory (this-&gt;<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ());
+<a name="l00103"></a>00103          <span class="keywordflow">if</span>(ret == FALSE) {
+<a name="l00104"></a>00104                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> error = ::GetLastError ();               
+<a name="l00105"></a>00105                   <span class="keywordflow">if</span> (error != ERROR_FILE_NOT_FOUND)
+<a name="l00106"></a>00106                            <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;RemoveDirectory Failed&quot;</span>, error);
+<a name="l00107"></a>00107          } 
+<a name="l00108"></a>00108          <span class="keywordflow">else</span>
+<a name="l00109"></a>00109                   <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">true</span>;
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 }
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <span class="comment">// public </span>
+<a name="l00115"></a>00115 <span class="keywordtype">void</span> 
+<a name="l00116"></a><a class="code" href="class_directory.html#adb6542e38a39bcddd257cb0fac0799b2">00116</a> <a class="code" href="class_directory.html#adb6542e38a39bcddd257cb0fac0799b2">Directory::removeTree</a> (<span class="keywordtype">void</span>)
+<a name="l00117"></a>00117 {
+<a name="l00118"></a>00118          
+<a name="l00119"></a>00119          <span class="keywordflow">if</span> (this-&gt;<a class="code" href="class_directory.html#a716a130cd6579b89513ce09e23699841">exists</a> () == <span class="keyword">false</span>)
+<a name="l00120"></a>00120                   <span class="keywordflow">return</span>;
+<a name="l00121"></a>00121                   
+<a name="l00122"></a>00122          vector&lt;String&gt; subs;
+<a name="l00123"></a>00123          this-&gt;<a class="code" href="class_directory.html#aca76e03d986a65439427cf3514feece9">list</a> (subs);
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125          <span class="comment">// Remove its subs recursively.</span>
+<a name="l00126"></a>00126          vector&lt;String&gt;::iterator itend = subs.end ();
+<a name="l00127"></a>00127          <span class="keywordflow">for</span> (vector&lt;String&gt;::iterator it = subs.begin (); it != itend; ++it) {
+<a name="l00128"></a>00128                   <a class="code" href="class_string.html">String</a> name = *it;
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130                   <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#ae123cf07384f5f2735f11792b4d4d5bf">BaseFile::isDirectory</a> (name)) {
+<a name="l00131"></a>00131                            <a class="code" href="class_directory.html">Directory</a> dir (name); <span class="comment">// Recursively to remove the subdirectories.</span>
+<a name="l00132"></a>00132                            dir.<a class="code" href="class_directory.html#adb6542e38a39bcddd257cb0fac0799b2">removeTree</a> ();
+<a name="l00133"></a>00133                   }
+<a name="l00134"></a>00134                   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#a8cbb6b4f2822f2a657d4210f3813607a">BaseFile::isFile</a> (name)){
+<a name="l00135"></a>00135                            <a class="code" href="class_file.html">File</a> file (name);
+<a name="l00136"></a>00136                            file.<a class="code" href="class_file.html#a8bed076c061764629a836b93adb87ee9">remove</a> ();
+<a name="l00137"></a>00137                   }
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139          }
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141          <span class="comment">// OK, all subs has been removed, remove itself safely.</span>
+<a name="l00142"></a>00142          this-&gt;<span class="keyword">remove</span> ();
+<a name="l00143"></a>00143 }
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146 <a class="code" href="class_directory.html">Directory</a>
+<a name="l00147"></a><a class="code" href="class_directory.html#a448dcf4a0829463ccc7235a45e6b3936">00147</a> <a class="code" href="class_directory.html#a448dcf4a0829463ccc7235a45e6b3936">Directory::createSubDirectory</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; name)<span class="keyword"> const</span>
+<a name="l00148"></a>00148 <span class="keyword"></span>{        
+<a name="l00149"></a>00149          <a class="code" href="class_string.html">String</a> fileName = <a class="code" href="class_path.html#a462f1b559c98d2db871fe6047f83f270">Path::getFileName</a> (name);
+<a name="l00150"></a>00150          <a class="code" href="class_string.html">String</a> path;
+<a name="l00151"></a>00151          <span class="keywordflow">if</span> (fileName.<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> ()) {
+<a name="l00159"></a>00159                   path = <a class="code" href="class_path.html#a852a7274d13c705a19a5a36ad69e5253">Path::combine</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, name);
+<a name="l00160"></a>00160     }
+<a name="l00161"></a>00161          <span class="keywordflow">else</span>
+<a name="l00162"></a>00162                   path = <a class="code" href="class_path.html#a852a7274d13c705a19a5a36ad69e5253">Path::combine</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, fileName);
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164          <a class="code" href="class_directory.html">Directory</a> dir (path);
+<a name="l00165"></a>00165          dir.<a class="code" href="class_directory.html#ad3566bccb6104c0068a535b2b38c13fb">create</a> ();  
+<a name="l00166"></a>00166 
+<a name="l00167"></a>00167          <span class="keywordflow">return</span> dir;
+<a name="l00168"></a>00168 }
+<a name="l00169"></a>00169 
+<a name="l00170"></a>00170 
+<a name="l00171"></a>00171 <span class="comment">// public virtual </span>
+<a name="l00172"></a>00172 <span class="keywordtype">bool</span> 
+<a name="l00173"></a><a class="code" href="class_directory.html#a716a130cd6579b89513ce09e23699841">00173</a> <a class="code" href="class_directory.html#a716a130cd6579b89513ce09e23699841">Directory::exists</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00174"></a>00174 <span class="keyword"></span>{        
+<a name="l00175"></a>00175          <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a>) {
+<a name="l00176"></a>00176                   <span class="keyword">const_cast&lt;</span><a class="code" href="class_directory.html">Directory</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> ();
+<a name="l00177"></a>00177          }
+<a name="l00178"></a>00178 
+<a name="l00179"></a>00179          <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a> attrs = <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#a22d5a49251ba4c0ab96842ee6dd386e1">attrs</a>;
+<a name="l00180"></a>00180          <span class="keywordflow">return</span> (attrs == <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da70acceabf0596e472ffd21a96aa52615">INVALID_FILE</a> ? <span class="keyword">false</span> : (attrs &amp; <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da9d09f58160b1161920aad19080f568cc">DIRECTORY</a>) != 0 ? <span class="keyword">true</span>: <span class="keyword">false</span>);
+<a name="l00181"></a>00181 }
+<a name="l00182"></a>00182 
+<a name="l00183"></a>00183 
+<a name="l00184"></a><a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72">00184</a> <span class="keyword">enum</span> <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72">F_MODE</a> {
+<a name="l00185"></a>00185          <span class="comment">//LIST_ALL = 0,</span>
+<a name="l00186"></a>00186          <span class="comment">//LIST_DIR = 1,</span>
+<a name="l00187"></a>00187          <span class="comment">//LIST_FILE = 2,</span>
+<a name="l00188"></a>00188 
+<a name="l00192"></a><a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a0348b15f0bca269ad9c0a7a69bf37d7f">00192</a>          <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a0348b15f0bca269ad9c0a7a69bf37d7f">LIST_DIR</a> = 0x01,
+<a name="l00193"></a><a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a5333f8c71dfb0c87d5624c16fa11d9c3">00193</a>          <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a5333f8c71dfb0c87d5624c16fa11d9c3">LIST_FILE</a> = 0x02,
+<a name="l00194"></a><a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72ab3bd3caf889979b2d80f727034af6e54">00194</a>          <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72ab3bd3caf889979b2d80f727034af6e54">LIST_ALL</a> = 0x03,
+<a name="l00195"></a>00195 };
+<a name="l00196"></a>00196 
+<a name="l00197"></a>00197 
+<a name="l00198"></a>00198 <span class="keyword">inline</span> <span class="keywordtype">bool</span>
+<a name="l00199"></a><a class="code" href="directory_8cpp.html#aad47d4b0db794e32c575e44ddb0c03f3">00199</a> <a class="code" href="directory_8cpp.html#aad47d4b0db794e32c575e44ddb0c03f3">isNotDotDir</a> (<span class="keyword">const</span> tchar_t* fileName)
+<a name="l00200"></a>00200 {
+<a name="l00201"></a>00201          <span class="keywordflow">return</span> (<a class="code" href="directory_8cpp.html#a4ce098586a258d4341c9dbe2038e055f">t_strnlen</a> (fileName, _T(<span class="stringliteral">&quot;.&quot;</span>), 2) != 0 &amp;&amp;
+<a name="l00202"></a>00202                              <a class="code" href="directory_8cpp.html#a4ce098586a258d4341c9dbe2038e055f">t_strnlen</a> (fileName, _T(<span class="stringliteral">&quot;..&quot;</span>), 3) != 0);
+<a name="l00203"></a>00203 }
+<a name="l00204"></a>00204 
+<a name="l00205"></a>00205 
+<a name="l00206"></a>00206 <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;
+<a name="l00207"></a><a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">00207</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;dirPath, vector&lt;T&gt;&amp; subs, <span class="keywordtype">int</span> mode, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)
+<a name="l00208"></a>00208 {
+<a name="l00209"></a>00209 
+<a name="l00210"></a>00210          <span class="comment">//String wild = Path::combine (dirPath, pattern);</span>
+<a name="l00211"></a>00211 
+<a name="l00215"></a>00215          <a class="code" href="class_string.html">String</a> wild = <a class="code" href="class_path.html#a852a7274d13c705a19a5a36ad69e5253">Path::combine</a> (<a class="code" href="class_path.html#a2b2ae8f9745f04455a8490bf147cf80d">Path::makeFullPath</a>(dirPath), pattern);
+<a name="l00216"></a>00216                   
+<a name="l00217"></a>00217          WIN32_FIND_DATA data;
+<a name="l00218"></a>00218          <span class="keywordtype">void</span>* find = ::FindFirstFile (wild.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), &amp;data);
+<a name="l00219"></a>00219          <span class="keywordflow">if</span> (find == INVALID_HANDLE_VALUE) {
+<a name="l00220"></a>00220                   <span class="comment">//</span>
+<a name="l00221"></a>00221                   <span class="comment">// AFAK, If append a pattern like *.h to the directory, and this directory</span>
+<a name="l00222"></a>00222                   <span class="comment">// don&#39;t have any file or dir to match it, the FindFirstFile will fail.</span>
+<a name="l00223"></a>00223                   <span class="comment">//</span>
+<a name="l00224"></a>00224                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> errCode = ::GetLastError ();
+<a name="l00225"></a>00225                   <span class="keywordflow">if</span> (pattern != _T(<span class="stringliteral">&quot;*&quot;</span>) &amp;&amp; (errCode == ERROR_FILE_NOT_FOUND || errCode == ERROR_PATH_NOT_FOUND))
+<a name="l00226"></a>00226                            <span class="keywordflow">return</span>;
+<a name="l00227"></a>00227 <span class="preprocessor">#ifndef __WINDOWS__</span>
+<a name="l00228"></a>00228 <span class="preprocessor"></span>                  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errCode == ERROR_NO_MORE_FILES)
+<a name="l00229"></a>00229                            <span class="keywordflow">return</span>;
+<a name="l00230"></a>00230 <span class="preprocessor">#endif</span>
+<a name="l00231"></a>00231 <span class="preprocessor"></span>
+<a name="l00232"></a>00232                   <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;genList failed&quot;</span>, errCode);
+<a name="l00233"></a>00233          }
+<a name="l00234"></a>00234          
+<a name="l00235"></a>00235          <span class="keywordtype">int</span> result = TRUE;
+<a name="l00236"></a>00236          <span class="keywordflow">while</span> (result) {
+<a name="l00237"></a>00237                    <span class="comment">//</span>
+<a name="l00238"></a>00238                    <span class="comment">// Ignore entries of &quot;.&quot; and &quot;..&quot; the documentation doesn&#39;t mention it.</span>
+<a name="l00239"></a>00239                    <span class="comment">//</span>
+<a name="l00240"></a>00240         <span class="comment">// ------------ can deal with &#39;.&#39; and &#39;..&#39; now -----</span>
+<a name="l00241"></a>00241                   <span class="keywordflow">if</span> (((mode &amp; <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a0348b15f0bca269ad9c0a7a69bf37d7f">LIST_DIR</a>) != 0 &amp;&amp; 
+<a name="l00242"></a>00242             (data.dwFileAttributes &amp; <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da9d09f58160b1161920aad19080f568cc">DIRECTORY</a>) != 0 &amp;&amp; 
+<a name="l00243"></a>00243             <a class="code" href="directory_8cpp.html#aad47d4b0db794e32c575e44ddb0c03f3">isNotDotDir</a> ((<span class="keyword">const</span> tchar_t*) data.cFileName))
+<a name="l00244"></a>00244             || 
+<a name="l00245"></a>00245             ((mode &amp; <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a5333f8c71dfb0c87d5624c16fa11d9c3">LIST_FILE</a>) != 0 &amp;&amp; 
+<a name="l00246"></a>00246             (data.dwFileAttributes &amp; <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da9d09f58160b1161920aad19080f568cc">DIRECTORY</a>) == 0)) {
+<a name="l00247"></a>00247 
+<a name="l00248"></a>00248                            subs.push_back (T(<a class="code" href="class_path.html#a852a7274d13c705a19a5a36ad69e5253">Path::combine</a> (dirPath, (<span class="keyword">const</span> tchar_t*)data.cFileName).<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ()));
+<a name="l00249"></a>00249                   }
+<a name="l00250"></a>00250                   
+<a name="l00251"></a>00251                   result = ::FindNextFile (find, &amp;data);
+<a name="l00252"></a>00252          }
+<a name="l00253"></a>00253          
+<a name="l00254"></a>00254          ::FindClose (find);                 
+<a name="l00255"></a>00255 }
+<a name="l00256"></a>00256 
+<a name="l00257"></a>00257 
+<a name="l00258"></a>00258 <span class="keywordtype">void</span> 
+<a name="l00259"></a><a class="code" href="class_directory.html#aca76e03d986a65439427cf3514feece9">00259</a> <a class="code" href="class_directory.html#aca76e03d986a65439427cf3514feece9">Directory::list</a> (vector&lt;String&gt;&amp; subs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)<span class="keyword"> const</span>
+<a name="l00260"></a>00260 <span class="keyword"></span>{
+<a name="l00261"></a>00261          <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, subs, <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72ab3bd3caf889979b2d80f727034af6e54">LIST_ALL</a>, pattern);
+<a name="l00262"></a>00262 }
+<a name="l00263"></a>00263 
+<a name="l00264"></a>00264 
+<a name="l00265"></a>00265 <span class="keywordtype">void</span>
+<a name="l00266"></a><a class="code" href="class_directory.html#a0e7a8f83b737f3f0e97fe3f68c032c00">00266</a> <a class="code" href="class_directory.html#aca76e03d986a65439427cf3514feece9">Directory::list</a> (vector&lt;Directory&gt;&amp; subs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)<span class="keyword"> const</span>
+<a name="l00267"></a>00267 <span class="keyword"></span>{
+<a name="l00268"></a>00268          <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, subs, <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72ab3bd3caf889979b2d80f727034af6e54">LIST_ALL</a>, pattern);
+<a name="l00269"></a>00269 }
+<a name="l00270"></a>00270 
+<a name="l00271"></a>00271 
+<a name="l00272"></a>00272 <span class="keywordtype">void</span>
+<a name="l00273"></a><a class="code" href="class_directory.html#a22b78c691df1c6d8313d6ecf3aeb7653">00273</a> <a class="code" href="class_directory.html#a22b78c691df1c6d8313d6ecf3aeb7653">Directory::listDirs</a> (vector&lt;String&gt;&amp; dirs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)<span class="keyword"> const</span>
+<a name="l00274"></a>00274 <span class="keyword"></span>{
+<a name="l00275"></a>00275          <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, dirs, <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a0348b15f0bca269ad9c0a7a69bf37d7f">LIST_DIR</a>, pattern);
+<a name="l00276"></a>00276 }
+<a name="l00277"></a>00277 
+<a name="l00278"></a>00278 <span class="keywordtype">void</span>
+<a name="l00279"></a><a class="code" href="class_directory.html#a3a9da66c295d15fce5d5fd0f2ae50b23">00279</a> <a class="code" href="class_directory.html#a22b78c691df1c6d8313d6ecf3aeb7653">Directory::listDirs</a> (vector&lt;Directory&gt;&amp; dirs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)<span class="keyword"> const</span>
+<a name="l00280"></a>00280 <span class="keyword"></span>{
+<a name="l00281"></a>00281          <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, dirs, <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a0348b15f0bca269ad9c0a7a69bf37d7f">LIST_DIR</a>, pattern);
+<a name="l00282"></a>00282 }
+<a name="l00283"></a>00283 
+<a name="l00284"></a>00284 
+<a name="l00285"></a>00285 <span class="keywordtype">void</span>
+<a name="l00286"></a><a class="code" href="class_directory.html#ac8dd57a28c8e00a4ea76ef28b4e6eebe">00286</a> <a class="code" href="class_directory.html#ac8dd57a28c8e00a4ea76ef28b4e6eebe">Directory::listFiles</a> (vector&lt;String&gt;&amp; files, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)<span class="keyword"> const</span>
+<a name="l00287"></a>00287 <span class="keyword"></span>{
+<a name="l00288"></a>00288          <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, files, <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a5333f8c71dfb0c87d5624c16fa11d9c3">LIST_FILE</a>, pattern);
+<a name="l00289"></a>00289 }
+<a name="l00290"></a>00290 
+<a name="l00291"></a>00291 
+<a name="l00292"></a>00292 <span class="keywordtype">void</span> 
+<a name="l00293"></a><a class="code" href="class_directory.html#a49e59b7a255f3aa81bade527e9a15c72">00293</a> <a class="code" href="class_directory.html#ac8dd57a28c8e00a4ea76ef28b4e6eebe">Directory::listFiles</a> (vector&lt;File&gt;&amp; files, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern)<span class="keyword"> const</span>
+<a name="l00294"></a>00294 <span class="keyword"></span>{
+<a name="l00295"></a>00295          <a class="code" href="directory_8cpp.html#ab0501d9ab08ab072f6ef4f50ec5833af">genList</a> (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>, files, <a class="code" href="directory_8cpp.html#a4acfa4ed0e32f981e5415209be331c72a5333f8c71dfb0c87d5624c16fa11d9c3">LIST_FILE</a>, pattern);
+<a name="l00296"></a>00296 }
+<a name="l00297"></a>00297 
+<a name="l00298"></a>00298 
+<a name="l00299"></a>00299 <span class="comment">// public</span>
+<a name="l00300"></a>00300 <a class="code" href="class_directory.html">Directory</a> 
+<a name="l00301"></a><a class="code" href="class_directory.html#a599cd2db5aa542a50a8f9e08d66c8859">00301</a> <a class="code" href="class_directory.html#a599cd2db5aa542a50a8f9e08d66c8859">Directory::getParent</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00302"></a>00302 <span class="keyword"></span>{        
+<a name="l00303"></a>00303          <span class="keywordflow">if</span> (<a class="code" href="class_directory.html#ac658bf0cbfe2612420e5d7dd4f6eb9a5">isRoot</a> ())
+<a name="l00304"></a>00304                   <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a>(<span class="stringliteral">&quot;IDS_ROOT_DIR&quot;</span>, <a class="code" href="directory_8cpp.html#a1ac1db8490c2e1412576c8eede377813">PATH_ERROR_ID</a>);
+<a name="l00305"></a>00305 
+<a name="l00306"></a>00306     <a class="code" href="class_string.html">String</a> fpath = <a class="code" href="class_path.html#a6d10572d4d9fff47b2d3c09d8a66dfc8">Path::adaptSep</a>(<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>);
+<a name="l00307"></a>00307     <span class="keywordflow">if</span> (fpath[fpath.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a>() - 1] == <a class="code" href="class_path.html#a60d685a7553583b2ac23952e2f0bdeea">Path::separator</a>) {
+<a name="l00308"></a>00308         fpath = <a class="code" href="class_string.html">String</a>(fpath, 0, fpath.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a>() - 1);
+<a name="l00309"></a>00309     }
+<a name="l00310"></a>00310          <span class="keywordflow">return</span> <a class="code" href="class_directory.html#a7702bdc8398b21937fb9504147238485">Directory</a> (<a class="code" href="class_path.html#a42c6f2c6991d48c241695e98800c0d65">Path::getDirectoryName</a> (fpath));
+<a name="l00311"></a>00311 }
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:39 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['read',['read',['../class_file_input_stream.html#a9534afb2f8cb0af838937152d505427f',1,'FileInputStream::read(void)'],['../class_file_input_stream.html#a12ad3fb2753e6a8f61acb0286bcdbb97',1,'FileInputStream::read(unsigned char *bytes, int len)'],['../class_file_stream.html#ad0f992e1ba7578489bf34841f4d010c5',1,'FileStream::read()'],['../class_stream_reader.html#a917b85338c22bb816c289ecfc47f10b4',1,'StreamReader::read()']]],
+  ['readchar',['readChar',['../class_stream_reader.html#a00879ab068bf1e26fbbb8cee8aac920f',1,'StreamReader']]],
+  ['readline',['readLine',['../class_stream_reader.html#a21e55af2bc616499070e9add46623154',1,'StreamReader']]],
+  ['readlines',['readLines',['../class_stream_reader.html#a8e82964c9dc8abc2c8138183de6edaaf',1,'StreamReader::readLines(const String &amp;path, vector&lt; String &gt; &amp;filelines)'],['../class_stream_reader.html#a104d0e4617e1a3f3fd4284e62ba2b140',1,'StreamReader::readLines(vector&lt; String &gt; &amp;lines)']]],
+  ['readstring',['readString',['../class_stream_reader.html#ae31d53af8e9308ab6dede685af429f01',1,'StreamReader::readString(char endChar= &apos; &apos;)'],['../class_stream_reader.html#a0ac880c180cccc75dd4bdd3209f47d0c',1,'StreamReader::readString(const String &amp;anyEndChars)']]],
+  ['reboot',['reboot',['../class_runtime.html#a20a28ab81f755324ec73c21469cf97e9',1,'Runtime']]],
+  ['refresh',['refresh',['../class_base_file.html#a88a0560cf9c2c7f4f0813afd40e95f44',1,'BaseFile']]],
+  ['registertracemodule',['registerTraceModule',['../class_trace_module_manager.html#aeacaea29a99eb80ba68c1a563e9af68f',1,'TraceModuleManager']]],
+  ['remove',['remove',['../class_directory.html#aa5f3de00c47b33a1f23cecca3dae9536',1,'Directory::remove()'],['../class_file.html#a8bed076c061764629a836b93adb87ee9',1,'File::remove()']]],
+  ['removetree',['removeTree',['../class_directory.html#adb6542e38a39bcddd257cb0fac0799b2',1,'Directory']]],
+  ['rename',['rename',['../class_file.html#a75fdbda5ba19eb731cdddcf1b8c84d44',1,'File']]],
+  ['reopen',['reopen',['../class_stream_writer.html#aa2c4bf60f219ea48f52e7856be7ba3a2',1,'StreamWriter']]],
+  ['replace',['replace',['../class_string.html#a8c85264e0aa3d4ebf4400bd50681d412',1,'String::replace(tchar_t oldValue, tchar_t newValue, bool replaceAll=false)'],['../class_string.html#a48b5781f557aaedfdcd5613b945983ef',1,'String::replace(size_t pos1, size_t n1, const String &amp;str)'],['../class_string.html#a82ae12348e1fbe47db9ef65f4d3ead19',1,'String::replace(size_t pos1, size_t n1, const String &amp;str, size_t pos2, size_t n2)'],['../class_string.html#a3ee612830750d0ee614eefeaa41948a4',1,'String::replace(size_t pos1, size_t n1, const tchar_t *s, size_t n2)'],['../class_string.html#a5417108100266235a0d2141dd78f9b97',1,'String::replace(size_t pos1, size_t n1, const tchar_t *s)'],['../class_string.html#a801222a4a306db1fca5c1ec57c384092',1,'String::replace(size_t pos1, size_t n1, size_t n2, tchar_t c)']]],
+  ['reserve',['reserve',['../class_string.html#af6b2d38e1a0418cbf4731b39dc396b4c',1,'String']]],
+  ['resize',['resize',['../class_string.html#af8e8155961f5f8bf7b892bc50675ae27',1,'String::resize(size_t n, tchar_t c)'],['../class_string.html#aed74507f08fe6d92047fce1dc2811207',1,'String::resize(size_t n)']]],
+  ['result_5fpad',['result_pad',['../dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892',1,'dateformat.cpp']]],
+  ['resume',['resume',['../class_thread.html#a33fd09f7931689fde23e2645a4872917',1,'Thread']]],
+  ['rfind',['rfind',['../class_string.html#a33ee5b10c2c41bfc4523b9034d9e1b5e',1,'String::rfind(const String &amp;str, size_t pos=NO_POSITION) const '],['../class_string.html#ad650238e161ac1064a87d7dab3158b15',1,'String::rfind(const tchar_t *s, size_t pos, size_t n) const '],['../class_string.html#a7fd72418ab4533101843a60a58a53d62',1,'String::rfind(const tchar_t *s, size_t pos=NO_POSITION) const '],['../class_string.html#ab1aa8f8e68cf378f7ba13b4560f5c4a3',1,'String::rfind(tchar_t c, size_t pos=NO_POSITION) const ']]],
+  ['rightstring',['rightString',['../class_string.html#aa7afc9ad7fbbc3c4001fd0b52749d0ca',1,'String']]],
+  ['rijndael',['Rijndael',['../class_rijndael.html#a2099aaa6aa7ea3095215f92efd9be232',1,'Rijndael']]],
+  ['rijndaelencryption',['RijndaelEncryption',['../class_rijndael_encryption.html#af866fa7704b595f0157a623872f2717d',1,'RijndaelEncryption']]],
+  ['run',['run',['../class_thread.html#a6b5ecd28120c464675b090fa3f8d51c2',1,'Thread::run()'],['../class_i_timer_task.html#afa997a235f0a850e3274d0c1e7424f8c',1,'ITimerTask::run()']]]
+];

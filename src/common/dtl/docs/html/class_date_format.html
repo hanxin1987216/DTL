@@ -1,0 +1,1204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: DateFormat类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-methods">保护成员</a>  </div>
+  <div class="headertitle">
+<div class="title">DateFormat类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类DateFormat继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_date_format.png" usemap="#DateFormat_map" alt=""/>
+  <map id="DateFormat_map" name="DateFormat_map">
+<area href="class_locale_date_format.html" alt="LocaleDateFormat" shape="rect" coords="0,56,115,80"/>
+</map>
+ </div></div>
+
+<p><a href="class_date_format-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a493fbba008ed5a2520e2cd153a5e16eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a493fbba008ed5a2520e2cd153a5e16eb">DateFormat</a> (void)</td></tr>
+<tr class="memitem:a661b04fee9e495e1a78420dd30e1b4dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a661b04fee9e495e1a78420dd30e1b4dd">format</a> (const <a class="el" href="class_date.html">Date</a> *date, int pattern) const =0</td></tr>
+<tr class="memitem:ab4dc624522a1defc71e3ae0549124eba"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#ab4dc624522a1defc71e3ae0549124eba">format</a> (const <a class="el" href="class_date.html">Date</a> *date, const <a class="el" href="class_string.html">String</a> &amp;pattern) const =0</td></tr>
+<tr class="memitem:ae6136617b8fdc7bfbdb7e4d15f1b2810"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#ae6136617b8fdc7bfbdb7e4d15f1b2810">formatDay</a> (const <a class="el" href="class_date.html">Date</a> *date, int pattern) const =0</td></tr>
+<tr class="memitem:a23f656cb75d3128adb741075c1e9e322"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a23f656cb75d3128adb741075c1e9e322">formatTime</a> (const <a class="el" href="class_date.html">Date</a> *date, int pattern) const =0</td></tr>
+<tr class="memitem:ac91fa22c73289135d6d4db7a85655380"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#ac91fa22c73289135d6d4db7a85655380">getFormatPattern</a> (<a class="el" href="date_8h.html#ac6cce86321c85b03f460c556216f707e">FullDatePattern</a> pattern)=0</td></tr>
+<tr class="memitem:a5039de9473c05fae20c8d89bf01cb0cf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a5039de9473c05fae20c8d89bf01cb0cf">getFormatPattern</a> (<a class="el" href="date_8h.html#a1d6871e7f575403099cc68638de9fb30">DatePattern</a> pattern)=0</td></tr>
+<tr class="memitem:af5bb65885ff92de19b1bcfc3ff741dc6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#af5bb65885ff92de19b1bcfc3ff741dc6">getFormatPattern</a> (<a class="el" href="date_8h.html#a9f191cef912e3fdbe6f35d7aa39b2050">TimePattern</a> pattern)=0</td></tr>
+<tr class="memitem:a4584a1d630e5f4c8c1391bd2cfec2af2"><td class="memItemLeft" align="right" valign="top">virtual int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a4584a1d630e5f4c8c1391bd2cfec2af2">parse</a> (const <a class="el" href="class_string.html">String</a> &amp;str) const =0</td></tr>
+<tr class="memitem:a11013ff3aacb6bf692426931fecb3831"><td class="memItemLeft" align="right" valign="top">virtual int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a11013ff3aacb6bf692426931fecb3831">parse</a> (const <a class="el" href="class_string.html">String</a> &amp;str, const <a class="el" href="class_string.html">String</a> &amp;pattern) const =0</td></tr>
+<tr class="memitem:a7b71a032ec6c0e0fc6b52b59fb52dbe8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a7b71a032ec6c0e0fc6b52b59fb52dbe8">~DateFormat</a> (void)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a35d23216ea779c28fd3655adde287c52"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a35d23216ea779c28fd3655adde287c52">delLocalInstance</a> (void)</td></tr>
+<tr class="memitem:a98f57f59e8c23f4ed517c806a982cd4c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_date_format.html">DateFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a98f57f59e8c23f4ed517c806a982cd4c">getLocalInstance</a> (void)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+保护成员</h2></td></tr>
+<tr class="memitem:a381267a4b5e0b597be2ec6afbe60c0b0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a381267a4b5e0b597be2ec6afbe60c0b0">doFormat</a> (const <a class="el" href="class_locale.html">Locale</a> *locale, const <a class="el" href="class_date.html">Date</a> *date, const <a class="el" href="class_string.html">String</a> &amp;pattern) const </td></tr>
+<tr class="memitem:a9e8d49e7cb19dcf2cab378359efb9178"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date_format.html#a9e8d49e7cb19dcf2cab378359efb9178">doParse</a> (const <a class="el" href="class_locale.html">Locale</a> *locale, const <a class="el" href="class_string.html">String</a> &amp;str, const <a class="el" href="class_string.html">String</a> &amp;pattern, int64 &amp;time) const </td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>time string format pattern description </p>
+<pre>
+ H                                                             Hour in 24-hour format (0–23),Single-digit hours will not have a leading zero. 
+ HH                                                            Hour in 24-hour format (00–23)
+ h                                                             Hour in 12-hour format (0-12),Single-digit hours will not have a leading zero. 
+ hh                                                            Hour in 12-hour format (00–12) 
+ m                                                             Minute as decimal number (0–59),Single-digit hours will not have a leading zero. 
+ mm                                                            Minute as decimal number (00–59) 
+ s                                                             Second as decimal number (0–59),Single-digit hours will not have a leading zero.  
+ ss                                                            Second as decimal number (00–59)
+ y                                                             Year without century, as decimal number (0–99).If the year without the century is less than 10, the year is displayed with no leading zero.
+ yy                                                            Year without century, as decimal number (00–99)
+ yyyy                                                 Year with century, as decimal number 
+ M                                                             Month as decimal number (1-12).Single-digit months will not have a leading zero.
+ MM                                                            Month as decimal number (01-12).
+ MMM                                                  The abbreviated name of the month
+ MMMM                                                 The full name of the month
+ d                                                             Day of month as decimal number (1–31),Single-digit days will not have a leading zero.
+ dd                                                            Day of month as decimal number (01–31)
+ e                                                             The abbreviated name of the day of the week
+ E                                                             The full name of the day of the week
+ w                                                             Weekday as decimal number (0 – 6; Sunday is 0) 
+ W                                                             Week of year as decimal number, with Monday as first day of week (00 – 53)
+ p                                                             Current locale's A.M./P.M. indicator for 12-hour clock 
+ g                                                             Era abbreviated name
+ G                                                             Era full name
+ z                                                             Time zone abbreviated name
+ zz                                                            Time zone abbreviated name tailed with the full time zone offset ("+" or "-" followed by the hour and minutes). 
+ Z                                                             Time zone full name
+ ZZ                                                            Time zone abbreviated name tailed with the full time zone offset ("+" or "-" followed by the hour and minutes). 
+ O                                                             Time zone offset ("+" or "-" followed by the hour like "+0800"   China.
+ 'str'                                                Where str is any string. Displays the character literally. To display the ' character, use ''.
+ </pre> 
+<p>在文件<a class="el" href="dateformat_8h_source.html">dateformat.h</a>第<a class="el" href="dateformat_8h_source.html#l00067">67</a>行定义。</p>
+</div><hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a493fbba008ed5a2520e2cd153a5e16eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_date_format.html#a493fbba008ed5a2520e2cd153a5e16eb">DateFormat::DateFormat</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a>第<a class="el" href="dateformat_8cpp_source.html#l00444">444</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7b71a032ec6c0e0fc6b52b59fb52dbe8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_date_format.html#a7b71a032ec6c0e0fc6b52b59fb52dbe8">DateFormat::~DateFormat</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a>第<a class="el" href="dateformat_8cpp_source.html#l00448">448</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a35d23216ea779c28fd3655adde287c52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_date_format.html#a35d23216ea779c28fd3655adde287c52">DateFormat::delLocalInstance</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a>第<a class="el" href="dateformat_8cpp_source.html#l00468">468</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (DateFormat::_localInst != 0) {
+                  <span class="keyword">delete</span> DateFormat::_localInst;
+                  DateFormat::_localInst = 0;
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a381267a4b5e0b597be2ec6afbe60c0b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#a381267a4b5e0b597be2ec6afbe60c0b0">DateFormat::doFormat</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_locale.html">Locale</a> *&#160;</td>
+          <td class="paramname"><em>locale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a>第<a class="el" href="dateformat_8cpp_source.html#l00478">478</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="comment">// the length of the format is usually a good guess of the number</span>
+         <span class="comment">// of chars in the result. Might save us a few bytes sometimes</span>
+         <span class="comment">// Add + 10 for cases like mmmm dddd</span>
+         <a class="code" href="class_string.html">String</a> result;
+         <span class="keywordtype">size_t</span> size = pattern.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a> ();
+         result.<a class="code" href="class_string.html#af6b2d38e1a0418cbf4731b39dc396b4c">reserve</a> (size + 10);
+
+         <span class="keywordtype">size_t</span> i = 0;
+         <span class="keyword">const</span> tchar_t* patternStr = pattern.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ();       
+
+         DateTimeExpr dte (date-&gt;<a class="code" href="class_date.html#a13a44ace1486be7f860f4435706b6a6f">time</a> ());   
+
+         <span class="keywordflow">while</span> (i &lt; size) {
+                  <span class="keywordtype">int</span> tokLen = 0;
+                  tchar_t ch = patternStr [i];
+
+                  <span class="keywordflow">switch</span> (ch) {
+                  <span class="comment">//</span>
+                  <span class="comment">// Time Formats</span>
+                  <span class="comment">//</span>
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;h&#39;</span>):
+                  {
+                           <span class="comment">// hour, [1, 12]</span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+
+                           <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hr = dte.tm_hour % 12;
+                           <span class="keywordflow">if</span> (hr == 0)
+                                    hr = 12;
+
+                           <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, hr, 
+                                                      tokLen == 1 ? <span class="keyword">false</span> : hr &gt; 9 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
+                           <span class="keywordflow">break</span>;
+                  }
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;H&#39;</span>):
+                           <span class="comment">// hour, [0, 23]</span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+                           <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, dte.tm_hour, 
+                                                      tokLen == 1 ? <span class="keyword">false</span> : (dte.tm_hour &gt; 9 ? <span class="keyword">false</span> : <span class="keyword">true</span>));
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;m&#39;</span>):
+                           <span class="comment">// minute, [0, 59]</span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+                           <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, dte.tm_min, 
+                                    tokLen == 1 ? <span class="keyword">false</span> : dte.tm_min &gt; 9 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;s&#39;</span>):
+                           <span class="comment">// second [0, 29]</span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+                           <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, dte.tm_sec, 
+                                                      tokLen == 1 ? <span class="keyword">false</span> : dte.tm_sec &gt; 9 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;p&#39;</span>):
+                  {
+                           <span class="comment">// AM/PM. </span>
+                           tokLen = 1;
+<span class="preprocessor">#ifdef __WINDOWS__</span>
+<span class="preprocessor"></span>                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<a class="code" href="dateformat_8cpp.html#ac5b0e9a457e274d1c0ddb18bddc8e924">getTimeIndicator</a> (locale, 
+                                                                                                    dte.tm_hour &lt; 12));
+<span class="preprocessor">#else</span>
+<span class="preprocessor"></span>                           <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* timeIndicator = <a class="code" href="dateformat_8cpp.html#ac5b0e9a457e274d1c0ddb18bddc8e924">getTimeIndicator</a> (locale, dte.tm_hour &lt; 12);
+                           <span class="keywordtype">char</span>* charTimeIndicator = <a class="code" href="string_8cpp.html#af089c8d0dd00c5aea134187dcdbf212a">convertWcharToChar</a> (timeIndicator);
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (charTimeIndicator);
+                           g_free ((gchar*)charTimeIndicator);
+<span class="preprocessor">#endif</span>
+<span class="preprocessor"></span>                           <span class="keywordflow">break</span>;
+                  }
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;z&#39;</span>):
+                           <span class="comment">// timezone</span>
+                  case _T(<span class="stringliteral">&#39;Z&#39;</span>):
+                           assert (false); <span class="comment">// pls impl.</span>
+                           <span class="keywordflow">break</span>;
+
+                  <span class="comment">//</span>
+                  <span class="comment">// Date tokens</span>
+                  <span class="comment">//</span>
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;d&#39;</span>):
+                           <span class="comment">// day. d(dd) = day of month </span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+                           <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, dte.tm_mday, 
+                                                      tokLen == 1 ? <span class="keyword">false</span> : dte.tm_mday &gt; 9 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;e&#39;</span>):
+                  {
+                           tokLen = 1;
+<span class="preprocessor">#ifdef __WINDOWS__</span>
+<span class="preprocessor"></span>                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<a class="code" href="dateformat_8cpp.html#a846b8a75d071eb6fcc51698092b85253">getLocaleWeekDay</a> (locale, 
+                                                                                                    dte.tm_wday, 
+                                                                                                    <span class="keyword">true</span>));
+<span class="preprocessor">#else</span>
+<span class="preprocessor"></span>                           <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* localeWeekDay = <a class="code" href="dateformat_8cpp.html#a846b8a75d071eb6fcc51698092b85253">getLocaleWeekDay</a> (locale, dte.tm_wday, <span class="keyword">true</span>);
+                           <span class="keywordtype">char</span>* charLocaleWeekDay = <a class="code" href="string_8cpp.html#af089c8d0dd00c5aea134187dcdbf212a">convertWcharToChar</a> (localeWeekDay);
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (charLocaleWeekDay);
+                           g_free ((gchar*)charLocaleWeekDay);
+<span class="preprocessor">#endif</span>
+<span class="preprocessor"></span>                           <span class="keywordflow">break</span>;
+                  }
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;E&#39;</span>):
+                  {
+                           tokLen = 1;
+<span class="preprocessor">#ifdef __WINDOWS__</span>
+<span class="preprocessor"></span>                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<a class="code" href="dateformat_8cpp.html#a846b8a75d071eb6fcc51698092b85253">getLocaleWeekDay</a> (locale, 
+                                                                                                    dte.tm_wday, 
+                                                                                                    <span class="keyword">false</span>));
+<span class="preprocessor">#else</span>
+<span class="preprocessor"></span>                           <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* localeWeekDay = <a class="code" href="dateformat_8cpp.html#a846b8a75d071eb6fcc51698092b85253">getLocaleWeekDay</a> (locale, dte.tm_wday, <span class="keyword">false</span>);
+                           <span class="keywordtype">char</span>* charLocaleWeekDay = <a class="code" href="string_8cpp.html#af089c8d0dd00c5aea134187dcdbf212a">convertWcharToChar</a> (localeWeekDay);
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (charLocaleWeekDay);
+                           g_free ((gchar*)charLocaleWeekDay);
+<span class="preprocessor">#endif</span>
+<span class="preprocessor"></span>                           <span class="keywordflow">break</span>;
+                  }
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;w&#39;</span>):
+                           tokLen = 1;
+                           <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, dte.tm_wday, <span class="keyword">false</span>);
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;W&#39;</span>):
+                           assert (false); <span class="comment">// TODO:</span>
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;M&#39;</span>):
+                  {
+                           <span class="comment">// Month.m(m?) = month # (with leading 0 if two mm)</span>
+                           <span class="comment">// mmm = 3 letter name</span>
+                           <span class="comment">// mmmm+ = full name</span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+                           <span class="keywordtype">int</span> month = dte.tm_mon;
+
+                           <span class="keywordflow">if</span> (tokLen == 1)
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, month, <span class="keyword">false</span>);
+                           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tokLen == 2)
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, month, month &gt; 9 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
+                           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tokLen == 3) {
+<span class="preprocessor">#ifdef __WINDOWS__</span>
+<span class="preprocessor"></span>                                    result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<a class="code" href="dateformat_8cpp.html#ad694a8ea50194d37e78715e96ad1d1b0">getLocaleMonth</a> (locale,
+                                                                                                            month, 
+                                                                                                            <span class="keyword">true</span>));
+<span class="preprocessor">#else</span>
+<span class="preprocessor"></span>                           <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* localeMonth = <a class="code" href="dateformat_8cpp.html#ad694a8ea50194d37e78715e96ad1d1b0">getLocaleMonth</a> (locale, month, <span class="keyword">true</span>);
+                           <span class="keywordtype">char</span>* charLocaleMonth = <a class="code" href="string_8cpp.html#af089c8d0dd00c5aea134187dcdbf212a">convertWcharToChar</a> (localeMonth);
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (charLocaleMonth);
+                           g_free ((gchar*)charLocaleMonth);
+<span class="preprocessor">#endif</span>
+<span class="preprocessor"></span>                           }
+                           <span class="keywordflow">else</span> {
+<span class="preprocessor">#ifdef __WINDOWS__</span>
+<span class="preprocessor"></span>                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<a class="code" href="dateformat_8cpp.html#ad694a8ea50194d37e78715e96ad1d1b0">getLocaleMonth</a> (locale,
+                                                                                                            month, 
+                                                                                                            <span class="keyword">false</span>));
+<span class="preprocessor">#else</span>
+<span class="preprocessor"></span>                           <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* localeMonth = <a class="code" href="dateformat_8cpp.html#ad694a8ea50194d37e78715e96ad1d1b0">getLocaleMonth</a> (locale, month, <span class="keyword">false</span>);
+                           <span class="keywordtype">char</span>* charLocaleMonth = <a class="code" href="string_8cpp.html#af089c8d0dd00c5aea134187dcdbf212a">convertWcharToChar</a> (localeMonth);
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (charLocaleMonth);
+                           g_free ((gchar*)charLocaleMonth);
+<span class="preprocessor">#endif</span>
+<span class="preprocessor"></span>                           }
+
+                           <span class="keywordflow">break</span>;
+                  }
+
+                  <span class="keywordflow">case</span> _T(<span class="charliteral">&#39;y&#39;</span>):
+                  {
+                           <span class="comment">// Year. y(y?) = two digit year, with leading 0 if yy</span>
+                           <span class="comment">// yyy+ full year, if yyy and yr &lt; 1000, displayed as three digits</span>
+                           tokLen = <a class="code" href="dateformat_8cpp.html#a1be532fcc90375f3e516c51e9f0035b7">count_repeat</a> (patternStr, size, i, ch);
+
+                           <span class="keywordtype">int</span> year = tokLen &gt; 2 ? dte.tm_year : dte.tm_year % 100;
+                           <span class="keywordflow">if</span> (tokLen == 1)
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, year, <span class="keyword">false</span>);
+                           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tokLen == 2)
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, year, (year &lt; 10));
+                           <span class="keywordflow">else</span>
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, year, <span class="keyword">false</span>);
+                           <span class="keywordflow">break</span>;
+                  }
+
+                  <span class="keywordflow">case</span> (<span class="charliteral">&#39;g&#39;</span>):
+                  <span class="keywordflow">case</span> (<span class="charliteral">&#39;G&#39;</span>):
+                           <span class="comment">// Era name</span>
+                           assert (<span class="keyword">false</span>);
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> (<span class="charliteral">&#39;O&#39;</span>):
+                  {
+                           <span class="keywordtype">int</span> hourOffset = (int) (<a class="code" href="class_time_zone.html#a201e6b1a04f88077055333c36e55266b">TimeZone::getCurrentTimeZone</a> ()-&gt;<a class="code" href="class_time_zone.html#a3db2bcccdb7d38ed96f73fafd4f14f9d">getUTCOffset</a> (
+                                                                                                                                       date) / <a class="code" href="class_date.html#a3be89b5b920e0321d2e4dfd96be43b4d">Date::ticksPerHour</a>);
+                           
+                           <span class="comment">// Time zone offset </span>
+                           <span class="keywordflow">if</span> (hourOffset &gt;= 0) { <span class="comment">// +0000</span>
+                                    result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<span class="charliteral">&#39;+&#39;</span>, 1);
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, hourOffset, (hourOffset &lt; 10));
+                           }
+                           <span class="keywordflow">else</span> {
+                                    result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<span class="charliteral">&#39;-&#39;</span>, 1);
+                                    <a class="code" href="dateformat_8cpp.html#aa4e8e9987c8aa592534987e43a9b8892">result_pad</a> (result, -hourOffset, (hourOffset &gt; -10));
+                           }
+                           
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (<span class="charliteral">&#39;0&#39;</span>, 2);
+                           tokLen = 1;
+                           <span class="keywordflow">break</span>;
+                  }
+                           
+                  <span class="comment">//</span>
+                  <span class="comment">// Other</span>
+                  <span class="comment">//</span>
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;\&#39;&#39;</span>:
+                  {
+                           <span class="comment">// literal</span>
+                           <span class="keywordtype">size_t</span> l = i + 1;
+                           <span class="keywordflow">while</span> (<span class="keyword">true</span>) {
+                                    <span class="keywordtype">wchar_t</span> c = patternStr[l++];
+
+                                    <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;\&#39;&#39;</span>) {
+                                             <span class="keywordflow">if</span> (patternStr[l] != <span class="charliteral">&#39;\&#39;&#39;</span>) <span class="comment">// Peek next to check double &#39;&#39;</span>
+                                                      <span class="keywordflow">break</span>;
+                                             <span class="keywordflow">else</span> 
+                                                      l++; <span class="comment">// skip it</span>
+                                    }
+
+                                    result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (c, 1);
+                           }
+                           
+                           tokLen = (int) (l - i);
+                           <span class="keywordflow">break</span>;
+                  }
+                  
+                  <span class="keywordflow">default</span>:
+                           <span class="comment">// catch all unkown token</span>
+                           result.<a class="code" href="class_string.html#a4849f0b933cbc812a292d06f79e12430">append</a> (ch, 1);
+                           tokLen = 1;
+                           <span class="keywordflow">break</span>;
+                  }
+
+                  i += tokLen;
+         }
+
+         <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9e8d49e7cb19dcf2cab378359efb9178"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_date_format.html#a9e8d49e7cb19dcf2cab378359efb9178">DateFormat::doParse</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_locale.html">Locale</a> *&#160;</td>
+          <td class="paramname"><em>locale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64 &amp;&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a>第<a class="el" href="dateformat_8cpp_source.html#l00779">779</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordtype">int</span> day = -1;
+         <span class="comment">//int dayofweek = -1;</span>
+         <span class="keywordtype">int</span> month = -1; 
+         <span class="keywordtype">int</span> year = -1;
+         <span class="keywordtype">int</span> hour = -1;
+         <span class="keywordtype">int</span> minute = -1;
+         <span class="keywordtype">int</span> second = -1;
+
+         <span class="keyword">const</span> tchar_t* ptn = pattern.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ();
+         <span class="keyword">const</span> tchar_t* chars = str.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ();
+         <span class="keyword">const</span> tchar_t* end_chars = chars + str.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a> ();
+
+         <span class="keywordtype">size_t</span> len = pattern.<a class="code" href="class_string.html#a7a94983d29c5141ca58bb13df5cea712">getLength</a> ();
+         <span class="keywordtype">size_t</span> pos = 0, num = 0;
+         <span class="keywordtype">int</span> ampm = -1;
+
+         <span class="keywordflow">while</span> (pos + num &lt; len) {
+                  <span class="keywordflow">if</span> (chars == end_chars)
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">if</span> (chars[pos] == <span class="charliteral">&#39;\&#39;&#39;</span>) {
+                           <span class="comment">// string literal, compare the literal is the expected.</span>
+                           num = 1;
+                           <span class="keywordflow">while</span> (pos + num &lt; len) {
+                                    <span class="keywordflow">if</span> (chars[pos + num] == <span class="charliteral">&#39;\&#39;&#39;</span>)
+                                             <span class="keywordflow">break</span>;
+
+                                    <span class="keywordflow">if</span> (chars == end_chars)
+                                             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                                    <span class="keywordflow">if</span> (*chars != ptn[pos + num])
+                                             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                                    
+                                    chars++;
+                                    num++;
+                           }
+                           <span class="keywordflow">if</span> (pos + num &gt; len)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="comment">//</span>
+                           <span class="comment">// has skip the string literal successfully, reset the pos and num</span>
+                           <span class="comment">//</span>
+                           pos += num + 1;
+                           num = 0;
+                           <span class="keywordflow">continue</span>;
+                  } 
+                  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_char.html#a13804218ed33469045b9cd3dd27d833f">Char::isWhiteSpace</a> (*chars)) {
+                           chars++;
+
+                           <span class="comment">// Compare the the pattern whether or not be whitespace</span>
+                           <span class="keywordflow">if</span> (<a class="code" href="class_char.html#a13804218ed33469045b9cd3dd27d833f">Char::isWhiteSpace</a> (ptn[pos])) {
+                                    pos++;
+                                    <span class="keywordflow">continue</span>;
+                           }
+
+                           <span class="comment">// skip the remaining whitespace</span>
+                           <span class="keywordtype">int</span> ws = 0;
+                           <span class="keywordtype">size_t</span> slen = end_chars - chars;
+                           <span class="keywordflow">while</span> ((<span class="keywordtype">size_t</span>) ws &lt; slen) {
+                                    <span class="keywordflow">if</span> (<a class="code" href="class_char.html#a13804218ed33469045b9cd3dd27d833f">Char::isWhiteSpace</a> (chars [ws]))
+                                             ws++;
+                                    <span class="keywordflow">else</span>
+                                             <span class="keywordflow">break</span>;
+                           }
+                           
+                           chars += ws;
+                  } <span class="comment">//END if</span>
+
+                  <span class="comment">//</span>
+                  <span class="comment">// Skip the repeated formatted character, use the last character, </span>
+                  <span class="comment">// @num record the repeated character count</span>
+                  <span class="comment">//</span>
+                  <span class="keywordflow">if</span> ((pos + num + 1 &lt; len) &amp;&amp; (ptn[pos + num + 1] == ptn[pos + num])) {
+                           num++; 
+                           <span class="keywordflow">continue</span>;
+                  }
+
+                  <span class="keywordtype">int</span> num_parsed = 0;
+                  <span class="keywordtype">bool</span> next_not_digit; <span class="comment">// keep the next character whether or not be a digit character</span>
+
+                  <span class="comment">// Check next character</span>
+                  <span class="keywordflow">if</span> (pos + num + 1 &lt; len) {
+                           <span class="keywordtype">wchar_t</span> next_char = ptn[pos + num + 1];
+                           
+                           next_not_digit = !(next_char == <span class="charliteral">&#39;d&#39;</span> ||
+                                                                  next_char == <span class="charliteral">&#39;M&#39;</span> ||
+                                                                  next_char == <span class="charliteral">&#39;y&#39;</span> ||
+                                                                  next_char == <span class="charliteral">&#39;h&#39;</span> ||
+                                                                  next_char == <span class="charliteral">&#39;H&#39;</span> ||
+                                                                  next_char == <span class="charliteral">&#39;m&#39;</span> ||
+                                                                  next_char == <span class="charliteral">&#39;s&#39;</span> ||
+                                                                  <span class="comment">//next_char == &#39;z&#39; ||</span>
+                                                                  next_char == <span class="charliteral">&#39;\&#39;&#39;</span> ||
+                                                                  <a class="code" href="class_char.html#ab7ed41a88b3bde8deb05b34894da3df7">Char::isDigit</a> (next_char));
+                  } 
+                  <span class="keywordflow">else</span> {
+                           next_not_digit = <span class="keyword">true</span>;
+                  } <span class="comment">//END if</span>
+                                    
+                  <span class="keywordflow">switch</span> (ptn[pos])
+                  {
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>: <span class="comment">// day</span>
+                           <span class="keywordflow">if</span> (day != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// has get</span>
+                           <span class="keywordflow">if</span> (num == 0)
+                                    day = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                 end_chars - chars, 
+                                                                                 2, 
+                                                                                 <span class="keyword">false</span>, 
+                                                                                 next_not_digit, 
+                                                                                 num_parsed);
+                           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num == 1)
+                                    day = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                 end_chars - chars,
+                                                                                 2, 
+                                                                                 <span class="keyword">true</span>, 
+                                                                                 next_not_digit, 
+                                                                                 num_parsed);
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;M&#39;</span>: <span class="comment">// month</span>
+                           <span class="keywordflow">if</span> (month != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// has get</span>
+                           <span class="keywordflow">if</span> (num == 0)
+                                    month = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                   end_chars - chars,
+                                                                                   2, 
+                                                                                   <span class="keyword">false</span>, 
+                                                                                   next_not_digit, 
+                                                                                   num_parsed);
+                           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num == 1)
+                                    month = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars,
+                                                                                   end_chars - chars, 
+                                                                                   2, 
+                                                                                   <span class="keyword">true</span>, 
+                                                                                   next_not_digit, 
+                                                                                   num_parsed);
+                           <span class="keywordflow">else</span> {
+                                    <span class="comment">// TODO:</span>
+                           }
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;y&#39;</span>: <span class="comment">// Year</span>
+                           <span class="keywordflow">if</span> (year != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">if</span> (num == 0) {
+                                    year = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                  end_chars - chars, 
+                                                                                  2,
+                                                                                  <span class="keyword">false</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+                           } 
+                           <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num &lt; 3) {
+                                    year = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars,
+                                                                                  end_chars - chars,
+                                                                                  2, 
+                                                                                  <span class="keyword">true</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+                           } 
+                           <span class="keywordflow">else</span> {
+                                    year = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                  end_chars - chars,
+                                                                                  4, 
+                                                                                  <span class="keyword">false</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+
+                                    <span class="comment">// TODO:</span>
+                                    <span class="comment">/*if ((year &gt;= 1000) &amp;&amp; (num_parsed == 4) &amp;&amp; (!longYear) &amp;&amp; (s.Length &gt; 4)) {</span>
+<span class="comment">                                             int np = 0;</span>
+<span class="comment">                                             int ly = parse_number (s, 5, false, sloppy_parsing, next_not_digit, out np);</span>
+<span class="comment">                                             longYear = (ly &gt; 9999);</span>
+<span class="comment">                                    }*/</span>
+
+                                    num = 3;
+                           }
+
+                           <span class="comment">//FIXME: We should do use dfi.Calendat.TwoDigitYearMax</span>
+                           <span class="keywordflow">if</span> (num_parsed &lt;= 2)
+                                    year += (year &lt; 30) ? 2000 : 1900;
+            <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>: <span class="comment">// hour</span>
+                           <span class="keywordflow">if</span> (hour != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">if</span> (num == 0)
+                                    hour = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars,
+                                                                                  end_chars - chars, 
+                                                                                  2, 
+                                                                                  <span class="keyword">false</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+                           <span class="keywordflow">else</span> {
+                                    hour = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars,
+                                                                                  end_chars - chars,
+                                                                                  2, 
+                                                                                  <span class="keyword">true</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+                                    num = 1;
+                           }
+
+                           <span class="keywordflow">if</span> (hour &gt;= 12)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;H&#39;</span>: <span class="comment">// Hour</span>
+                           <span class="keywordflow">if</span> ((hour != -1) || (ampm &gt;= 0))
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">if</span> (num == 0)
+                                    hour = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars,
+                                                                                  end_chars - chars,
+                                                                                  2, 
+                                                                                  <span class="keyword">false</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+                           <span class="keywordflow">else</span>
+                           {
+                                    hour = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                  end_chars - chars,
+                                                                                  2, 
+                                                                                  <span class="keyword">true</span>, 
+                                                                                  next_not_digit, 
+                                                                                  num_parsed);
+                                    num = 1;
+                           }
+                           <span class="keywordflow">if</span> (hour &gt;= 24)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           ampm = -2;
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;m&#39;</span>: <span class="comment">// minute</span>
+                           <span class="keywordflow">if</span> (minute != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">if</span> (num == 0)
+                                    minute = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                    end_chars - chars,
+                                                                                    2, 
+                                                                                    <span class="keyword">false</span>, 
+                                                                                    next_not_digit, 
+                                                                                    num_parsed);
+                           <span class="keywordflow">else</span>
+                           {
+                                    minute = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                    end_chars - chars,
+                                                                                    2, 
+                                                                                    <span class="keyword">true</span>, 
+                                                                                    next_not_digit, 
+                                                                                    num_parsed);
+                                    num = 1;
+                           }
+                           <span class="keywordflow">if</span> (minute &gt;= 60)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:
+                           <span class="keywordflow">if</span> (second != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">if</span> (num == 0)
+                                    second = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                    end_chars - chars, 
+                                                                                    2, 
+                                                                                    <span class="keyword">false</span>, 
+                                                                                    next_not_digit, 
+                                                                                    num_parsed);
+                           <span class="keywordflow">else</span>
+                           {
+                                    second = <a class="code" href="dateformat_8cpp.html#ae116ea5f0f698070c0cf928cc59025f8">parse_number</a> (chars, 
+                                                                                    end_chars - chars, 
+                                                                                    2, 
+                                                                                    <span class="keyword">true</span>, 
+                                                                                    next_not_digit, 
+                                                                                    num_parsed);
+                                    num = 1;
+                           }
+                           <span class="keywordflow">if</span> (second &gt;= 60)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:
+                           <span class="keywordflow">if</span> (ampm != -1)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                           <span class="keywordflow">if</span> (num == 0)
+                           {
+                                    <span class="comment">// TODO</span>
+                           }
+                           <span class="keywordflow">else</span>
+                           {
+                                    <span class="comment">// TODO:</span>
+                                    num = 1;
+                           }
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;z&#39;</span>:
+                           <span class="comment">// TODO;</span>
+                           <span class="keywordflow">return</span> <span class="keyword">false</span>;     
+                           
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;Z&#39;</span>:
+                           <span class="keywordflow">if</span> (*chars != <span class="charliteral">&#39;Z&#39;</span>)
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                           <span class="comment">// TODO:</span>
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;/&#39;</span>:
+                  <span class="keywordflow">case</span> <span class="charliteral">&#39;:&#39;</span>:
+                           num_parsed = 1;
+                           <span class="keywordflow">break</span>;
+
+                  <span class="keywordflow">default</span>:
+                           <span class="keywordflow">if</span> (ptn[pos] == <span class="charliteral">&#39;\&#39;&#39;</span>) {
+                                    pos++;
+                           }                                            
+
+                           <span class="keywordflow">if</span> (*chars != ptn[pos]) {
+                                    <span class="comment">//TODO:</span>
+                                    <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                           }
+
+                           <span class="keywordflow">if</span> (ptn[pos + 1] == <span class="charliteral">&#39;\&#39;&#39;</span>) {
+                                    pos++;
+                           }
+
+                           num = 0;
+                           num_parsed = 1;
+                           <span class="keywordflow">break</span>;
+                  }
+
+                  <span class="keywordflow">if</span> (num_parsed &lt; 0)
+                           <span class="keywordflow">return</span> <span class="keyword">false</span>;
+
+                  chars += num_parsed;
+                  pos += num + 1;
+                  num = 0;
+
+         } <span class="comment">// END while</span>
+
+         
+         <span class="keywordflow">if</span> (second == -1)
+                  second = 0;
+         <span class="keywordflow">if</span> (minute == -1)
+                  minute = 0;
+         <span class="keywordflow">if</span> (hour == -1)
+                  hour = 0;
+
+         <a class="code" href="class_date.html">Date</a> now;
+         <span class="keywordflow">if</span> (day == -1)
+                  day = now.<a class="code" href="class_date.html#adb71d806712713720163566ea07ba6cb">getDay</a> ();
+         <span class="keywordflow">if</span> (month == -1)
+                  month = now.<a class="code" href="class_date.html#a2bc4ef37e92bf64ae6e80cbcbda7469c">getMonth</a> ();
+         <span class="keywordflow">if</span> (year == -1) <span class="comment">//TODO:             </span>
+                  year = now.<a class="code" href="class_date.html#a3f034fda4766b990e1e5ba4954263ed6">getYear</a> ();
+         
+         <span class="keywordflow">if</span> (ampm == 1)
+                  hour = hour + 12;
+         
+         <span class="comment">// For anything out of range  return false</span>
+         <span class="keywordflow">if</span> ( year &lt; 1 || year &gt; 9999 || month &lt; 1 || month &gt;12  ||
+                   day &lt; 1 || day &gt; (<span class="keywordtype">int</span>) <a class="code" href="comdef_8cpp.html#a96ac0306ff4024b01f499df49c533806">daysInMonth</a> (year, month) ||
+                   hour &lt; 0 || hour &gt; 23 ||
+                   minute &lt; 0 || minute &gt; 59 ||
+                   second &lt; 0 || second &gt; 59 )
+                           <span class="keywordflow">return</span> <span class="keyword">false</span>; 
+
+         <a class="code" href="class_date.html">Date</a> date (year, month, day, hour, minute, second, 0);
+         
+         <span class="keywordtype">int</span> hourOffset = (int) (<a class="code" href="class_time_zone.html#a201e6b1a04f88077055333c36e55266b">TimeZone::getCurrentTimeZone</a> ()-&gt;<a class="code" href="class_time_zone.html#a3db2bcccdb7d38ed96f73fafd4f14f9d">getUTCOffset</a> (&amp;date) / <a class="code" href="class_date.html#a3be89b5b920e0321d2e4dfd96be43b4d">Date::ticksPerHour</a>);
+         date.addHours (-hourOffset);
+
+         time = date.time ();
+         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a661b04fee9e495e1a78420dd30e1b4dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#a661b04fee9e495e1a78420dd30e1b4dd">DateFormat::format</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#aefc3d6dc227bf01e926b8d7221b06f76">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4dc624522a1defc71e3ae0549124eba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#a661b04fee9e495e1a78420dd30e1b4dd">DateFormat::format</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#a264f38f763489700397a813951af355c">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6136617b8fdc7bfbdb7e4d15f1b2810"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#ae6136617b8fdc7bfbdb7e4d15f1b2810">DateFormat::formatDay</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#a6dcc02aa5db00d4baca13af051d4537f">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a23f656cb75d3128adb741075c1e9e322"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#a23f656cb75d3128adb741075c1e9e322">DateFormat::formatTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_date.html">Date</a> *&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#ab17863525e10594af6522a75ddd82248">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac91fa22c73289135d6d4db7a85655380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#ac91fa22c73289135d6d4db7a85655380">DateFormat::getFormatPattern</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="date_8h.html#ac6cce86321c85b03f460c556216f707e">FullDatePattern</a>&#160;</td>
+          <td class="paramname"><em>pattern</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#a10d048090d50692652fcb24bef9e364e">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5039de9473c05fae20c8d89bf01cb0cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#ac91fa22c73289135d6d4db7a85655380">DateFormat::getFormatPattern</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="date_8h.html#a1d6871e7f575403099cc68638de9fb30">DatePattern</a>&#160;</td>
+          <td class="paramname"><em>pattern</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#a06db84e2ac5daab63f3239804ab87646">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="af5bb65885ff92de19b1bcfc3ff741dc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_date_format.html#ac91fa22c73289135d6d4db7a85655380">DateFormat::getFormatPattern</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="date_8h.html#a9f191cef912e3fdbe6f35d7aa39b2050">TimePattern</a>&#160;</td>
+          <td class="paramname"><em>pattern</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#aeda60ab727abe92d6087e6d463ca0cc3">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a98f57f59e8c23f4ed517c806a982cd4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_date_format.html">DateFormat</a> * <a class="el" href="class_date_format.html#a98f57f59e8c23f4ed517c806a982cd4c">DateFormat::getLocalInstance</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a>第<a class="el" href="dateformat_8cpp_source.html#l00457">457</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (DateFormat::_localInst == 0) {
+                  DateFormat::_localInst = <span class="keyword">new</span> SimpleDateFormat;                 
+         }
+
+         <span class="keywordflow">return</span> DateFormat::_localInst;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a4584a1d630e5f4c8c1391bd2cfec2af2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int64 <a class="el" href="class_date_format.html#a4584a1d630e5f4c8c1391bd2cfec2af2">DateFormat::parse</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#ad12312a204ca13d500d9d1bfbbe0d456">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a11013ff3aacb6bf692426931fecb3831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int64 <a class="el" href="class_date_format.html#a4584a1d630e5f4c8c1391bd2cfec2af2">DateFormat::parse</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="class_locale_date_format.html#a41ebaaa36cbe80ef63cab21dc673e8a9">LocaleDateFormat</a>内被实现。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>E:/code/trunk/src/common/dtl/sys/<a class="el" href="dateformat_8h_source.html">dateformat.h</a></li>
+<li>E:/code/trunk/src/common/dtl/sys/<a class="el" href="dateformat_8cpp_source.html">dateformat.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:45 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

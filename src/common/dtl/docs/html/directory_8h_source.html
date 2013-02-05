@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/io/directory.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/io/directory.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="directory_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">directory.h:      </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library header files</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Software, Inc.(2011)</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         This file contain the declaration of classes:</span>
+<a name="l00008"></a>00008 <span class="comment"></span>
+<a name="l00009"></a>00009 <span class="comment">Author:</span>
+<a name="l00010"></a>00010 <span class="comment">         韩欣</span>
+<a name="l00011"></a>00011 <span class="comment"></span>
+<a name="l00012"></a>00012 <span class="comment">Creating Time:</span>
+<a name="l00013"></a>00013 <span class="comment">         2011-10-10</span>
+<a name="l00014"></a>00014 <span class="comment">***************************************************************************************************/</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#ifndef __DTL__DIRECTORY_H__</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#define __DTL__DIRECTORY_H__</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00019"></a>00019 <span class="preprocessor">#if PRAGMA_ONCE</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#        pragma once</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span>
+<a name="l00023"></a>00023 
+<a name="l00027"></a><a class="code" href="class_directory.html">00027</a> <span class="keyword">class </span><a class="code" href="prec_8h.html#ad8c2d068705a970928afad755b449b15">DTL_DLLEXPORT</a> <a class="code" href="class_directory.html">Directory</a>: <span class="keyword">public</span> <a class="code" href="class_base_file.html">BaseFile</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029 <span class="keyword">public</span>:
+<a name="l00030"></a><a class="code" href="class_directory.html#a7702bdc8398b21937fb9504147238485">00030</a>          <a class="code" href="class_directory.html">Directory</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; fullPath)
+<a name="l00031"></a>00031                   : <a class="code" href="class_base_file.html">BaseFile</a> (fullPath)
+<a name="l00032"></a>00032          {
+<a name="l00033"></a>00033          }
+<a name="l00034"></a>00034 
+<a name="l00038"></a><a class="code" href="class_directory.html#a25c002ae81e27020cc1be38b82443d07">00038</a>          <a class="code" href="class_directory.html">Directory</a> (<span class="keyword">const</span> <a class="code" href="class_directory.html">Directory</a>&amp; dir)
+<a name="l00039"></a>00039                   : <a class="code" href="class_base_file.html">BaseFile</a> (dir)
+<a name="l00040"></a>00040          {
+<a name="l00041"></a>00041          }
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043          ~<a class="code" href="class_directory.html">Directory</a> (<span class="keywordtype">void</span>);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045          
+<a name="l00046"></a>00046 <span class="comment">// Overriden methods</span>
+<a name="l00047"></a>00047 <span class="keyword">public</span>:
+<a name="l00052"></a>00052          <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_base_file.html#a403e3b3061f5e3c5bf26c507171cf215">exists</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00053"></a>00053 
+<a name="l00059"></a>00059          <span class="keyword">virtual</span> <a class="code" href="class_string.html">String</a> <a class="code" href="class_base_file.html#a6ef8104ba66338666ad292224c4afce2">getName</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="keyword">public</span>:
+<a name="l00069"></a>00069          <span class="keywordtype">void</span> create (<span class="keywordtype">void</span>);
+<a name="l00070"></a>00070 
+<a name="l00080"></a>00080          <a class="code" href="class_directory.html">Directory</a> createSubDirectory (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; name) <span class="keyword">const</span>;
+<a name="l00081"></a>00081 
+<a name="l00097"></a>00097          <span class="keywordtype">void</span> list (vector&lt;String&gt;&amp; subs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern = _T(<span class="stringliteral">&quot;*&quot;</span>)) <span class="keyword">const</span>;
+<a name="l00098"></a>00098          <span class="keywordtype">void</span> list (vector&lt;Directory&gt;&amp; subs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern = _T(<span class="stringliteral">&quot;*&quot;</span>)) <span class="keyword">const</span>;
+<a name="l00099"></a>00099 
+<a name="l00115"></a>00115          <span class="keywordtype">void</span> listDirs (vector&lt;String&gt;&amp; dirs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern = _T(<span class="stringliteral">&quot;*&quot;</span>)) <span class="keyword">const</span>;
+<a name="l00116"></a>00116          <span class="keywordtype">void</span> listDirs (vector&lt;Directory&gt;&amp; subs, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern = _T(<span class="stringliteral">&quot;*&quot;</span>)) <span class="keyword">const</span>;
+<a name="l00117"></a>00117          
+<a name="l00133"></a>00133          <span class="keywordtype">void</span> listFiles (vector&lt;String&gt;&amp; files, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern = _T(<span class="stringliteral">&quot;*&quot;</span>)) <span class="keyword">const</span>;
+<a name="l00134"></a>00134          <span class="keywordtype">void</span> listFiles (vector&lt;File&gt;&amp; files, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; pattern = _T(<span class="stringliteral">&quot;*&quot;</span>)) <span class="keyword">const</span>;
+<a name="l00135"></a>00135          
+<a name="l00142"></a>00142          <a class="code" href="class_directory.html">Directory</a> getParent (<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00143"></a>00143 
+<a name="l00149"></a><a class="code" href="class_directory.html#ac658bf0cbfe2612420e5d7dd4f6eb9a5">00149</a>          <span class="keywordtype">bool</span> isRoot (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00150"></a>00150 <span class="keyword">         </span>{
+<a name="l00151"></a>00151                   <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; path = <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>;
+<a name="l00152"></a>00152                   <span class="keywordflow">return</span> (<a class="code" href="class_path.html#a87426cd7cc07be2885f545caedf72346">Path::getPathRoot</a> (path) == path);
+<a name="l00153"></a>00153          }
+<a name="l00154"></a>00154 
+<a name="l00160"></a>00160          <span class="keywordtype">void</span> <span class="keyword">remove</span> (void);
+<a name="l00161"></a>00161 
+<a name="l00168"></a>00168          <span class="keywordtype">void</span> removeTree (<span class="keywordtype">void</span>);
+<a name="l00169"></a>00169          
+<a name="l00170"></a>00170 }; <span class="comment">// End class Directory</span>
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172 <span class="preprocessor">#endif // __DTL__DIRECTORY_H__</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:39 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

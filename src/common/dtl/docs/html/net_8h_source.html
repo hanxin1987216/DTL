@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/net/net.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/net/net.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="net_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">net.h:   </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library header files</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Software, Inc.(2011)</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         This file contain the declaration of classes: EthernetMgm  </span>
+<a name="l00008"></a>00008 <span class="comment">         网卡信息配置</span>
+<a name="l00009"></a>00009 <span class="comment"></span>
+<a name="l00010"></a>00010 <span class="comment">Author:</span>
+<a name="l00011"></a>00011 <span class="comment">         韩欣</span>
+<a name="l00012"></a>00012 <span class="comment"></span>
+<a name="l00013"></a>00013 <span class="comment">Creating Time:</span>
+<a name="l00014"></a>00014 <span class="comment">         2012-2-10</span>
+<a name="l00015"></a>00015 <span class="comment">***************************************************************************************************/</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#ifndef __DTL_NET_NET_H__</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#define __DTL_NET_NET_H__</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span>
+<a name="l00020"></a>00020 <span class="preprocessor">#if PRAGMA_ONCE</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#        pragma once</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &quot;../lang/string.h&quot;</span>
+<a name="l00025"></a>00025 
+<a name="l00029"></a><a class="code" href="struct_ethernet_info.html">00029</a> <span class="keyword">struct </span><a class="code" href="struct_ethernet_info.html">EthernetInfo</a>
+<a name="l00030"></a>00030 {
+<a name="l00031"></a><a class="code" href="struct_ethernet_info.html#a08f9ab6f495827722b71c3cd282e82f7">00031</a>          <a class="code" href="struct_ethernet_info.html#a08f9ab6f495827722b71c3cd282e82f7">EthernetInfo</a>()
+<a name="l00032"></a>00032                   :<a class="code" href="struct_ethernet_info.html#aaa82b2b6c1f428f66a337ee11c13e8a4">_device</a> () 
+<a name="l00033"></a>00033                   ,<a class="code" href="struct_ethernet_info.html#a8d94f0fa68c92e484a942393e3e4c848">_ip</a> ()
+<a name="l00034"></a>00034                   ,<a class="code" href="struct_ethernet_info.html#a6b56c5dc83afb377014712bc2c0a5d8f">_netmask</a> ()
+<a name="l00035"></a>00035                   ,<a class="code" href="struct_ethernet_info.html#a0c935420b78bc61107392bc0436c4bb5">_macAddress</a> ()
+<a name="l00036"></a>00036                   ,<a class="code" href="struct_ethernet_info.html#a811af33ed437a2295a89ca36f4589683">_broadcast</a> ()
+<a name="l00037"></a>00037                   ,<a class="code" href="struct_ethernet_info.html#a087198cc7c1b8cabfb6ac3e4686c934d">_type</a> () 
+<a name="l00038"></a>00038                   ,<a class="code" href="struct_ethernet_info.html#a17f1458d8f701931225b91b98f5f6eb6">_gateway</a> ()
+<a name="l00039"></a>00039                   ,<a class="code" href="struct_ethernet_info.html#ac191e0943d5f4f1ef5c8200959d20f2c">_master</a>() 
+<a name="l00040"></a>00040                   ,<a class="code" href="struct_ethernet_info.html#a51e6ddd05967ab8aed544967fde8f4ae">_status</a> (0)
+<a name="l00041"></a>00041                   ,<a class="code" href="struct_ethernet_info.html#a05d11951208c4333591108af8ea330c0">_bondType</a> (0)
+<a name="l00042"></a>00042          {
+<a name="l00043"></a>00043          }
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="keyword">public</span>:
+<a name="l00046"></a><a class="code" href="struct_ethernet_info.html#aaa82b2b6c1f428f66a337ee11c13e8a4">00046</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#aaa82b2b6c1f428f66a337ee11c13e8a4">_device</a>;
+<a name="l00047"></a><a class="code" href="struct_ethernet_info.html#a8d94f0fa68c92e484a942393e3e4c848">00047</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#a8d94f0fa68c92e484a942393e3e4c848">_ip</a>;
+<a name="l00048"></a><a class="code" href="struct_ethernet_info.html#a6b56c5dc83afb377014712bc2c0a5d8f">00048</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#a6b56c5dc83afb377014712bc2c0a5d8f">_netmask</a>;
+<a name="l00049"></a><a class="code" href="struct_ethernet_info.html#a0c935420b78bc61107392bc0436c4bb5">00049</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#a0c935420b78bc61107392bc0436c4bb5">_macAddress</a>;
+<a name="l00050"></a><a class="code" href="struct_ethernet_info.html#a811af33ed437a2295a89ca36f4589683">00050</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#a811af33ed437a2295a89ca36f4589683">_broadcast</a>;
+<a name="l00051"></a><a class="code" href="struct_ethernet_info.html#a087198cc7c1b8cabfb6ac3e4686c934d">00051</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#a087198cc7c1b8cabfb6ac3e4686c934d">_type</a>;
+<a name="l00052"></a><a class="code" href="struct_ethernet_info.html#a17f1458d8f701931225b91b98f5f6eb6">00052</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#a17f1458d8f701931225b91b98f5f6eb6">_gateway</a>;
+<a name="l00053"></a><a class="code" href="struct_ethernet_info.html#ac191e0943d5f4f1ef5c8200959d20f2c">00053</a>          <a class="code" href="class_string.html">String</a> <a class="code" href="struct_ethernet_info.html#ac191e0943d5f4f1ef5c8200959d20f2c">_master</a>;
+<a name="l00054"></a><a class="code" href="struct_ethernet_info.html#a51e6ddd05967ab8aed544967fde8f4ae">00054</a>          <span class="keywordtype">int</span>  <a class="code" href="struct_ethernet_info.html#a51e6ddd05967ab8aed544967fde8f4ae">_status</a>;
+<a name="l00055"></a><a class="code" href="struct_ethernet_info.html#a05d11951208c4333591108af8ea330c0">00055</a>          <span class="keywordtype">int</span>  <a class="code" href="struct_ethernet_info.html#a05d11951208c4333591108af8ea330c0">_bondType</a>;
+<a name="l00056"></a>00056 };
+<a name="l00057"></a>00057 
+<a name="l00061"></a><a class="code" href="struct_bond_info.html">00061</a> <span class="keyword">struct </span><a class="code" href="struct_bond_info.html">BondInfo</a>
+<a name="l00062"></a>00062 {
+<a name="l00063"></a><a class="code" href="struct_bond_info.html#ab67a9df84a9e99e37e5fea9bb60a4df5">00063</a>          <a class="code" href="struct_bond_info.html#ab67a9df84a9e99e37e5fea9bb60a4df5">BondInfo</a>()
+<a name="l00064"></a>00064                   :<a class="code" href="struct_bond_info.html#aa5a02a63d14cf7f954ba4320af774472">_bondIP</a> ()
+<a name="l00065"></a>00065                   ,<a class="code" href="struct_bond_info.html#a7be2ed3182fb8fcaae493825304cd60b">_bondName</a> ()
+<a name="l00066"></a>00066                   ,<a class="code" href="struct_bond_info.html#ad1581f898a1ab3ca170384d3bc2c59ae">_bondEthernets</a> ()
+<a name="l00067"></a>00067          {
+<a name="l00068"></a>00068          }
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="keyword">public</span>:
+<a name="l00071"></a>00071 
+<a name="l00072"></a><a class="code" href="struct_bond_info.html#aa5a02a63d14cf7f954ba4320af774472">00072</a>          <a class="code" href="class_string.html">String</a>                     <a class="code" href="struct_bond_info.html#aa5a02a63d14cf7f954ba4320af774472">_bondIP</a>;
+<a name="l00073"></a><a class="code" href="struct_bond_info.html#a7be2ed3182fb8fcaae493825304cd60b">00073</a>          <a class="code" href="class_string.html">String</a>                     <a class="code" href="struct_bond_info.html#a7be2ed3182fb8fcaae493825304cd60b">_bondName</a>;
+<a name="l00074"></a><a class="code" href="struct_bond_info.html#ad1581f898a1ab3ca170384d3bc2c59ae">00074</a>          vector&lt;String&gt;    <a class="code" href="struct_bond_info.html#ad1581f898a1ab3ca170384d3bc2c59ae">_bondEthernets</a>;
+<a name="l00075"></a>00075 };
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 
+<a name="l00083"></a><a class="code" href="class_ethernet_mgm.html">00083</a> <span class="keyword">class </span><a class="code" href="prec_8h.html#ad8c2d068705a970928afad755b449b15">DTL_DLLEXPORT</a> <a class="code" href="class_ethernet_mgm.html">EthernetMgm</a>
+<a name="l00084"></a>00084 {
+<a name="l00085"></a>00085 <span class="keyword">public</span>:
+<a name="l00086"></a>00086          <a class="code" href="class_ethernet_mgm.html">EthernetMgm</a> (<span class="keywordtype">void</span>);
+<a name="l00087"></a>00087          ~<a class="code" href="class_ethernet_mgm.html">EthernetMgm</a> (<span class="keywordtype">void</span>);
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="keyword">public</span>:
+<a name="l00097"></a>00097          <span class="keywordtype">int</span> getAllEthernetInfo (vector&lt;EthernetInfo&gt;&amp; eInfos);
+<a name="l00098"></a>00098 
+<a name="l00109"></a>00109          <span class="keywordtype">int</span> setEthernetInfo (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; ethernetName, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; ip, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; mask, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; gateway);
+<a name="l00110"></a>00110 
+<a name="l00118"></a>00118          <a class="code" href="class_string.html">String</a> getBroadCastByIP (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; ip);
+<a name="l00119"></a>00119 
+<a name="l00128"></a>00128          <span class="keywordtype">void</span> getDNS (<a class="code" href="class_string.html">String</a>&amp; firstDNS, <a class="code" href="class_string.html">String</a>&amp; secondDNS);
+<a name="l00129"></a>00129          <span class="keywordtype">void</span> setDNS (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; firstDNS, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; secondDNS);
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 
+<a name="l00144"></a>00144          <span class="keywordtype">void</span> bondMultiEthernet (<span class="keywordtype">int</span> bondType,
+<a name="l00145"></a>00145                                                                vector&lt;int&gt;ethernetIndexs, 
+<a name="l00146"></a>00146                                                                <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; bondIP, 
+<a name="l00147"></a>00147                                                                <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; bondMask, 
+<a name="l00148"></a>00148                                                                <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; bondGateway,
+<a name="l00149"></a>00149                                                                <span class="keywordtype">int</span> bondID);
+<a name="l00150"></a>00150          
+<a name="l00151"></a>00151 
+<a name="l00152"></a>00152 
+<a name="l00159"></a>00159          <span class="keywordtype">void</span> cancelBond (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; bondName);
+<a name="l00160"></a>00160 
+<a name="l00167"></a>00167          <span class="keywordtype">void</span> getBondInfos (vector&lt;BondInfo&gt;&amp; bondInfos);
+<a name="l00168"></a>00168          
+<a name="l00172"></a>00172          <span class="keywordtype">void</span> netRestart (<span class="keywordtype">void</span>);
+<a name="l00173"></a>00173 
+<a name="l00174"></a>00174 }; <span class="comment">// End class EthernetMgm</span>
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 
+<a name="l00177"></a>00177 <span class="preprocessor">#endif // __DTL_NET_NET_H__</span>
+<a name="l00178"></a>00178 <span class="preprocessor"></span>
+<a name="l00179"></a>00179 
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:41 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

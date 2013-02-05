@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Persons>
+  <Person ID="1">
+    <name>周星星</name>
+    <age>20</age>
+  </Person>
+  <Person ID="2">
+    <name>白晶晶</name>
+    <age>18</age>
+  </Person>
+</Persons>

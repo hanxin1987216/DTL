@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/util/tracelog.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/util/tracelog.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tracelog_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">tracelog.h:       </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library header files</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Software, Inc.(2011)</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         Compilation trace routines delcares and trace utility macro definition</span>
+<a name="l00008"></a>00008 <span class="comment"></span>
+<a name="l00009"></a>00009 <span class="comment">Author:</span>
+<a name="l00010"></a>00010 <span class="comment">         韩欣</span>
+<a name="l00011"></a>00011 <span class="comment"></span>
+<a name="l00012"></a>00012 <span class="comment">Creating Time:</span>
+<a name="l00013"></a>00013 <span class="comment">         2011-10-10</span>
+<a name="l00014"></a>00014 <span class="comment">***************************************************************************************************/</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#ifndef __DTL_TRACE_LOG_H__</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#define __DTL_TRACE_LOG_H__</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00019"></a>00019 <span class="preprocessor">#if PRAGMA_ONCE</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#        pragma once</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="preprocessor">#if defined(__USE_TRACE__)</span>
+<a name="l00025"></a>00025 <span class="preprocessor"></span>
+<a name="l00029"></a>00029 <span class="preprocessor">#define DEFINE_TRACE_MODULE(globalTraceModuleVar)     \</span>
+<a name="l00030"></a>00030 <span class="preprocessor">         TraceModule* globalTraceModuleVar = 0</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00038"></a>00038 <span class="preprocessor">#define CREATE_TRACE_MODULE(globalTraceModuleVar, name) \</span>
+<a name="l00039"></a>00039 <span class="preprocessor">         do { \</span>
+<a name="l00040"></a>00040 <span class="preprocessor">                  if (globalTraceModuleVar == 0) { \</span>
+<a name="l00041"></a>00041 <span class="preprocessor">                           globalTraceModuleVar = new TraceModule (name); \</span>
+<a name="l00042"></a>00042 <span class="preprocessor">                           TraceModuleManager::getInstance ()-&gt;registerTraceModule (globalTraceModuleVar); \</span>
+<a name="l00043"></a>00043 <span class="preprocessor">                  } \</span>
+<a name="l00044"></a>00044 <span class="preprocessor">         } while (false)</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00049"></a>00049 <span class="preprocessor">#define DECLARE_TRACE_MODULE(globalTraceModuleVar) \</span>
+<a name="l00050"></a>00050 <span class="preprocessor">         extern cpp::diagnostics::TraceModule* globalTraceModuleVar</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span>
+<a name="l00055"></a>00055 <span class="preprocessor">#ifndef TRACE</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span><span class="preprocessor">#define TRACE(X) Trace::trace X</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
+<a name="l00062"></a>00062 <span class="preprocessor">#define DESTROY_TRACE_MODULE(globalTraceModule) \</span>
+<a name="l00063"></a>00063 <span class="preprocessor">         do { \</span>
+<a name="l00064"></a>00064 <span class="preprocessor">                  if (globalTraceModule != 0) { \</span>
+<a name="l00065"></a>00065 <span class="preprocessor">                           delete globalTraceModule; \</span>
+<a name="l00066"></a>00066 <span class="preprocessor">                           globalTraceModule = 0; \</span>
+<a name="l00067"></a>00067 <span class="preprocessor">                  } \</span>
+<a name="l00068"></a>00068 <span class="preprocessor">         } while (false)</span>
+<a name="l00069"></a>00069 <span class="preprocessor"></span>
+<a name="l00070"></a>00070 <span class="preprocessor">#else    //__USE_TRACE__</span>
+<a name="l00071"></a>00071 <span class="preprocessor"></span>
+<a name="l00072"></a><a class="code" href="tracelog_8h.html#a5dd1ce56e9bd48fab47c495d1d367a79">00072</a> <span class="preprocessor">         #define DEFINE_TRACE_MODULE(globalTraceModuleVar)</span>
+<a name="l00073"></a><a class="code" href="tracelog_8h.html#ae7de3e2fe363f40cb751be776a700554">00073</a> <span class="preprocessor"></span><span class="preprocessor">         #define CREATE_TRACE_MODULE(globalTraceModuleVar, name) do {} while (false)</span>
+<a name="l00074"></a><a class="code" href="tracelog_8h.html#aeef205a36d5931fa76ee67e067378462">00074</a> <span class="preprocessor"></span><span class="preprocessor">         #define DECLARE_TRACE_MODULE(globalTraceModuleVar)</span>
+<a name="l00075"></a>00075 <span class="preprocessor"></span><span class="preprocessor">         #ifndef TRACE</span>
+<a name="l00076"></a><a class="code" href="tracelog_8h.html#a638b671f4fa00cd5267c8df6c19c4477">00076</a> <span class="preprocessor"></span><span class="preprocessor">         #define TRACE(X) do {} while (false)</span>
+<a name="l00077"></a>00077 <span class="preprocessor"></span><span class="preprocessor">         #endif</span>
+<a name="l00078"></a><a class="code" href="tracelog_8h.html#a1ea83cd547f9dfc432365c5b6c3172ad">00078</a> <span class="preprocessor"></span><span class="preprocessor">         #define DESTROY_TRACE_MODULE(globalTraceModule) do {} while (false)</span>
+<a name="l00079"></a>00079 <span class="preprocessor"></span>
+<a name="l00080"></a>00080 <span class="preprocessor">#endif // __USE_TRACE__</span>
+<a name="l00081"></a>00081 <span class="preprocessor"></span>
+<a name="l00082"></a>00082 <span class="comment">//</span>
+<a name="l00083"></a>00083 <span class="comment">// trace 输出类型</span>
+<a name="l00084"></a>00084 <span class="comment">//</span>
+<a name="l00085"></a><a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bce">00085</a> <span class="keyword">enum</span> <a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bce">TraceType</a>
+<a name="l00086"></a>00086 {
+<a name="l00087"></a><a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bcea9b7b188df18b103861bbb54f1202c65f">00087</a>          <a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bcea9b7b188df18b103861bbb54f1202c65f">TRACE_SYNC</a>,
+<a name="l00088"></a><a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bcea66f9044f5146a6d00636e55db763a826">00088</a>          <a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bcea66f9044f5146a6d00636e55db763a826">TRACE_ASYNC</a>,
+<a name="l00089"></a>00089 };
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="comment">//</span>
+<a name="l00092"></a>00092 <span class="comment">// 记录 源文件名称 对应的行号</span>
+<a name="l00093"></a>00093 <span class="comment">//</span>
+<a name="l00094"></a><a class="code" href="struct_trace_source.html">00094</a> <span class="keyword">struct </span><a class="code" href="struct_trace_source.html">TraceSource</a>
+<a name="l00095"></a>00095 {
+<a name="l00096"></a><a class="code" href="struct_trace_source.html#a0a024fbe1224df9df52c448aea8a24c6">00096</a>          <a class="code" href="class_string.html">String</a>                     <a class="code" href="struct_trace_source.html#a0a024fbe1224df9df52c448aea8a24c6">file</a>;
+<a name="l00097"></a><a class="code" href="struct_trace_source.html#a0b1f6722647f841b546b9a5e00f1489d">00097</a>          vector &lt;int&gt;      <a class="code" href="struct_trace_source.html#a0b1f6722647f841b546b9a5e00f1489d">lines</a>;
+<a name="l00098"></a>00098          
+<a name="l00099"></a><a class="code" href="struct_trace_source.html#a5414bba638a6613e27fd29bddc6a98d1">00099</a>          <span class="keywordtype">bool</span> <a class="code" href="struct_trace_source.html#a5414bba638a6613e27fd29bddc6a98d1">find</a> (<span class="keywordtype">int</span> line)<span class="keyword"> const</span>
+<a name="l00100"></a>00100 <span class="keyword">         </span>{
+<a name="l00101"></a>00101                   <span class="keywordflow">if</span> (<a class="code" href="struct_trace_source.html#a0b1f6722647f841b546b9a5e00f1489d">lines</a>.empty () == <span class="keyword">true</span>)
+<a name="l00102"></a>00102                            <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00103"></a>00103                            
+<a name="l00104"></a>00104                   vector&lt;int&gt;::const_iterator it, itend = <a class="code" href="struct_trace_source.html#a0b1f6722647f841b546b9a5e00f1489d">lines</a>.end ();
+<a name="l00105"></a>00105                   <span class="keywordflow">for</span> (it = <a class="code" href="struct_trace_source.html#a0b1f6722647f841b546b9a5e00f1489d">lines</a>.begin (); it != itend; ++it) {
+<a name="l00106"></a>00106                            <span class="keywordflow">if</span> ((*it) == line)
+<a name="l00107"></a>00107                                     <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00108"></a>00108                   }
+<a name="l00109"></a>00109                   <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00110"></a>00110          }
+<a name="l00111"></a>00111 };
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 
+<a name="l00118"></a><a class="code" href="class_trace_module.html">00118</a> <span class="keyword">class </span><a class="code" href="prec_8h.html#ad8c2d068705a970928afad755b449b15">DTL_DLLEXPORT</a> <a class="code" href="class_trace_module.html">TraceModule</a>
+<a name="l00119"></a>00119 {
+<a name="l00120"></a>00120 <span class="keyword">public</span>:
+<a name="l00121"></a>00121     <a class="code" href="class_trace_module.html">TraceModule</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; moduleName);
+<a name="l00122"></a>00122 
+<a name="l00126"></a><a class="code" href="class_trace_module.html#a59c1cd838a5afd6a5a0b66c229816851">00126</a>     <a class="code" href="class_string.html">String</a> getName (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00127"></a>00127 <span class="keyword">    </span>{
+<a name="l00128"></a>00128          <span class="keywordflow">return</span> _name;
+<a name="l00129"></a>00129     }
+<a name="l00130"></a>00130     
+<a name="l00131"></a>00131 <span class="keyword">private</span>:
+<a name="l00132"></a>00132          <a class="code" href="class_string.html">String</a> _name;
+<a name="l00133"></a>00133 }; <span class="comment">// End class TraceModule</span>
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 
+<a name="l00142"></a><a class="code" href="class_trace_module_manager.html">00142</a> <span class="keyword">class </span><a class="code" href="prec_8h.html#ad8c2d068705a970928afad755b449b15">DTL_DLLEXPORT</a> <a class="code" href="class_trace_module_manager.html">TraceModuleManager</a>
+<a name="l00143"></a>00143 {
+<a name="l00144"></a>00144 <span class="keyword">public</span>:
+<a name="l00148"></a>00148          <span class="keyword">static</span> <a class="code" href="class_trace_module_manager.html">TraceModuleManager</a>* getInstance (<span class="keywordtype">void</span>);                 
+<a name="l00149"></a>00149          <span class="keyword">static</span> <span class="keywordtype">void</span> delInstance (<span class="keywordtype">void</span>);
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 <span class="keyword">public</span>:
+<a name="l00155"></a>00155          <span class="keywordtype">void</span> start (<span class="keywordtype">void</span>);
+<a name="l00156"></a>00156          <span class="keywordtype">void</span> stop (<span class="keywordtype">void</span>);
+<a name="l00157"></a>00157          
+<a name="l00163"></a>00163          <span class="keywordtype">void</span> registerTraceModule (<a class="code" href="class_trace_module.html">TraceModule</a>* module);
+<a name="l00164"></a>00164 
+<a name="l00170"></a>00170          <span class="keywordtype">bool</span> needTrace (<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00171"></a>00171 
+<a name="l00179"></a>00179          <span class="keywordtype">bool</span> needTrace (<a class="code" href="class_trace_module.html">TraceModule</a>* module);
+<a name="l00180"></a>00180 
+<a name="l00189"></a>00189          <span class="keywordtype">bool</span> needTrace (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;file, <span class="keywordtype">int</span> line);
+<a name="l00190"></a>00190          
+<a name="l00194"></a>00194          <span class="keywordtype">bool</span> needBacktrace (<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line);
+<a name="l00195"></a>00195    
+<a name="l00202"></a>00202          <span class="keywordtype">void</span> writeTrace (<a class="code" href="class_trace_module.html">TraceModule</a>* module, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; msg);
+<a name="l00203"></a>00203          
+<a name="l00204"></a>00204 <span class="keyword">private</span>:
+<a name="l00205"></a>00205          <a class="code" href="class_trace_module_manager.html">TraceModuleManager</a> (<span class="keywordtype">void</span>);          
+<a name="l00206"></a>00206          ~<a class="code" href="class_trace_module_manager.html">TraceModuleManager</a> (<span class="keywordtype">void</span>);
+<a name="l00207"></a>00207 
+<a name="l00208"></a>00208 <span class="keyword">private</span>:
+<a name="l00209"></a>00209          <span class="keyword">static</span> <a class="code" href="class_trace_module_manager.html">TraceModuleManager</a>* _inst;
+<a name="l00210"></a>00210          
+<a name="l00211"></a>00211          vector&lt;TraceModule*&gt; _modules;
+<a name="l00212"></a>00212          
+<a name="l00213"></a>00213          <span class="comment">//</span>
+<a name="l00214"></a>00214          <span class="comment">// The modules should be traced, if it is empty, trace all modules.</span>
+<a name="l00215"></a>00215          <span class="comment">//</span>
+<a name="l00216"></a>00216          vector&lt;String&gt; _traceModules;
+<a name="l00217"></a>00217          
+<a name="l00218"></a>00218          <span class="comment">//</span>
+<a name="l00219"></a>00219          <span class="comment">// 包含或排除指定源文件生成的 trace</span>
+<a name="l00220"></a>00220          <span class="comment">//</span>
+<a name="l00221"></a>00221          vector &lt;TraceSource&gt; _includeSource,
+<a name="l00222"></a>00222                                                        _excludeSource;
+<a name="l00223"></a>00223 
+<a name="l00224"></a>00224          <span class="comment">//</span>
+<a name="l00225"></a>00225          <span class="comment">// 需要输出堆栈的源文件</span>
+<a name="l00226"></a>00226          <span class="comment">//</span>
+<a name="l00227"></a>00227          vector &lt;TraceSource&gt; _backtraceSource;
+<a name="l00228"></a>00228          
+<a name="l00229"></a>00229          <a class="code" href="tracelog_8h.html#a4d993d14a84a1fe1147cfb37d9ac7bce">TraceType</a> _traceType;
+<a name="l00230"></a>00230          <span class="keywordtype">bool</span> _needTrace;
+<a name="l00231"></a>00231          
+<a name="l00232"></a>00232          <span class="keywordtype">bool</span> _firstTrace;
+<a name="l00233"></a>00233          
+<a name="l00234"></a>00234          <a class="code" href="class_thread_mutex_lock.html">ThreadMutexLock</a> _mutex;
+<a name="l00235"></a>00235          <span class="keyword">class </span>TraceOutputImpl* _impl;
+<a name="l00236"></a>00236          <span class="keyword">class </span>TraceOutputThread* _thread;
+<a name="l00237"></a>00237          <span class="keyword">class </span>ncTraceDebugObject* _debugObject;
+<a name="l00238"></a>00238 }; <span class="comment">// End class TraceModuleManager</span>
+<a name="l00239"></a>00239 
+<a name="l00243"></a><a class="code" href="class_trace.html">00243</a> <span class="keyword">class </span><a class="code" href="prec_8h.html#ad8c2d068705a970928afad755b449b15">DTL_DLLEXPORT</a> <a class="code" href="class_trace.html">Trace</a>
+<a name="l00244"></a>00244 {
+<a name="l00245"></a>00245 <span class="keyword">public</span>:
+<a name="l00249"></a>00249     <span class="keyword">static</span> <span class="keywordtype">void</span> trace (<a class="code" href="class_trace_module.html">TraceModule</a>* module, <span class="keyword">const</span> tchar_t* fmt, ...) NO_THROW;
+<a name="l00250"></a>00250     <span class="keyword">static</span> <span class="keywordtype">void</span> traceEx (<a class="code" href="class_trace_module.html">TraceModule</a>* module, <span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line, <span class="keyword">const</span> tchar_t* fmt, ...) NO_THROW;
+<a name="l00251"></a>00251     
+<a name="l00257"></a>00257     <span class="keyword">static</span> <span class="keywordtype">bool</span> needTrace (<span class="keywordtype">void</span>) NO_THROW;
+<a name="l00258"></a>00258 }; <span class="comment">// End class Trace</span>
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260 
+<a name="l00261"></a>00261 <span class="preprocessor">#endif // __DTL_DATE_H__</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:42 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

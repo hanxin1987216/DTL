@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: E:/code/trunk/src/common/dtl/sys/errorprovider.cpp源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">E:/code/trunk/src/common/dtl/sys/errorprovider.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="errorprovider_8cpp.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/***************************************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">errorprovider.h:  </span>
+<a name="l00003"></a>00003 <span class="comment">         C++ Foundation Library header files</span>
+<a name="l00004"></a>00004 <span class="comment">         Copyright (c) Datatom Co., Ltd.(2011 - 2012), All rights reserved.</span>
+<a name="l00005"></a>00005 <span class="comment"></span>
+<a name="l00006"></a>00006 <span class="comment">Purpose:</span>
+<a name="l00007"></a>00007 <span class="comment">         异常提供者</span>
+<a name="l00008"></a>00008 <span class="comment">         </span>
+<a name="l00009"></a>00009 <span class="comment">Author:</span>
+<a name="l00010"></a>00010 <span class="comment">         韩欣 (han.xin@datatom.com)</span>
+<a name="l00011"></a>00011 <span class="comment">         </span>
+<a name="l00012"></a>00012 <span class="comment">Creating Time:</span>
+<a name="l00013"></a>00013 <span class="comment">         2011-11-28</span>
+<a name="l00014"></a>00014 <span class="comment">***************************************************************************************************/</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;../prec.h&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="errorprovider_8h.html">errorprovider.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="exception_8h.html">exception.h</a>&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;../util/util.h&quot;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a><a class="code" href="errorprovider_8cpp.html#aab49048ab26ca6c2e82771826106a699">00022</a> <span class="keywordtype">bool</span> <span class="keyword">inline</span> <a class="code" href="errorprovider_8cpp.html#aab49048ab26ca6c2e82771826106a699">errorToString</a> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; errorId, <a class="code" href="class_string.html">String</a> &amp; msg)
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024          <span class="comment">/*</span>
+<a name="l00025"></a>00025 <span class="comment">         map&lt;int, String&gt;  errorMsg;</span>
+<a name="l00026"></a>00026 <span class="comment">         vector &lt;String&gt; allLine;</span>
+<a name="l00027"></a>00027 <span class="comment">         bool p = getFileContent (&quot;/var/error&quot;, allLine);</span>
+<a name="l00028"></a>00028 <span class="comment">         if (!p)</span>
+<a name="l00029"></a>00029 <span class="comment">                  return false;</span>
+<a name="l00030"></a>00030 <span class="comment">         vector&lt;String&gt;::iterator it;</span>
+<a name="l00031"></a>00031 <span class="comment">         for (it = allLine.begin (); it != allLine.end (); ++it)</span>
+<a name="l00032"></a>00032 <span class="comment">         {</span>
+<a name="l00033"></a>00033 <span class="comment">                  String key;</span>
+<a name="l00034"></a>00034 <span class="comment">                  String value;</span>
+<a name="l00035"></a>00035 <span class="comment">                  size_t pos = (*it).find (&quot;=&quot;);</span>
+<a name="l00036"></a>00036 <span class="comment">                  key = (*it).subString (0, pos);</span>
+<a name="l00037"></a>00037 <span class="comment">                  value = (*it).subString (pos).trim ();</span>
+<a name="l00038"></a>00038 <span class="comment">                  int tmpId = atoi (key.getCStr());            </span>
+<a name="l00039"></a>00039 <span class="comment">                  if (errorId == tmpId)</span>
+<a name="l00040"></a>00040 <span class="comment">                  {</span>
+<a name="l00041"></a>00041 <span class="comment">                           msg = value;</span>
+<a name="l00042"></a>00042 <span class="comment">                           break;</span>
+<a name="l00043"></a>00043 <span class="comment">                  }</span>
+<a name="l00044"></a>00044 <span class="comment">         }</span>
+<a name="l00045"></a>00045 <span class="comment"></span>
+<a name="l00046"></a>00046 <span class="comment">         */</span>
+<a name="l00047"></a>00047          <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00048"></a>00048 }
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 
+<a name="l00053"></a>00053 <span class="comment">//</span>
+<a name="l00054"></a>00054 <span class="comment">// 系统异常提供者</span>
+<a name="l00055"></a>00055 <span class="comment">//</span>
+<a name="l00057"></a>00057 <span class="comment"></span>
+<a name="l00058"></a>00058  <a class="code" href="class_system_error_handler.html">SystemErrorHandler</a>* SystemErrorHandler::_inst = 0;
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060  <span class="comment">// public static</span>
+<a name="l00061"></a>00061  <a class="code" href="class_system_error_handler.html">SystemErrorHandler</a>*
+<a name="l00062"></a><a class="code" href="class_system_error_handler.html#ac25663a0bb393c8ffc07ffb711fe1f10">00062</a>  <a class="code" href="class_system_error_handler.html#ac25663a0bb393c8ffc07ffb711fe1f10">SystemErrorHandler::getInstance</a> (<span class="keywordtype">void</span>)
+<a name="l00063"></a>00063  {
+<a name="l00064"></a>00064           <span class="keywordflow">if</span> (SystemErrorHandler::_inst == 0) {
+<a name="l00065"></a>00065                    SystemErrorHandler::_inst = <span class="keyword">new</span> <a class="code" href="class_system_error_handler.html">SystemErrorHandler</a>;
+<a name="l00066"></a>00066           }
+<a name="l00067"></a>00067          
+<a name="l00068"></a>00068           <span class="keywordflow">return</span> SystemErrorHandler::_inst;
+<a name="l00069"></a>00069  }
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071  <span class="comment">// public static</span>
+<a name="l00072"></a>00072  <span class="keywordtype">void</span>
+<a name="l00073"></a><a class="code" href="class_system_error_handler.html#a8ea5a7c28bda6b40b8f730bba5c9029f">00073</a>  <a class="code" href="class_system_error_handler.html#a8ea5a7c28bda6b40b8f730bba5c9029f">SystemErrorHandler::delInstance</a> (<span class="keywordtype">void</span>)
+<a name="l00074"></a>00074  {
+<a name="l00075"></a>00075           <span class="keywordflow">if</span> (SystemErrorHandler::_inst != 0) {
+<a name="l00076"></a>00076                    <span class="keyword">delete</span> SystemErrorHandler::_inst;
+<a name="l00077"></a>00077                    SystemErrorHandler::_inst = 0;
+<a name="l00078"></a>00078           }
+<a name="l00079"></a>00079  }
+<a name="l00080"></a>00080                   
+<a name="l00081"></a>00081  <span class="comment">// public virtual</span>
+<a name="l00082"></a>00082  <a class="code" href="class_string.html">String</a>
+<a name="l00083"></a><a class="code" href="class_system_error_handler.html#a609c539ebdc79ded450adb983f798d1e">00083</a>  <a class="code" href="class_system_error_handler.html#a609c539ebdc79ded450adb983f798d1e">SystemErrorHandler::toString</a> (<span class="keywordtype">int</span> errCode)<span class="keyword"> const</span>
+<a name="l00084"></a>00084 <span class="keyword"> </span>{
+<a name="l00085"></a>00085           <span class="keyword">const</span> <a class="code" href="class_string.html">String</a> empty;
+<a name="l00086"></a>00086           <span class="keywordflow">return</span> <a class="code" href="class_system_error_handler.html#a609c539ebdc79ded450adb983f798d1e">toString</a> (empty, errCode);
+<a name="l00087"></a>00087  }
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089  <span class="comment">// public virtual</span>
+<a name="l00090"></a>00090  <a class="code" href="class_string.html">String</a>
+<a name="l00091"></a><a class="code" href="class_system_error_handler.html#ac5ac20667e06f7280e9c2100b1e0ebc4">00091</a>  <a class="code" href="class_system_error_handler.html#a609c539ebdc79ded450adb983f798d1e">SystemErrorHandler::toString</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; prefix, <span class="keywordtype">int</span> errCode)<span class="keyword"> const</span>
+<a name="l00092"></a>00092 <span class="keyword"> </span>{
+<a name="l00093"></a>00093           <a class="code" href="class_string.html">String</a> errMsg (prefix);   
+<a name="l00094"></a>00094           errMsg += strerror(errCode);
+<a name="l00095"></a>00095           <span class="keywordflow">return</span> errMsg;
+<a name="l00096"></a>00096  }
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098  <span class="comment">// public virtual</span>
+<a name="l00099"></a>00099  <a class="code" href="class_string.html">String</a>
+<a name="l00100"></a><a class="code" href="class_system_error_handler.html#a6d5ff2eab0ec4905709fea39351c8e99">00100</a>  <a class="code" href="class_system_error_handler.html#a6d5ff2eab0ec4905709fea39351c8e99">SystemErrorHandler::getProviderName</a> (<span class="keywordtype">void</span>)<span class="keyword"> const</span>
+<a name="l00101"></a>00101 <span class="keyword"> </span>{
+<a name="l00102"></a>00102           <span class="keyword">static</span> <a class="code" href="class_string.html">String</a> providerName (<span class="stringliteral">&quot;POSIX System&quot;</span>);
+<a name="l00103"></a>00103           <span class="keywordflow">return</span> providerName;
+<a name="l00104"></a>00104  }
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108  
+<a name="l00109"></a>00109 <span class="comment">//</span>
+<a name="l00110"></a>00110 <span class="comment">// The name of DTL Common Module</span>
+<a name="l00111"></a>00111 <span class="comment">//</span>
+<a name="l00112"></a><a class="code" href="errorprovider_8cpp.html#a4038f99e26eb750059eac9e17900edb7">00112</a> <span class="preprocessor">#define DTL_ERROR_PROVIDER_NAME     _T(&quot;DTL&quot;)</span>
+<a name="l00113"></a>00113 <span class="preprocessor"></span>
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 
+<a name="l00116"></a><a class="code" href="errorprovider_8cpp.html#ad1cd4be25df54178e5431ccb52ba40c8">00116</a> <span class="keyword">static</span> <a class="code" href="classdt_base_error_provider.html">dtBaseErrorProvider</a>* <a class="code" href="errorprovider_8cpp.html#ad1cd4be25df54178e5431ccb52ba40c8">unknwonErrorProvider</a> = 0;
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118  <span class="comment">//</span>
+<a name="l00119"></a>00119  <span class="comment">// DTL ErrorProvider instanse</span>
+<a name="l00120"></a>00120  <span class="comment">//</span>
+<a name="l00121"></a><a class="code" href="errorprovider_8cpp.html#ad04f27d9ce24b4a8dda24d581e3a455f">00121</a> <span class="keyword">static</span> <a class="code" href="classdt_base_error_provider.html">dtBaseErrorProvider</a>* <a class="code" href="errorprovider_8cpp.html#ad04f27d9ce24b4a8dda24d581e3a455f">dtlErrorProvider</a> = 0;
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124 <a class="code" href="class_i_error_provider.html">IErrorProvider</a>* 
+<a name="l00125"></a><a class="code" href="errorprovider_8h.html#a0297eeee491ed52c5157759ef10b6e87">00125</a> <a class="code" href="errorprovider_8cpp.html#a59fc57f63a37dd994e482eaa3c88a28c">ncGetErrorProvider</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; providerName)
+<a name="l00126"></a>00126 {
+<a name="l00127"></a>00127          <span class="keywordflow">if</span> (::<a class="code" href="errorprovider_8cpp.html#af1979eb77df21597896817c122d978e2">ncIsDTLErrorProvider</a> (providerName) == <span class="keyword">true</span>)
+<a name="l00128"></a>00128                   <a class="code" href="errorprovider_8cpp.html#afba7ff95cf0ac0dc252bb7fd762dc880">return ::ncGetDTLErrorProvider</a> ();
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130          <span class="comment">// TODO add</span>
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132          <span class="comment">//</span>
+<a name="l00133"></a>00133          <span class="comment">// 没有找到匹配异常，就返回Unkown ErrorProvider</span>
+<a name="l00134"></a>00134          <span class="comment">//</span>
+<a name="l00135"></a>00135          <span class="keywordflow">if</span> (unknwonErrorProvider == 0) {
+<a name="l00136"></a>00136                   unknwonErrorProvider = <span class="keyword">new</span> <a class="code" href="classdt_base_error_provider.html">dtBaseErrorProvider</a> (providerName);
+<a name="l00137"></a>00137          }
+<a name="l00138"></a>00138          
+<a name="l00139"></a>00139          <span class="keywordflow">return</span> <a class="code" href="errorprovider_8cpp.html#ad1cd4be25df54178e5431ccb52ba40c8">unknwonErrorProvider</a>;
+<a name="l00140"></a>00140 }
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 <span class="comment">// DTL</span>
+<a name="l00146"></a>00146 <a class="code" href="class_i_error_provider.html">IErrorProvider</a>* 
+<a name="l00147"></a><a class="code" href="errorprovider_8h.html#a96df7fc582c7e6e0b008713b3f017dc1">00147</a> <a class="code" href="errorprovider_8cpp.html#afba7ff95cf0ac0dc252bb7fd762dc880">ncGetDTLErrorProvider</a> (<span class="keywordtype">void</span>)
+<a name="l00148"></a>00148 {
+<a name="l00149"></a>00149          <span class="keywordflow">if</span> (dtlErrorProvider == 0) {
+<a name="l00150"></a>00150                   dtlErrorProvider = <span class="keyword">new</span> <a class="code" href="classdt_base_error_provider.html">dtBaseErrorProvider</a> (<a class="code" href="errorprovider_8cpp.html#a4038f99e26eb750059eac9e17900edb7">DTL_ERROR_PROVIDER_NAME</a>);
+<a name="l00151"></a>00151          }
+<a name="l00152"></a>00152          
+<a name="l00153"></a>00153          <span class="keywordflow">return</span> <a class="code" href="errorprovider_8cpp.html#ad04f27d9ce24b4a8dda24d581e3a455f">dtlErrorProvider</a>;
+<a name="l00154"></a>00154 }
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 <span class="comment">// DTL</span>
+<a name="l00158"></a>00158 <span class="keywordtype">bool</span>
+<a name="l00159"></a><a class="code" href="errorprovider_8h.html#a0ec378e5578e5c365935a5fc651d0f0b">00159</a> <a class="code" href="errorprovider_8cpp.html#af1979eb77df21597896817c122d978e2">ncIsDTLErrorProvider</a> (<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; providerName)
+<a name="l00160"></a>00160 {
+<a name="l00161"></a>00161          <span class="keywordflow">return</span> (providerName.<a class="code" href="class_string.html#af9e4fd1b603b9e74217624664c2e63bb">compareIgnoreCase</a>(<a class="code" href="errorprovider_8cpp.html#a4038f99e26eb750059eac9e17900edb7">DTL_ERROR_PROVIDER_NAME</a>) == 0);
+<a name="l00162"></a>00162 }
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:41 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

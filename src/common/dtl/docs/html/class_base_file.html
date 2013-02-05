@@ -1,0 +1,1029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>dtl: BaseFile类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">dtl
+   &#160;<span id="projectnumber">1.0.7</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">组合类型</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-methods">保护成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#friends">友元</a>  </div>
+  <div class="headertitle">
+<div class="title">BaseFile类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类BaseFile继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_base_file.png" usemap="#BaseFile_map" alt=""/>
+  <map id="BaseFile_map" name="BaseFile_map">
+<area href="class_directory.html" alt="Directory" shape="rect" coords="0,56,65,80"/>
+<area href="class_file.html" alt="File" shape="rect" coords="75,56,140,80"/>
+</map>
+ </div></div>
+
+<p><a href="class_base_file-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+组合类型</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_base_file_1_1_file_data.html">FileData</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a2c9ae069235cbfd5783d1708a5bd0156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a2c9ae069235cbfd5783d1708a5bd0156">BaseFile</a> (const <a class="el" href="class_string.html">String</a> &amp;path)</td></tr>
+<tr class="memitem:a72d2127ff566a0467501df6c4037f652"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a72d2127ff566a0467501df6c4037f652">BaseFile</a> (const <a class="el" href="class_base_file.html">BaseFile</a> &amp;file)</td></tr>
+<tr class="memitem:a403e3b3061f5e3c5bf26c507171cf215"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a403e3b3061f5e3c5bf26c507171cf215">exists</a> (void) const =0</td></tr>
+<tr class="memitem:aa7593b3262529faca6ec4b9f8605f09e"><td class="memItemLeft" align="right" valign="top">int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#aa7593b3262529faca6ec4b9f8605f09e">getCreationTime</a> (void) const </td></tr>
+<tr class="memitem:a5c056edb895d7f7f49bb421d88a91178"><td class="memItemLeft" align="right" valign="top"><a class="el" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a5c056edb895d7f7f49bb421d88a91178">getFileAttrs</a> (void) const </td></tr>
+<tr class="memitem:aa91ea7c48ea32385c1f30a6937056e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#aa91ea7c48ea32385c1f30a6937056e7a">getFullName</a> (void) const </td></tr>
+<tr class="memitem:a88c1f8c9bbaf077f33366357ea9a6080"><td class="memItemLeft" align="right" valign="top">int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a88c1f8c9bbaf077f33366357ea9a6080">getLastAccess</a> (void) const </td></tr>
+<tr class="memitem:afbe1725b8391c3cf6d22486caa1dfa37"><td class="memItemLeft" align="right" valign="top">int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#afbe1725b8391c3cf6d22486caa1dfa37">getLastModified</a> (void) const </td></tr>
+<tr class="memitem:a6ef8104ba66338666ad292224c4afce2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a6ef8104ba66338666ad292224c4afce2">getName</a> (void) const =0</td></tr>
+<tr class="memitem:aa689fda828e107f6a4a83c86e7b0bf47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_base_file.html">BaseFile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#aa689fda828e107f6a4a83c86e7b0bf47">operator=</a> (const <a class="el" href="class_base_file.html">BaseFile</a> &amp;file)</td></tr>
+<tr class="memitem:a88a0560cf9c2c7f4f0813afd40e95f44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a88a0560cf9c2c7f4f0813afd40e95f44">refresh</a> (void)</td></tr>
+<tr class="memitem:a04e94ae9294ee05744535855dce1a250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a04e94ae9294ee05744535855dce1a250">setFileAttrs</a> (int attrs)</td></tr>
+<tr class="memitem:a6d2f098763c50b51aa48bcaf13812fe0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a6d2f098763c50b51aa48bcaf13812fe0">~BaseFile</a> (void)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a5be1c5b00a95ff3fa46611202b03d260"><td class="memItemLeft" align="right" valign="top">static int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a5be1c5b00a95ff3fa46611202b03d260">getCreationTime</a> (const <a class="el" href="class_string.html">String</a> &amp;path)</td></tr>
+<tr class="memitem:a4dc7bd93007c3249be99330b33d49dfb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a4dc7bd93007c3249be99330b33d49dfb">getFileAttrs</a> (const <a class="el" href="class_string.html">String</a> &amp;path)</td></tr>
+<tr class="memitem:a04d8ee81663ce6abdf555be31df9390a"><td class="memItemLeft" align="right" valign="top">static int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a04d8ee81663ce6abdf555be31df9390a">getLastAccess</a> (const <a class="el" href="class_string.html">String</a> &amp;path)</td></tr>
+<tr class="memitem:a4b138c0b01b4f5ffbebcbbe7779d310d"><td class="memItemLeft" align="right" valign="top">static int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a4b138c0b01b4f5ffbebcbbe7779d310d">getLastModified</a> (const <a class="el" href="class_string.html">String</a> &amp;path)</td></tr>
+<tr class="memitem:ae123cf07384f5f2735f11792b4d4d5bf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#ae123cf07384f5f2735f11792b4d4d5bf">isDirectory</a> (const <a class="el" href="class_string.html">String</a> &amp;dir)</td></tr>
+<tr class="memitem:a8cbb6b4f2822f2a657d4210f3813607a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a8cbb6b4f2822f2a657d4210f3813607a">isFile</a> (const <a class="el" href="class_string.html">String</a> &amp;path)</td></tr>
+<tr class="memitem:ad230be1583f4b9c33d60491d6b560b9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#ad230be1583f4b9c33d60491d6b560b9d">setFileAttrs</a> (const <a class="el" href="class_string.html">String</a> &amp;path, int attrs)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+保护成员</h2></td></tr>
+<tr class="memitem:ad83c63e2ec95363cfbc8237602852bda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#ad83c63e2ec95363cfbc8237602852bda">BaseFile</a> (const <a class="el" href="class_string.html">String</a> &amp;path, bool fullPath)</td></tr>
+<tr class="memitem:a8130535d7996d9a513c4c06e16032f0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> (void)</td></tr>
+<tr class="memitem:ab5e0aba979e4ad0e73f773d36ec8c64f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#ab5e0aba979e4ad0e73f773d36ec8c64f">setFileAttrs</a> (const WapiFindData &amp;fdata)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a1ee1940ff48ac04bdbe232be0c9e6596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_base_file_1_1_file_data.html">FileData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a></td></tr>
+<tr class="memitem:a289640e9e2f6517d3257d253f0420097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a></td></tr>
+<tr class="memitem:adea3b1a6945e5762d53cf0444c0e756b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a7ac90907dc49bef22c4e53b23c7972b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_file.html#a7ac90907dc49bef22c4e53b23c7972b8">generateList</a> (std::vector&lt; <a class="el" href="class_base_file.html">BaseFile</a> * &gt; &amp;entries, const <a class="el" href="class_string.html">String</a> &amp;path, const <a class="el" href="class_string.html">String</a> &amp;pattern, int lastMask)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>This class </p>
+
+<p>在文件<a class="el" href="basefile_8h_source.html">basefile.h</a>第<a class="el" href="basefile_8h_source.html#l00027">27</a>行定义。</p>
+</div><hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a2c9ae069235cbfd5783d1708a5bd0156"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_file.html#a2c9ae069235cbfd5783d1708a5bd0156">BaseFile::BaseFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Constructs a system file object with path specified.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The specified path of this file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00034">34</a>行定义。</p>
+<div class="fragment"><pre class="fragment">         : <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> (0)
+         , <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> (<span class="keyword">true</span>)
+         , <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a> (fullPath)
+{
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a72d2127ff566a0467501df6c4037f652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_file.html#a2c9ae069235cbfd5783d1708a5bd0156">BaseFile::BaseFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_base_file.html">BaseFile</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Copies a system file object. </p>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00042">42</a>行定义。</p>
+<div class="fragment"><pre class="fragment">         : <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> (0)
+         , <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> (<span class="keyword">true</span>)
+         , <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a> (file.<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>)
+{
+         <span class="keywordflow">if</span> (file.<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> != 0) {
+                  <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> = <span class="keyword">new</span> FileData ();
+                  
+                  ::memcpy (<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>, file.<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>, sizeof (FileData));
+                  <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">false</span>;
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a6d2f098763c50b51aa48bcaf13812fe0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_file.html#a6d2f098763c50b51aa48bcaf13812fe0">BaseFile::~BaseFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Destroys a system file object. </p>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00082">82</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> != 0) {
+                  <span class="keyword">delete</span> <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>;
+                  <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> = 0;
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ad83c63e2ec95363cfbc8237602852bda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_file.html#a2c9ae069235cbfd5783d1708a5bd0156">BaseFile::BaseFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a403e3b3061f5e3c5bf26c507171cf215"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="class_base_file.html#a403e3b3061f5e3c5bf26c507171cf215">BaseFile::exists</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Tests whether the file or directory exists.</p>
+<dl class="section return"><dt>返回:</dt><dd>true if exists, false otherwise. </dd></dl>
+
+<p>在<a class="el" href="class_file.html#a77f3e1813fa0bccf3d11f81865374c23">File</a>及<a class="el" href="class_directory.html#a716a130cd6579b89513ce09e23699841">Directory</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7593b3262529faca6ec4b9f8605f09e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 <a class="el" href="class_base_file.html#aa7593b3262529faca6ec4b9f8605f09e">BaseFile::getCreationTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the time that the file or directory was created.</p>
+<dl class="section return"><dt>返回:</dt><dd>return A 64-bit integer value representing the time that the file or directory was created. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00105">105</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a>)
+                  <span class="keyword">const_cast&lt;</span><a class="code" href="class_base_file.html">BaseFile</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> ();
+
+         <span class="keywordflow">return</span> <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#a87fe1a7ae8d61612fcc60fb034db6d88">creationTime</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a5be1c5b00a95ff3fa46611202b03d260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 <a class="el" href="class_base_file.html#aa7593b3262529faca6ec4b9f8605f09e">BaseFile::getCreationTime</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the time that the file or directory was created.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file or directory name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>A 64-bit integer value representing the time that the file or directory was created. </dd></dl>
+<dl class="exception"><dt><b>异常:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">throw</td><td>IOException or its subclass exception when cannot get the time. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00253">253</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         
+         WapiFileAttributesData data;
+
+         <span class="keywordtype">int</span> result = ::GetFileAttributesEx (path.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), 
+                                                                                            GetFileExInfoStandard, 
+                                                                                            &amp;data);
+         int64 creationTime = 0;
+
+         <span class="keywordflow">if</span> (result) {
+                  <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;creationTime, (&amp;data.ftCreationTime));
+         } 
+         <span class="keywordflow">else</span> {
+                  <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (strerror(errno), errno);
+         }
+
+         <span class="keywordflow">return</span> creationTime;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a5c056edb895d7f7f49bb421d88a91178"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a> <a class="el" href="class_base_file.html#a5c056edb895d7f7f49bb421d88a91178">BaseFile::getFileAttrs</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the attributes that the file or directory had.</p>
+<dl class="section return"><dt>返回:</dt><dd>The combination of enumeration contants on FileAttributes. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00128">128</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a>)
+                  <span class="keyword">const_cast&lt;</span><a class="code" href="class_base_file.html">BaseFile</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> ();
+
+         <span class="keywordflow">return</span> <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#a22d5a49251ba4c0ab96842ee6dd386e1">attrs</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a4dc7bd93007c3249be99330b33d49dfb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a> <a class="el" href="class_base_file.html#a5c056edb895d7f7f49bb421d88a91178">BaseFile::getFileAttrs</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the attributes that the file or directory had.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file or directory name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>The combination of enumeration contants on FileAttributes. INVALID_FILE if the file or directory doesn't exist. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00300">300</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="keywordflow">return</span> <a class="code" href="comdef_8cpp.html#af1c84e1e10fbec0128199578032041ca">loadFileAttributes</a> (path.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ());
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aa91ea7c48ea32385c1f30a6937056e7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> <a class="el" href="class_base_file.html#aa91ea7c48ea32385c1f30a6937056e7a">BaseFile::getFullName</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="section return"><dt>返回:</dt><dd>the full name of this file or directory. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8h_source.html">basefile.h</a>第<a class="el" href="basefile_8h_source.html#l00069">69</a>行定义。</p>
+<div class="fragment"><pre class="fragment">    {
+        <span class="keywordflow">return</span> <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>;
+    }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a88c1f8c9bbaf077f33366357ea9a6080"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 <a class="el" href="class_base_file.html#a88c1f8c9bbaf077f33366357ea9a6080">BaseFile::getLastAccess</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the time that the file or directory was accessed.</p>
+<dl class="section return"><dt>返回:</dt><dd>return A 64-bit integer value representing the time that the file or directory was accessed. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00117">117</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a>)
+                  <span class="keyword">const_cast&lt;</span><a class="code" href="class_base_file.html">BaseFile</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> ();
+
+         <span class="keywordflow">return</span> <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#a01f2fad1a1c4d3d36548764d1030e25b">lastAccessTime</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a04d8ee81663ce6abdf555be31df9390a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 <a class="el" href="class_base_file.html#a88c1f8c9bbaf077f33366357ea9a6080">BaseFile::getLastAccess</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the time that the file or directory was accessed.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file or directory name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>return A 64-bit integer value representing the time that the file or directory was accessed. </dd></dl>
+<dl class="exception"><dt><b>异常:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">throw</td><td>IOException or its subclass exception when cannot get the time. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00277">277</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+                  
+         WapiFileAttributesData data;
+
+         <span class="keywordtype">int</span> result = ::GetFileAttributesEx (path.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), 
+                                                                                            GetFileExInfoStandard, 
+                                                                                            &amp;data);
+         int64 lastAccessTime = 0;
+
+         <span class="keywordflow">if</span> (result) {
+                  <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;lastAccessTime, (&amp;data.ftLastAccessTime));
+         } 
+         <span class="keywordflow">else</span> {
+                  <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (strerror(errno), errno);
+         }
+
+         <span class="keywordflow">return</span> lastAccessTime;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="afbe1725b8391c3cf6d22486caa1dfa37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 <a class="el" href="class_base_file.html#afbe1725b8391c3cf6d22486caa1dfa37">BaseFile::getLastModified</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the time that the file or directory was last modified.</p>
+<dl class="section return"><dt>返回:</dt><dd>A 64-bit integer value representing the time that the file or directory was last modified. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00094">94</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a>)
+                  <span class="keyword">const_cast&lt;</span><a class="code" href="class_base_file.html">BaseFile</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> ();
+
+         <span class="keywordflow">return</span> <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#af619ec064471bb2395fdb0812b516f97">lastModifiedTime</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a4b138c0b01b4f5ffbebcbbe7779d310d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 <a class="el" href="class_base_file.html#afbe1725b8391c3cf6d22486caa1dfa37">BaseFile::getLastModified</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the time that the file or directory was last modified.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file or directory name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>A 64-bit integer value representing the time that the file or directory was last modified. </dd></dl>
+<dl class="exception"><dt><b>异常:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">throw</td><td>IOException or its subclass exception when cannot get the time. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00230">230</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="comment">// TODO: here just implements win32</span>
+         WapiFileAttributesData data;
+
+         <span class="keywordtype">int</span> result = GetFileAttributesEx (path.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), 
+                                                                                            GetFileExInfoStandard, 
+                                                                                            &amp;data);
+         int64 lastModifiedTime = 0;
+
+         <span class="keywordflow">if</span> (result) {
+                  <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;lastModifiedTime, (&amp;data.ftLastWriteTime));
+         } 
+         <span class="keywordflow">else</span> {
+                  <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (strerror(errno), errno);
+         }
+
+         <span class="keywordflow">return</span> lastModifiedTime;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a6ef8104ba66338666ad292224c4afce2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_string.html">String</a> <a class="el" href="class_base_file.html#a6ef8104ba66338666ad292224c4afce2">BaseFile::getName</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="section return"><dt>返回:</dt><dd>the relative name of this file or directory. </dd></dl>
+
+<p>在<a class="el" href="class_file.html#a7fb21a555214c212afe5b2cb12da6d9b">File</a>及<a class="el" href="class_directory.html#ac1f2948dd3f59a1e7e322b5698f09242">Directory</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae123cf07384f5f2735f11792b4d4d5bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_base_file.html#ae123cf07384f5f2735f11792b4d4d5bf">BaseFile::isDirectory</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Check the dir whether represents a directory.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>is the name which need to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>true is dir is a directory, otherwise return false if not be a directory or doesn't exists. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00221">221</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a> attrs = <a class="code" href="comdef_8cpp.html#af1c84e1e10fbec0128199578032041ca">loadFileAttributes</a> (path.getCStr ());
+         <span class="keywordflow">return</span> (attrs == <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da70acceabf0596e472ffd21a96aa52615">INVALID_FILE</a> ? <span class="keyword">false</span> : (attrs &amp; <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da9d09f58160b1161920aad19080f568cc">DIRECTORY</a>) != 0 ? <span class="keyword">true</span>: <span class="keyword">false</span>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a8cbb6b4f2822f2a657d4210f3813607a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_base_file.html#a8cbb6b4f2822f2a657d4210f3813607a">BaseFile::isFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Check the path whether represents a file.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>is the name which need to check.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回:</dt><dd>true is  is a file, otherwise return false if not be a file or doesn't exists. </dd></dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00208">208</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (path.<a class="code" href="class_string.html#a2e3f864b93892db8d733374c99c63e8c">isEmpty</a> ())
+                  <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (<span class="stringliteral">&quot;IDS_ISFILE_PARAM_NULL&quot;</span>, 2);
+         
+         <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a> attrs = <a class="code" href="comdef_8cpp.html#af1c84e1e10fbec0128199578032041ca">loadFileAttributes</a> (path.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> ());
+
+         <span class="keywordflow">return</span> (attrs == <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da70acceabf0596e472ffd21a96aa52615">INVALID_FILE</a> ? <span class="keyword">false</span> : (attrs &amp; <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da9d09f58160b1161920aad19080f568cc">DIRECTORY</a>) != 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a8130535d7996d9a513c4c06e16032f0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">BaseFile::loadFileAttrs</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00170">170</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="comment">// TODO: here just implements win32</span>
+         WIN32_FILE_ATTRIBUTE_DATA data;
+
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> == 0)
+                  <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> = <span class="keyword">new</span> FileData ();
+
+         FileData* stat = <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>;
+
+         <span class="keywordtype">int</span> result = ::GetFileAttributesEx (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), 
+                                                                                          GetFileExInfoStandard,                                                                                                                                   
+                                                                                          &amp;data);
+         <span class="keywordflow">if</span> (result) {
+                  stat-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#a22d5a49251ba4c0ab96842ee6dd386e1">attrs</a> = (<a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a>) data.dwFileAttributes;
+
+                  <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;stat-&gt;creationTime, (&amp;data.ftCreationTime));
+                  <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;stat-&gt;lastAccessTime, (&amp;data.ftLastAccessTime));
+                  <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;stat-&gt;lastModifiedTime, (&amp;data.ftLastWriteTime));
+
+                  stat-&gt;length = ((int64)data.nFileSizeHigh &lt;&lt; 32) | data.nFileSizeLow;
+
+                  <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">false</span>;
+         } <span class="keywordflow">else</span> {
+                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lastErr = ::GetLastError ();
+                  <span class="keywordflow">if</span> (lastErr == ERROR_FILE_NOT_FOUND || lastErr == ERROR_PATH_NOT_FOUND) {
+                           ::memset (stat, 0, <span class="keyword">sizeof</span> (FileData));
+                           stat-&gt;attrs = <a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490da70acceabf0596e472ffd21a96aa52615">INVALID_FILE</a>;
+                  }
+                  <span class="keywordflow">else</span> {
+                           <a class="code" href="exception_8h.html#aa9dcf1f190d09192bac2a56a331061a1">THROW</a> (<span class="stringliteral">&quot;error&quot;</span>);
+                  }
+         }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aa689fda828e107f6a4a83c86e7b0bf47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_base_file.html">BaseFile</a> &amp; BaseFile::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_base_file.html">BaseFile</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Assigns a system file object. </p>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00058">58</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="keywordflow">if</span> (&amp;file == <span class="keyword">this</span>)
+                  <span class="keywordflow">return</span> *<span class="keyword">this</span>;
+                  
+         <a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a> = file.<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>;
+
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> != 0) {
+                  <span class="keyword">delete</span> <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>;
+                  <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> = 0;
+                  <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">true</span>;
+         }
+
+         <span class="keywordflow">if</span> (file.<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> != 0) {
+                  <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> = <span class="keyword">new</span>  FileData ();
+                  ::memcpy (<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>, file.<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>, sizeof (FileData));
+                  <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">false</span>;
+         }
+
+         <span class="keywordflow">return</span> (*<span class="keyword">this</span>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a88a0560cf9c2c7f4f0813afd40e95f44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_base_file.html#a88a0560cf9c2c7f4f0813afd40e95f44">BaseFile::refresh</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Refreshs the file or directory attributes. </p>
+
+<p>在文件<a class="el" href="basefile_8h_source.html">basefile.h</a>第<a class="el" href="basefile_8h_source.html#l00077">77</a>行定义。</p>
+<div class="fragment"><pre class="fragment">    {
+        <a class="code" href="class_base_file.html#a8130535d7996d9a513c4c06e16032f0f">loadFileAttrs</a> ();
+    }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a04e94ae9294ee05744535855dce1a250"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_base_file.html#a04e94ae9294ee05744535855dce1a250">BaseFile::setFileAttrs</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attrs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Changes the attributes of the file or directory.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attrs</td><td>The new attributes that is combination of enum FileAttributes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>异常:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">throw</td><td>IOException or its subclass exception when cannot change the attributes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00139">139</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{        
+         <span class="keywordtype">int</span> result = SetFileAttributes (<a class="code" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">_fullPath</a>.<a class="code" href="class_string.html#adbaf0ff1f9639127e5de309e3ad15b23">getCStr</a> (), (unsigned) attrs);
+         <span class="keywordflow">if</span> (result == <span class="keyword">false</span>)
+                  <a class="code" href="exception_8h.html#a79876a73c0e219f35398fd5b65366ef3">THROW_ID</a> (strerror(errno), errno);
+
+         <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ad230be1583f4b9c33d60491d6b560b9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="class_base_file.html#a04e94ae9294ee05744535855dce1a250">BaseFile::setFileAttrs</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Changes the attributes of the file or directory.</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file or directory name. </td></tr>
+    <tr><td class="paramname">attrs</td><td>The new attributes that is combination of enum FileAttributes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>异常:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">throw</td><td>IOException or its subclass exception when cannot change the attributes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab5e0aba979e4ad0e73f773d36ec8c64f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_base_file.html#a04e94ae9294ee05744535855dce1a250">BaseFile::setFileAttrs</a> </td>
+          <td>(</td>
+          <td class="paramtype">const WapiFindData &amp;&#160;</td>
+          <td class="paramname"><em>fdata</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a>第<a class="el" href="basefile_8cpp_source.html#l00152">152</a>行定义。</p>
+<div class="fragment"><pre class="fragment">{
+         <span class="keywordflow">if</span> (<a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> == 0)
+                  <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a> = <span class="keyword">new</span> FileData ();
+                           
+         FileData* stat = <a class="code" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">_data</a>;
+                           
+         stat-&gt;<a class="code" href="struct_base_file_1_1_file_data.html#a22d5a49251ba4c0ab96842ee6dd386e1">attrs</a> = (<a class="code" href="comdef_8h.html#a455a8b0435bc093ae97e1e6475b4490d">FileAttributes</a>) fdata.dwFileAttributes;
+         <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;stat-&gt;creationTime, (&amp;fdata.ftCreationTime));
+         <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;stat-&gt;lastAccessTime, (&amp;fdata.ftLastAccessTime));
+         <a class="code" href="comdef_8cpp.html#a7305bb0b3fdd0ceaeb2068bb8790175d">fileTimeToTime</a> (&amp;stat-&gt;lastModifiedTime, (&amp;fdata.ftLastWriteTime));
+         stat-&gt;length = ((int64)fdata.nFileSizeHigh &lt;&lt; 32) | fdata.nFileSizeLow; 
+                  
+         <a class="code" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">_needLoad</a> = <span class="keyword">false</span>;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>友元及相关函数文档</h2>
+<a class="anchor" id="a7ac90907dc49bef22c4e53b23c7972b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_base_file.html#a7ac90907dc49bef22c4e53b23c7972b8">generateList</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_base_file.html">BaseFile</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lastMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a1ee1940ff48ac04bdbe232be0c9e6596"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_base_file_1_1_file_data.html">FileData</a>* <a class="el" href="class_base_file.html#a1ee1940ff48ac04bdbe232be0c9e6596">BaseFile::_data</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="basefile_8h_source.html">basefile.h</a>第<a class="el" href="basefile_8h_source.html#l00215">215</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a289640e9e2f6517d3257d253f0420097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> <a class="el" href="class_base_file.html#a289640e9e2f6517d3257d253f0420097">BaseFile::_fullPath</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="basefile_8h_source.html">basefile.h</a>第<a class="el" href="basefile_8h_source.html#l00219">219</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adea3b1a6945e5762d53cf0444c0e756b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_base_file.html#adea3b1a6945e5762d53cf0444c0e756b">BaseFile::_needLoad</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="basefile_8h_source.html">basefile.h</a>第<a class="el" href="basefile_8h_source.html#l00217">217</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>E:/code/trunk/src/common/dtl/io/<a class="el" href="basefile_8h_source.html">basefile.h</a></li>
+<li>E:/code/trunk/src/common/dtl/io/<a class="el" href="basefile_8cpp_source.html">basefile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月18日 星期三 15:05:45 for dtl by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

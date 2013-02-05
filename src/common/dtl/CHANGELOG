@@ -1,0 +1,193 @@
+#                       DTL  Current version 2.0
+#
+#			 	 Author: 韩欣 (han.xin@datatom.com)
+#            	 This file summarizes changes made since 1.0
+
+特别说明：使用DTL库必须在程序入口处调用一次 InitDTLibrary 接口
+
+Version 2.0
+------------------------------
+* lang/String : add a static method to String, now can use String::Format(....) interface
+* add poco library to depend
+* 取消jemalloc的支持，改用 tcmalloc, 优化多线程内存分配和访问效率
+* io/FileOutputStream: 增加SetEndOfFile接口
+* net/httpsocket:  使用poco库重新编写，功能更稳定，支持基本用户认证
+* net/cgibase:  迁移dtCGIContactBase 至DTL
+* net/stmp:  增加sendmail发送邮件功能，使用接口实现，功能更稳定
+* add log:  重新实现TraceLog功能，简化代码
+* add Proccess::executeCmd ：执行外部进程命令
+* add filetool: 增加 Filetool 工具类至DTL
+* add static String md5(const String& str) interface
+* add util\DeviceMgm : 增加卷设备管理接口，支持mount,unmount,getCapacity, getFreeSpace
+* add util\volume: 	增加卷类，可以获取文件系统类型，容量和空闲空间信息
+* modify cJSON: 增加以下接口
+	extern String cJSON_GetValueToStr(cJSON *item, const String &key = String::EMPTY);
+	extern char* cJSON_GetStringValue(cJSON *item);
+	extern int cJSON_GetIntValue(cJSON *item);
+	extern double cJSON_GetDoubleValue(cJSON *item);
+* fix bug: json not support int64, convert to String
+* fix bug: jsontextwriter add getJsonObject interface
+* fix bug: fix jsontextwriter class memory leak problem
+* fix bug: leftString 和rightString 修复参数超过字符串长度时的bug
+* fix bug: 删除MS统计时间宏INIT_MS_TIME：注意用time_t计时才是人们正常意识上的秒数，而clock_t计时所表示的是占用CPU的时钟单元
+* fix bug: dtl::string::findLastNotOf default param value
+* fix bug: String + operation
+* fix bug: streamreader 修改getlines函数获取一行大于256字节时发生错误
+* fix bug: 重构Base64编码代码，修复图片无法显示的问题
+
+
+Version 1.1.0
+-----------------------
+* 修复String split接口不支持按照空格切割的问题
+* 引入jemalloc 替代glibc 的malloc,alloc等内存分配接口，提升多线程环境下的性能
+* 新增PerformanceProfiler 性能剖析器，用于分析收集函数接口执行效率，分析性能瓶颈
+* 修复StreamWriter的 writeLine接口会修改原字符串的bug
+
+
+Version 1.0.9
+-----------------------
+* 增加 Random 随机数、随机字符串实现
+* 增加 SingleTemplate 单例模式模版实现
+* 增加 simple_hash，RS_hash，JS_hash，PJW_hash，ELF_hash，BKDR_hash，SDBM_hash，DJB_hash，AP_hash，CRC_hash等Hash算法实现
+* 增加 二进制JSON实现 BSON，实现二进制序列化和反序列化
+* 修改 MD5 toString方法
+* 增加 Mac地址、CPU信息、机器码生成接口
+
+
+Version 1.0.8
+-----------------------
+* 修复FileStream构造函数_name 未赋值的问题
+* 修复httpsocket内存泄漏的问题
+* 新增Compress文件压缩、解压缩功能支持，支持1-9级别的压缩比例
+* 新增 TraceLog 模块，用于代码调试、记录程序运行日志、错误日志等
+	1. 支持输出到屏幕或者文件
+	2. 支持日志的级别， info, debug, warn , error, fault等
+	3. 支持输出到屏幕时变颜色，warn蓝色，error红色等等
+* 新增 JsonTextWriter实现Json字符串操作，取代C风格的cJSON 	
+	
+
+Version 1.0.7
+-----------------------
+* 增加SysLog 记录系统日志功能
+* 修复HttpSocket在大量发送请求时崩溃问题(内存分配问题导致)
+* 完善和修复EthernetMgm网卡管理类bugs
+* StreamWriter 构造增加判断文件是否存在
+* String增加 formatv (const tchar_t* fmt, va_list ap) 接口
+* 完善 Daemon 后台服务类，可以设置 ps 查看进程的描述信息
+* 增加 Environment 环境变量获取和设置类实现
+* 增加 Runtime 系统运行时类实现
+
+
+Version 1.0.6
+-----------------------
+* MD5散列算法toString 接口增加uppercase支持，控制字符大小写
+* 修复网卡管理代码一些bugs
+* StreamReader增加 read() 一次性读取所有内容接口
+* 优化httpSocket异常处理，修复httpsocket处理无法到达程序崩溃的问题
+* 修复httpSocket传输数据量较大时出现乱码的问题。原因：数据没接收完整前使用了部分buffer构造string
+* 加密库新增 sha1 和 sha1-hmac 散列算法实现
+* util 模块新增 Guid 全球唯一标识符算法实现
+* 新增 Deamon 后台服务开发类实现
+* 新增 dtVersion， dtGetMajorVersion 等版本管理接口实现
+* 补充 Library,EthernetMgm等unittest测试用例
+
+Version 1.0.5
+-----------------------
+* 修复linux 编译rude/config.h不存在的问题
+* 取消对libmysqlclient.so 的编译依赖，通过Library库实现动态加载
+* 修复加载语言只能加载中文语言的问题, 通过配置 dtl.config lang配置项自动加载不同语言资源
+* Makefile增加 CONFIG_FILES = dtl.config 编译后自动拷贝配置文件
+
+
+Version 1.0.4
+-----------------------
+* add DTL_CDECL defines
+* Linux下，UInt 增加 getValue接口
+* add dtl version mgm 用于DTL版本管理和兼容性处理: dtGetDTLVersion
+													dtGetDTLMajorVersion
+													dtGetDTLMinorVersion
+													dtGetDTLPatchVersion
+													dtCompairDTLVersion
+* add Thread 线程库支持
+* update DT Dev Guid.docx document
+* add IResourceReader, DoResourceReader 语言资源读写接口实现
+* remove version.h, version.cpp 原来产品版本管理类
+* 增加 ConfigFile 配置文件读写类 , 如以下格式的读写：
+
+		[Strong Body Parts]
+		arm=2
+		head=1
+
+		[Weak Body Parts]
+		eyes=2
+		belly=1
+	
+* 修复部分文件不是 utf8编码问题
+* dtl增加依赖 mysqlclient库，（后面调整为动态加载接口方式，取消编译依赖）
+* add Library 动态库符号加载模块类实现 (Library::load ("libxxx.so")....)
+
+			  
+Version 1.0.3
+-----------
+* Add security, path, FileInput\outputStream unittest case
+* Fix Some bugs of Path, add Path::adaptSep, Path::split method
+* fix bugs of Base16
+* fix a wrong default param value of String::findLastOf, change pos = 0 to pos = NO_POSITION
+* fix some bugs of Driectory
+* 修复 rc4潜在的内存泄漏问题
+* add HttpSocket 通信类
+* add cJSON 类
+
+			  
+Version 1.0.2
+-----------
+* Fix Some bugs of  String, Timer, Date, Exception
+* Perfect Class FileoutputStream, FileInputStream 
+* Add some unittest samples
+	
+			  
+Version 1.0.1
+-----------
+* Add Some Moduls			  
+	sys/TimeZone       时区
+	sys/TimeFormat     时间输出格式化
+	sys/TimeDiff       时间差计算
+	sys/Process        进程
+	lang/Char          字符
+* Fix Some bugs of  Date、Process
+	
+			  
+Version 1.0
+-----------
+* Initial DTL 
+
+* include:
+   lang\String
+		Int64
+		Int
+		UInt
+	sys\Exception
+		ErrorProvider
+		LockFile
+		ThreadMutexLock
+		AutoLock
+		Timer
+		Date
+		Process
+		Locale
+	io\BaseFile
+		Path
+		File
+		Directory
+		StreamReader
+		StreamWriter
+		FileStream
+		FileInputStream
+		FileOutputStream
+	security\Rijndael
+			MD5
+			Base16
+			Base64
+			RC4
+	util\Version
+	

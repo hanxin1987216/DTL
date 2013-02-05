@@ -1,0 +1,299 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="Tahoma" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/220395 (zh-CN); Windows/6.1.7601 Service Pack 1;"/>
+  <style>
+    body, td {
+      font-family: Tahoma;
+      font-size: 12pt;
+    }
+  </style>
+</head>
+<body>
+<a name="6993"/>
+
+<div>
+<div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="95%"><tbody><tr><td align="left" valign="top"><h2>ConfigFile</h2><p>ConfigFile is the public interface for the configuration component.<br></p><p><a name="constructor_summary"></a></p><table border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr bgcolor="#CCCCFF"><td colspan="2"><font size="+2"><b>Constructor Summary</b></font></td></tr><tr bgcolor="white"><td><code><b>ConfigFile</b>()</code><br>
+Default constructor</td></tr><tr bgcolor="white"><td><code><b>~ConfigFile</b>()</code><br></td></tr></tbody></table><a name="method_summary"></a><table border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr bgcolor="#CCCCFF"><td colspan="2"><font size="+2"><b>Method Summary</b></font></td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>clear</b>()</code><br>
+Removes the contents of the configuration file - completely wipes it out.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>deleteData</b>( const char* name )</code><br>
+Deletes the data member identified by <i>name</i> (if it exists) in the current section.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>deleteSection</b>( const char* sectionname )</code><br>
+Deletes the section identified by <i>sectionname</i> and all data associated with it</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>exists</b>( const char* name ) const</code><br>
+Returns true if a data member exists with the given name within the current section</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>getBoolValue</b>( const char* name ) const</code><br>
+Returns the boolean value of the data identified by <i>name</i> within the current section</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>const char*</code></font></td><td><code><b>getDataNameAt</b>( int index ) const</code><br>
+Enumeration method to discover data members within the current section</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>double</code></font></td><td><code><b>getDoubleValue</b>( const char* name ) const</code><br>
+Returns the double value, or 0 if a double value cannot be determined</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>const char*</code></font></td><td><code><b>getError</b>()</code><br>
+Returns the most recent error string, if there is one.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>int</code></font></td><td><code><b>getIntValue</b>( const char* name ) const</code><br>
+Returns the integer value of the data identifed by <i>name</i> within the current section</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>int</code></font></td><td><code><b>getNumDataMembers</b>() const</code><br>
+Returns the number of data elements for the current section</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>int</code></font></td><td><code><b>getNumSections</b>() const</code><br>
+Returns the number of sections in the entire configuration file, including the default section - &quot;&quot;</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>const char*</code></font></td><td><code><b>getSectionNameAt</b>( int index ) const</code><br>
+Enumeration method to discover sections</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>const char*</code></font></td><td><code><b>getStringValue</b>( const char* name ) const</code><br>
+Returns the string-character value.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>load</b>( const char* filename )</code><br>
+Adds the file's configuration info to the current configuration object.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>load</b>()</code><br>
+Loads the default file into the configuration object.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>preserveDeletedData</b>( bool shouldPreserve )</code><br>
+Sets whether or not deleted data will be preserved as comments.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>save</b>( const char* filepath )</code><br>
+Saves the configuration object to the specified file</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>save</b>()</code><br>
+Saves the configuration to the default config file.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setBoolValue</b>( const char* name, bool value )</code><br>
+Sets the named value within the current section to &quot;true&quot; or &quot;false&quot;</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setCommentCharacter</b>( char commentchar )</code><br>
+Set's the comment character ( initially set to '#' )</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setConfigFile</b>( const char* filepath )</code><br>
+Set's the default filepath to be used by the load() and save() methods.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setDelimiter</b>( char kayvaluedelimiter )</code><br>
+Set's the delimiter for new config objects ( initially set to '=' )</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setDoubleValue</b>( const char* name, double value )</code><br>
+Sets the named value within the current section to the specified double</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setIntValue</b>( const char* name, int value )</code><br>
+Sets the named value within the current section to the specified integer</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>setSection</b>( const char* sectionname, bool shouldCreate )</code><br>
+Sets the current working section, possibly creating a new section</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>bool</code></font></td><td><code><b>setSection</b>( const char* sectionname )</code><br>
+Sets the current working section, creating the section if it does not exist.</td></tr><tr bgcolor="white"><td align="right" nowrap="nowrap" valign="top" width="1%"><font size="-1"><code>void</code></font></td><td><code><b>setStringValue</b>( const char* name, const char* value )</code><br>
+Sets the named value within the current section to the specified string</td></tr></tbody></table><br><br><a name="constructor_detail"></a><table border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr bgcolor="#CCCCFF"><td><font size="+2"><b>Constructor Detail</b></font></td></tr></tbody></table><a name="Config()"></a><a name="Config"></a><h3>Config</h3><pre>
+public <b>Config</b>();
+</pre><dl><dd>Default constructor<br>
+Use to obtain an instance of the rude::Config component<br><br><b>Example:</b><br><code><br>
+rude::Config myconfig;<br><br>
+//OR<br><br>
+rude::Config *myconfig = new rude::Config();<br></code><br></dd></dl><hr><a name="~Config()"></a><a name="~Config"></a><h3>~Config</h3><pre>
+public <b>~Config</b>();
+</pre><hr><br><a name="method_detail"></a><table border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr bgcolor="#CCCCFF"><td><font size="+2"><b>Method Detail</b></font></td></tr></tbody></table><a name="clear()"></a><a name="clear"></a><h3>clear</h3><pre>
+public void <b>clear</b>();
+</pre><dl><dd>Removes the contents of the configuration file - completely wipes it out.<br>
+Does not preserve anything. Afterwards, the current section is set<br>
+to the empty section (&quot;&quot;), which is the unnamed section<br>
+at the beginning of the configuration file.<br></dd></dl><hr><a name="deleteData(constchar*)"></a><a name="deleteData"></a><h3>deleteData</h3><pre>
+public bool <b>deleteData</b>( const char* name );
+</pre><dl><dd>Deletes the data member identified by <i>name</i> (if it exists) in the current section.<br>
+If the configuration object is saved,<br>
+then the data member will be commented out.<br>
+If a new value is later assigned to this<br>
+value (in the lifetime of the instance),<br>
+then it becomes undeleted (uncommented).<br></dd></dl><hr><a name="deleteSection(constchar*)"></a><a name="deleteSection"></a><h3>deleteSection</h3><pre>
+public bool <b>deleteSection</b>( const char* sectionname );
+</pre><dl><dd>Deletes the section identified by <i>sectionname</i> and all data associated with it<br>
+Returns false if the section does not exist or has already been deleted.<br>
+If the object is saved, the entire section will be commented out.<br>
+If, during the lifetime of this object, the section is re-created, then the section name becomes uncommented, but all<br>
+previous data members remain commented (as if deleted) unless/until recreated (see deleteData())<br></dd></dl><hr><a name="exists(constchar*)"></a><a name="exists"></a><h3>exists</h3><pre>
+public bool <b>exists</b>( const char* name ) const;
+</pre><dl><dd>Returns true if a data member exists with the given name within the current section<br><br><b>Example:</b><br><br>
+Given the following configuration:<br><font color="red"><br>
+[Strong Body Parts]<br>
+arm=2<br>
+head=1<br>
+legs=2<br>
+neck=1<br>
+[Weak Body Parts]<br>
+eyes=2<br>
+belly=1<br>
+nose=1<br></font><br>
+You'll get the following results:<br><code><br>
+config-&gt;setSection(&quot;Strong Body Parts&quot;, true);<br><br>
+if(config-&gt;exists(&quot;arm&quot;))<br>
+{<br>
+// yes, arm exists...<br>
+}<br><br>
+if(config-&gt;exists(&quot;belly&quot;))<br>
+{<br>
+// returns false - belly isn't in that section.<br>
+}<br><br>
+config-&gt;setSection(&quot;Weak Body Parts&quot;, true);<br><br>
+if(config-&gt;exists(&quot;belly&quot;))<br>
+{<br>
+// yes! belly is in this section....<br>
+}<br></code><br></dd></dl><hr><a name="getBoolValue(constchar*)"></a><a name="getBoolValue"></a><h3>getBoolValue</h3><pre>
+public bool <b>getBoolValue</b>( const char* name ) const;
+</pre><dl><dd>Returns the boolean value of the data identified by <i>name</i> within the current section<br>
+Returns true if the current value is &quot;on&quot; or 1,<br>
+or if the value starts with the letter 't' or 'y'<br>
+( all of the above are case insensitive )<br>
+returns false otherwise<br>
+As such, it will interpret the following as true:<br>
+Yes, yes, On, on, True, true, 1, T, t, Y, y<br>
+Likewise, it will interpret the following as false:<br>
+No, no, Off, off, False, false, 0, F, f, N, n<br><br><b>Example:</b><br><br>
+Given the following configuration:<br><font color="red"><br>
+[Things that are and aren't]<br>
+Bed Bugs= TRUE<br>
+Aliens = 1<br>
+Freud= ON<br>
+Water= yes<br>
+ducks = false<br>
+carpenter = off<br>
+floppy = 0<br>
+sand = Nope<br></font><br>
+You'll get the following results:<br><code><br>
+config-&gt;setSection(&quot;Things that are and aren't&quot;);<br><br>
+config-&gt;getBoolValue(&quot;Aliens&quot;); // returns true<br>
+config-&gt;getBoolValue(&quot;carpenter&quot;); // returns false<br>
+// etc...<br></code><br></dd></dl><hr><a name="getDataNameAt(int)"></a><a name="getDataNameAt"></a><h3>getDataNameAt</h3><pre>
+public const char* <b>getDataNameAt</b>( int index ) const;
+</pre><dl><dd>Enumeration method to discover data members within the current section<br>
+Returns the name of the data member at<br>
+the specified index within the current<br>
+section, or NULL if the index is out of range.<br><b>Example:</b><br><br>
+Given the following configuration:<br><br><font color="red">[Contact Info]<br>
+name= Mark Twain<br>
+email address = mark@twain<br>
+phone = 123.456.789<br></font><br>
+You'll get the following results:<br><code><br>
+config-&gt;setSection(&quot;Contact Info&quot;);<br>
+config-&gt;getDataNameAt(0); // returns &quot;name&quot;<br>
+config-&gt;getDataNameAt(2); // returns &quot;phone&quot;<br>
+config-&gt;getDataNameAt(3); // returns NULL (out of range)<br></code><br></dd></dl><hr><a name="getDoubleValue(constchar*)"></a><a name="getDoubleValue"></a><h3>getDoubleValue</h3><pre>
+public double <b>getDoubleValue</b>( const char* name ) const;
+</pre><dl><dd>Returns the double value, or 0 if a double value cannot be determined<br></dd></dl><hr><a name="getError()"></a><a name="getError"></a><h3>getError</h3><pre>
+public const char* <b>getError</b>();
+</pre><dl><dd>Returns the most recent error string, if there is one.<br>
+If no error exists, it will return the empty string (&quot;&quot;).<br></dd></dl><hr><a name="getIntValue(constchar*)"></a><a name="getIntValue"></a><h3>getIntValue</h3><pre>
+public int <b>getIntValue</b>( const char* name ) const;
+</pre><dl><dd>Returns the integer value of the data identifed by <i>name</i> within the current section<br>
+Returns 0 if the data does not exist or if an integer value cannot be determined.<br></dd></dl><hr><a name="getNumDataMembers()"></a><a name="getNumDataMembers"></a><h3>getNumDataMembers</h3><pre>
+public int <b>getNumDataMembers</b>() const;
+</pre><dl><dd>Returns the number of data elements for the current section<br><b>Example:</b><br><br>
+Given the following configuration:<br><br><font color="red">[Good Movies]<br>
+The 5th Element<br>
+Resevoir Dogs<br>
+Braveheart<br><br>
+[Bad Movies]<br><br>
+Freddy Got Fingered<br>
+CONfidential<br><br>
+[Body Parts]<br>
+arm=2<br>
+head=1<br>
+legs=2<br>
+neck=1<br>
+ears=2<br>
+eyes=2<br><br></font><br>
+You'll get the following results:<br><code><br>
+config-&gt;setSection(&quot;Body Parts&quot;, true);<br>
+config-&gt;getNumDataMembers(); // returns 6<br>
+config-&gt;setSection(&quot;Bad Movies&quot;, true);<br>
+config-&gt;getNumDataMembers(); // returns 2<br>
+config-&gt;setSection(&quot;Good Movies&quot;, true);<br>
+config-&gt;getNumDataMembers(); // returns 3<br></code><br></dd></dl><hr><a name="getNumSections()"></a><a name="getNumSections"></a><h3>getNumSections</h3><pre>
+public int <b>getNumSections</b>() const;
+</pre><dl><dd>Returns the number of sections in the entire configuration file, including the default section - &quot;&quot;<br>
+Sections within the configuration file are identifed by [Square Brackets] surrounding the name of the section.<br>
+Whitespace surrounding the section name is ignored. So [ This Section ] and [This Section] are identical.<br>
+Section names <b>are</b> case sensitive.<br>
+The default section is the empty section - the unnamed section at the beginning of the file that<br>
+exists before any other [named] sections.<br>
+This default section exists even if the first line of the file is a [named section].<br>
+As such, the return value will always be &gt;= 1.<br></dd></dl><hr><a name="getSectionNameAt(int)"></a><a name="getSectionNameAt"></a><h3>getSectionNameAt</h3><pre>
+public const char* <b>getSectionNameAt</b>( int index ) const;
+</pre><dl><dd>Enumeration method to discover sections<br>
+Returns the section name at the given index,<br>
+or NULL if the index is out of range<br>
+If the section has no name, but is a valid index, then it will return the empty string (&quot;&quot;)<br></dd></dl><hr><a name="getStringValue(constchar*)"></a><a name="getStringValue"></a><h3>getStringValue</h3><pre>
+public const char* <b>getStringValue</b>( const char* name ) const;
+</pre><dl><dd>Returns the string-character value.<br>
+Unless quoted, leading and trailing whitespace is stripped.<br></dd></dl><hr><a name="load(constchar*)"></a><a name="load"></a><h3>load</h3><pre>
+public bool <b>load</b>( const char* filename );
+</pre><dl><dd>Adds the file's configuration info to the current configuration object.<br>
+Does not delete any existing data in the config object.<br>
+The default config file path is not altered...<br>
+Use setConfigFile() to permanently set the default config file for load() and save()<br>
+This method does not clear the config object before loading.<br>
+Use clear() if the config object already has data that you want to discard.<br></dd></dl><hr><a name="load()"></a><a name="load"></a><h3>load</h3><pre>
+public bool <b>load</b>();
+</pre><dl><dd>Loads the default file into the configuration object.<br>
+By default, the current file is 'default.conf',<br>
+but can be overridden by calling the setConfigFile() method.<br>
+This method does not clear the config object before loading.<br>
+If you load two or more configuration files that have the same sections,<br>
+they are effectively merged. In this case, data members that have the same<br>
+name will get the value of the last file loaded. This comes in handy if<br>
+you load a global config file first, and you want to override<br>
+some custom fields by subsequently loading a &quot;preferences&quot; file tailored to an individual.<br>
+Use clear() if the config object already has data that you want to completely discard before loading<br>
+a new file, or use another Config object instance.<br></dd></dl><hr><a name="preserveDeletedData(bool)"></a><a name="preserveDeletedData"></a><h3>preserveDeletedData</h3><pre>
+public void <b>preserveDeletedData</b>( bool shouldPreserve );
+</pre><dl><dd>Sets whether or not deleted data will be preserved as comments.<br>
+If set to true, deleted data will be converted into comments when<br>
+the save() method is called. If set to false, deleted data<br>
+will not be compeltely discarded. Default is false (no preserve).<br></dd></dl><hr><a name="save(constchar*)"></a><a name="save"></a><h3>save</h3><pre>
+public bool <b>save</b>( const char* filepath );
+</pre><dl><dd>Saves the configuration object to the specified file<br>
+The default config file path is not altered...<br>
+Use setConfigFile() to permanently set the default config file for load() and save()<br></dd></dl><hr><a name="save()"></a><a name="save"></a><h3>save</h3><pre>
+public bool <b>save</b>();
+</pre><dl><dd>Saves the configuration to the default config file.<br>
+Initially, the default config file is &quot;./default.ini&quot;.<br>
+This filename can be changed by the setConfigFile() method.<br></dd></dl><hr><a name="setBoolValue(constchar*,bool)"></a><a name="setBoolValue"></a><h3>setBoolValue</h3><pre>
+public void <b>setBoolValue</b>( const char* name, bool value );
+</pre><dl><dd>Sets the named value within the current section to &quot;true&quot; or &quot;false&quot;<br>
+If the value is already set for the data item, the value is changed.<br>
+If the value is not already set, it is created<br><br><b>Example:</b><br><br>
+To create the following configuration entries:<br><br><font color="red">[On Sale]<br>
+Hard Drives = true<br>
+Cases = false<br>
+Keyboards = false<br></font><br>
+Use this code:<br><code><br>
+config-&gt;setSection(&quot;On Sale&quot;, true);<br>
+config-&gt;setBoolValue(&quot;Hard Drives&quot;, true);<br>
+config-&gt;setBoolValue(&quot;Cases&quot;, false);<br>
+config-&gt;setBoolValue(&quot;Keyboards&quot;, false);<br>
+config-&gt;save();<br></code><br><dl><dt><b>Parameters:</b></dt><dd><code>name</code> - the identifying name of the data member</dd><dd><code>value</code> - The integer value of the data member</dd></dl></dd></dl><hr><a name="setCommentCharacter(char)"></a><a name="setCommentCharacter"></a><h3>setCommentCharacter</h3><pre>
+public void <b>setCommentCharacter</b>( char commentchar );
+</pre><dl><dd>Set's the comment character ( initially set to '#' )<br>
+If the comment character is set to NULL (0),<br>
+then comments will not be written when save() is called<br></dd></dl><hr><a name="setConfigFile(constchar*)"></a><a name="setConfigFile"></a><h3>setConfigFile</h3><pre>
+public void <b>setConfigFile</b>( const char* filepath );
+</pre><dl><dd>Set's the default filepath to be used by the load() and save() methods.<br>
+The default filepath is initially set to &quot;./default.ini&quot;<br></dd></dl><hr><a name="setDelimiter(char)"></a><a name="setDelimiter"></a><h3>setDelimiter</h3><pre>
+public void <b>setDelimiter</b>( char kayvaluedelimiter );
+</pre><dl><dd>Set's the delimiter for new config objects ( initially set to '=' )<br>
+If the delimiter is set to NULL, then it will be assumed that<br>
+the key and value are separated by whitespace.<br></dd></dl><hr><a name="setDoubleValue(constchar*,double)"></a><a name="setDoubleValue"></a><h3>setDoubleValue</h3><pre>
+public void <b>setDoubleValue</b>( const char* name, double value );
+</pre><dl><dd>Sets the named value within the current section to the specified double<br>
+If the value is already set for the data item, the value is changed.<br>
+If the value is not already set, it is created<br><br><b>Example:</b><br><br>
+To create the following configuration entries:<br><br><font color="red">[Prices]<br>
+Hard Drives = 59.95<br>
+Cases = 44.00<br>
+Keyboards = 12.25<br></font><br>
+Use this code:<br><code><br>
+config-&gt;setSection(&quot;Prices&quot;, true);<br>
+config-&gt;setDoubleValue(&quot;Hard Drives&quot;, 59.95);<br>
+config-&gt;setDoubleValue(&quot;Cases&quot;, 44.00);<br>
+config-&gt;setDoubleValue(&quot;Keyboards&quot;, 12.25);<br>
+config-&gt;save();<br></code><br><dl><dt><b>Parameters:</b></dt><dd><code>name</code> - the identifying name of the data member</dd><dd><code>value</code> - The double value of the data member</dd></dl></dd></dl><hr><a name="setIntValue(constchar*,int)"></a><a name="setIntValue"></a><h3>setIntValue</h3><pre>
+public void <b>setIntValue</b>( const char* name, int value );
+</pre><dl><dd>Sets the named value within the current section to the specified integer<br>
+If the value is already set for the data item, the value is changed.<br>
+If the value is not already set, it is created<br><br><b>Example:</b><br><br>
+To create the following configuration entries:<br><br><font color="red">[Inventory]<br>
+Hard Drives = 35<br>
+Cases = 24<br>
+Keyboards = 103<br></font><br>
+Use this code:<br><code><br>
+config-&gt;setSection(&quot;Inventory&quot;, true);<br>
+config-&gt;setIntValue(&quot;Hard Drives&quot;, 35);<br>
+config-&gt;setIntValue(&quot;Cases&quot;, 24);<br>
+config-&gt;setIntValue(&quot;Keyboards&quot;, 103);<br>
+config-&gt;save();<br></code><br><dl><dt><b>Parameters:</b></dt><dd><code>name</code> - the identifying name of the data member</dd><dd><code>value</code> - The integer value of the data member</dd></dl></dd></dl><hr><a name="setSection(constchar*,bool)"></a><a name="setSection"></a><h3>setSection</h3><pre>
+public bool <b>setSection</b>( const char* sectionname, bool shouldCreate );
+</pre><dl><dd>Sets the current working section, possibly creating a new section<br>
+The default section is &quot;&quot; (the untitled section at the beginning of the configuration file).<br>
+If the new section cannot be found, and <b>shouldCreate</b> is <b>true</b>,<br>
+then the section will be created.<br>
+If the new section cannot be found, and <b>shouldCreate</b> is <b>false</b>,<br>
+then the current section remains unchanged, and the method returns false.<br>
+Leading and trailing whitespace is not preserved when the file is written,<br>
+and as such should be avoided when creating sections<br></dd></dl><hr><a name="setSection(constchar*)"></a><a name="setSection"></a><h3>setSection</h3><pre>
+public bool <b>setSection</b>( const char* sectionname );
+</pre><dl><dd>Sets the current working section, creating the section if it does not exist.<br>
+See <b><i>setSection(const char *sectionname, bool shouldCreate)</i></b> where <i>shouldCreate</i> = true.<br></dd></dl><hr><a name="setStringValue(constchar*,constchar*)"></a><a name="setStringValue"></a><h3>setStringValue</h3><pre>
+public void <b>setStringValue</b>( const char* name, const char* value );
+</pre><dl><dd>Sets the named value within the current section to the specified string<br>
+If the value is already set for the data item, the value is changed.<br>
+If the value is not already set, it is created.<br>
+If leading and/or trailing whitespace exists within the value, it will be preserved in<br>
+the config file by surrounding the value with quotes.<br>
+Likewise, if the value starts with a quote (&quot;), then the value<br>
+will necessarily be surrounded by quotes to preserve it.<br>
+Note: Whitespace within the identifying fieldname (the key for the pair) is not preserved.<br><br><b>Example:</b><br><br>
+To create the following configuration entry:<br><br><font color="red">[travel]<br>
+Travel Agent = Mary Johnson</font><br><br>
+Use this code:<br><code><br>
+config-&gt;setSection(&quot;travel&quot;, true);<br>
+config-&gt;setStringValue(&quot;Travel Agent&quot;, &quot;Mary Johnson&quot;);<br>
+config-&gt;save();<br></code><br><dl><dt><b>Parameters:</b></dt><dd><code>name</code> - the identifying name of the data member</dd><dd><code>value</code> - The string value of the data member</dd></dl></dd></dl><hr><a name="version()"></a><a name="version"></a></td></tr></tbody></table></td></tr></tbody></table><br></div>
+</div></body></html> 
