@@ -1,26 +1,26 @@
 #                       DTL  Current version 2.0
 #
-#			 	 Author: º«ĞÀ (han.xin@datatom.com)
+#			 	 Author: éŸ©æ¬£ (han.xin@datatom.com)
 #            	 This file summarizes changes made since 1.0
 
-ÌØ±ğËµÃ÷£ºÊ¹ÓÃDTL¿â±ØĞëÔÚ³ÌĞòÈë¿Ú´¦µ÷ÓÃÒ»´Î InitDTLibrary ½Ó¿Ú
+ç‰¹åˆ«è¯´æ˜ï¼šä½¿ç”¨DTLåº“å¿…é¡»åœ¨ç¨‹åºå…¥å£å¤„è°ƒç”¨ä¸€æ¬¡ InitDTLibrary æ¥å£
 
 Version 2.0
 ------------------------------
 * lang/String : add a static method to String, now can use String::Format(....) interface
 * add poco library to depend
-* È¡ÏûjemallocµÄÖ§³Ö£¬¸ÄÓÃ tcmalloc, ÓÅ»¯¶àÏß³ÌÄÚ´æ·ÖÅäºÍ·ÃÎÊĞ§ÂÊ
-* io/FileOutputStream: Ôö¼ÓSetEndOfFile½Ó¿Ú
-* net/httpsocket:  Ê¹ÓÃpoco¿âÖØĞÂ±àĞ´£¬¹¦ÄÜ¸üÎÈ¶¨£¬Ö§³Ö»ù±¾ÓÃ»§ÈÏÖ¤
-* net/cgibase:  Ç¨ÒÆdtCGIContactBase ÖÁDTL
-* net/stmp:  Ôö¼Ósendmail·¢ËÍÓÊ¼ş¹¦ÄÜ£¬Ê¹ÓÃ½Ó¿ÚÊµÏÖ£¬¹¦ÄÜ¸üÎÈ¶¨
-* add log:  ÖØĞÂÊµÏÖTraceLog¹¦ÄÜ£¬¼ò»¯´úÂë
-* add Proccess::executeCmd £ºÖ´ĞĞÍâ²¿½ø³ÌÃüÁî
-* add filetool: Ôö¼Ó Filetool ¹¤¾ßÀàÖÁDTL
+* å–æ¶ˆjemallocçš„æ”¯æŒï¼Œæ”¹ç”¨ tcmalloc, ä¼˜åŒ–å¤šçº¿ç¨‹å†…å­˜åˆ†é…å’Œè®¿é—®æ•ˆç‡
+* io/FileOutputStream: å¢åŠ SetEndOfFileæ¥å£
+* net/httpsocket:  ä½¿ç”¨pocoåº“é‡æ–°ç¼–å†™ï¼ŒåŠŸèƒ½æ›´ç¨³å®šï¼Œæ”¯æŒåŸºæœ¬ç”¨æˆ·è®¤è¯
+* net/cgibase:  è¿ç§»dtCGIContactBase è‡³DTL
+* net/stmp:  å¢åŠ sendmailå‘é€é‚®ä»¶åŠŸèƒ½ï¼Œä½¿ç”¨æ¥å£å®ç°ï¼ŒåŠŸèƒ½æ›´ç¨³å®š
+* add log:  é‡æ–°å®ç°TraceLogåŠŸèƒ½ï¼Œç®€åŒ–ä»£ç 
+* add Proccess::executeCmd ï¼šæ‰§è¡Œå¤–éƒ¨è¿›ç¨‹å‘½ä»¤
+* add filetool: å¢åŠ  Filetool å·¥å…·ç±»è‡³DTL
 * add static String md5(const String& str) interface
-* add util\DeviceMgm : Ôö¼Ó¾íÉè±¸¹ÜÀí½Ó¿Ú£¬Ö§³Ömount,unmount,getCapacity, getFreeSpace
-* add util\volume: 	Ôö¼Ó¾íÀà£¬¿ÉÒÔ»ñÈ¡ÎÄ¼şÏµÍ³ÀàĞÍ£¬ÈİÁ¿ºÍ¿ÕÏĞ¿Õ¼äĞÅÏ¢
-* modify cJSON: Ôö¼ÓÒÔÏÂ½Ó¿Ú
+* add util\DeviceMgm : å¢åŠ å·è®¾å¤‡ç®¡ç†æ¥å£ï¼Œæ”¯æŒmount,unmount,getCapacity, getFreeSpace
+* add util\volume: 	å¢åŠ å·ç±»ï¼Œå¯ä»¥è·å–æ–‡ä»¶ç³»ç»Ÿç±»å‹ï¼Œå®¹é‡å’Œç©ºé—²ç©ºé—´ä¿¡æ¯
+* modify cJSON: å¢åŠ ä»¥ä¸‹æ¥å£
 	extern String cJSON_GetValueToStr(cJSON *item, const String &key = String::EMPTY);
 	extern char* cJSON_GetStringValue(cJSON *item);
 	extern int cJSON_GetIntValue(cJSON *item);
@@ -28,91 +28,91 @@ Version 2.0
 * fix bug: json not support int64, convert to String
 * fix bug: jsontextwriter add getJsonObject interface
 * fix bug: fix jsontextwriter class memory leak problem
-* fix bug: leftString ºÍrightString ĞŞ¸´²ÎÊı³¬¹ı×Ö·û´®³¤¶ÈÊ±µÄbug
-* fix bug: É¾³ıMSÍ³¼ÆÊ±¼äºêINIT_MS_TIME£º×¢ÒâÓÃtime_t¼ÆÊ±²ÅÊÇÈËÃÇÕı³£ÒâÊ¶ÉÏµÄÃëÊı£¬¶øclock_t¼ÆÊ±Ëù±íÊ¾µÄÊÇÕ¼ÓÃCPUµÄÊ±ÖÓµ¥Ôª
+* fix bug: leftString å’ŒrightString ä¿®å¤å‚æ•°è¶…è¿‡å­—ç¬¦ä¸²é•¿åº¦æ—¶çš„bug
+* fix bug: åˆ é™¤MSç»Ÿè®¡æ—¶é—´å®INIT_MS_TIMEï¼šæ³¨æ„ç”¨time_tè®¡æ—¶æ‰æ˜¯äººä»¬æ­£å¸¸æ„è¯†ä¸Šçš„ç§’æ•°ï¼Œè€Œclock_tè®¡æ—¶æ‰€è¡¨ç¤ºçš„æ˜¯å ç”¨CPUçš„æ—¶é’Ÿå•å…ƒ
 * fix bug: dtl::string::findLastNotOf default param value
 * fix bug: String + operation
-* fix bug: streamreader ĞŞ¸Ägetlinesº¯Êı»ñÈ¡Ò»ĞĞ´óÓÚ256×Ö½ÚÊ±·¢Éú´íÎó
-* fix bug: ÖØ¹¹Base64±àÂë´úÂë£¬ĞŞ¸´Í¼Æ¬ÎŞ·¨ÏÔÊ¾µÄÎÊÌâ
+* fix bug: streamreader ä¿®æ”¹getlineså‡½æ•°è·å–ä¸€è¡Œå¤§äº256å­—èŠ‚æ—¶å‘ç”Ÿé”™è¯¯
+* fix bug: é‡æ„Base64ç¼–ç ä»£ç ï¼Œä¿®å¤å›¾ç‰‡æ— æ³•æ˜¾ç¤ºçš„é—®é¢˜
 
 
 Version 1.1.0
 -----------------------
-* ĞŞ¸´String split½Ó¿Ú²»Ö§³Ö°´ÕÕ¿Õ¸ñÇĞ¸îµÄÎÊÌâ
-* ÒıÈëjemalloc Ìæ´úglibc µÄmalloc,allocµÈÄÚ´æ·ÖÅä½Ó¿Ú£¬ÌáÉı¶àÏß³Ì»·¾³ÏÂµÄĞÔÄÜ
-* ĞÂÔöPerformanceProfiler ĞÔÄÜÆÊÎöÆ÷£¬ÓÃÓÚ·ÖÎöÊÕ¼¯º¯Êı½Ó¿ÚÖ´ĞĞĞ§ÂÊ£¬·ÖÎöĞÔÄÜÆ¿¾±
-* ĞŞ¸´StreamWriterµÄ writeLine½Ó¿Ú»áĞŞ¸ÄÔ­×Ö·û´®µÄbug
+* ä¿®å¤String splitæ¥å£ä¸æ”¯æŒæŒ‰ç…§ç©ºæ ¼åˆ‡å‰²çš„é—®é¢˜
+* å¼•å…¥jemalloc æ›¿ä»£glibc çš„malloc,allocç­‰å†…å­˜åˆ†é…æ¥å£ï¼Œæå‡å¤šçº¿ç¨‹ç¯å¢ƒä¸‹çš„æ€§èƒ½
+* æ–°å¢PerformanceProfiler æ€§èƒ½å‰–æå™¨ï¼Œç”¨äºåˆ†ææ”¶é›†å‡½æ•°æ¥å£æ‰§è¡Œæ•ˆç‡ï¼Œåˆ†ææ€§èƒ½ç“¶é¢ˆ
+* ä¿®å¤StreamWriterçš„ writeLineæ¥å£ä¼šä¿®æ”¹åŸå­—ç¬¦ä¸²çš„bug
 
 
 Version 1.0.9
 -----------------------
-* Ôö¼Ó Random Ëæ»úÊı¡¢Ëæ»ú×Ö·û´®ÊµÏÖ
-* Ôö¼Ó SingleTemplate µ¥ÀıÄ£Ê½Ä£°æÊµÏÖ
-* Ôö¼Ó simple_hash£¬RS_hash£¬JS_hash£¬PJW_hash£¬ELF_hash£¬BKDR_hash£¬SDBM_hash£¬DJB_hash£¬AP_hash£¬CRC_hashµÈHashËã·¨ÊµÏÖ
-* Ôö¼Ó ¶ş½øÖÆJSONÊµÏÖ BSON£¬ÊµÏÖ¶ş½øÖÆĞòÁĞ»¯ºÍ·´ĞòÁĞ»¯
-* ĞŞ¸Ä MD5 toString·½·¨
-* Ôö¼Ó MacµØÖ·¡¢CPUĞÅÏ¢¡¢»úÆ÷ÂëÉú³É½Ó¿Ú
+* å¢åŠ  Random éšæœºæ•°ã€éšæœºå­—ç¬¦ä¸²å®ç°
+* å¢åŠ  SingleTemplate å•ä¾‹æ¨¡å¼æ¨¡ç‰ˆå®ç°
+* å¢åŠ  simple_hashï¼ŒRS_hashï¼ŒJS_hashï¼ŒPJW_hashï¼ŒELF_hashï¼ŒBKDR_hashï¼ŒSDBM_hashï¼ŒDJB_hashï¼ŒAP_hashï¼ŒCRC_hashç­‰Hashç®—æ³•å®ç°
+* å¢åŠ  äºŒè¿›åˆ¶JSONå®ç° BSONï¼Œå®ç°äºŒè¿›åˆ¶åºåˆ—åŒ–å’Œååºåˆ—åŒ–
+* ä¿®æ”¹ MD5 toStringæ–¹æ³•
+* å¢åŠ  Macåœ°å€ã€CPUä¿¡æ¯ã€æœºå™¨ç ç”Ÿæˆæ¥å£
 
 
 Version 1.0.8
 -----------------------
-* ĞŞ¸´FileStream¹¹Ôìº¯Êı_name Î´¸³ÖµµÄÎÊÌâ
-* ĞŞ¸´httpsocketÄÚ´æĞ¹Â©µÄÎÊÌâ
-* ĞÂÔöCompressÎÄ¼şÑ¹Ëõ¡¢½âÑ¹Ëõ¹¦ÄÜÖ§³Ö£¬Ö§³Ö1-9¼¶±ğµÄÑ¹Ëõ±ÈÀı
-* ĞÂÔö TraceLog Ä£¿é£¬ÓÃÓÚ´úÂëµ÷ÊÔ¡¢¼ÇÂ¼³ÌĞòÔËĞĞÈÕÖ¾¡¢´íÎóÈÕÖ¾µÈ
-	1. Ö§³ÖÊä³öµ½ÆÁÄ»»òÕßÎÄ¼ş
-	2. Ö§³ÖÈÕÖ¾µÄ¼¶±ğ£¬ info, debug, warn , error, faultµÈ
-	3. Ö§³ÖÊä³öµ½ÆÁÄ»Ê±±äÑÕÉ«£¬warnÀ¶É«£¬errorºìÉ«µÈµÈ
-* ĞÂÔö JsonTextWriterÊµÏÖJson×Ö·û´®²Ù×÷£¬È¡´úC·ç¸ñµÄcJSON 	
+* ä¿®å¤FileStreamæ„é€ å‡½æ•°_name æœªèµ‹å€¼çš„é—®é¢˜
+* ä¿®å¤httpsocketå†…å­˜æ³„æ¼çš„é—®é¢˜
+* æ–°å¢Compressæ–‡ä»¶å‹ç¼©ã€è§£å‹ç¼©åŠŸèƒ½æ”¯æŒï¼Œæ”¯æŒ1-9çº§åˆ«çš„å‹ç¼©æ¯”ä¾‹
+* æ–°å¢ TraceLog æ¨¡å—ï¼Œç”¨äºä»£ç è°ƒè¯•ã€è®°å½•ç¨‹åºè¿è¡Œæ—¥å¿—ã€é”™è¯¯æ—¥å¿—ç­‰
+	1. æ”¯æŒè¾“å‡ºåˆ°å±å¹•æˆ–è€…æ–‡ä»¶
+	2. æ”¯æŒæ—¥å¿—çš„çº§åˆ«ï¼Œ info, debug, warn , error, faultç­‰
+	3. æ”¯æŒè¾“å‡ºåˆ°å±å¹•æ—¶å˜é¢œè‰²ï¼Œwarnè“è‰²ï¼Œerrorçº¢è‰²ç­‰ç­‰
+* æ–°å¢ JsonTextWriterå®ç°Jsonå­—ç¬¦ä¸²æ“ä½œï¼Œå–ä»£Cé£æ ¼çš„cJSON 	
 	
 
 Version 1.0.7
 -----------------------
-* Ôö¼ÓSysLog ¼ÇÂ¼ÏµÍ³ÈÕÖ¾¹¦ÄÜ
-* ĞŞ¸´HttpSocketÔÚ´óÁ¿·¢ËÍÇëÇóÊ±±ÀÀ£ÎÊÌâ(ÄÚ´æ·ÖÅäÎÊÌâµ¼ÖÂ)
-* ÍêÉÆºÍĞŞ¸´EthernetMgmÍø¿¨¹ÜÀíÀàbugs
-* StreamWriter ¹¹ÔìÔö¼ÓÅĞ¶ÏÎÄ¼şÊÇ·ñ´æÔÚ
-* StringÔö¼Ó formatv (const tchar_t* fmt, va_list ap) ½Ó¿Ú
-* ÍêÉÆ Daemon ºóÌ¨·şÎñÀà£¬¿ÉÒÔÉèÖÃ ps ²é¿´½ø³ÌµÄÃèÊöĞÅÏ¢
-* Ôö¼Ó Environment »·¾³±äÁ¿»ñÈ¡ºÍÉèÖÃÀàÊµÏÖ
-* Ôö¼Ó Runtime ÏµÍ³ÔËĞĞÊ±ÀàÊµÏÖ
+* å¢åŠ SysLog è®°å½•ç³»ç»Ÿæ—¥å¿—åŠŸèƒ½
+* ä¿®å¤HttpSocketåœ¨å¤§é‡å‘é€è¯·æ±‚æ—¶å´©æºƒé—®é¢˜(å†…å­˜åˆ†é…é—®é¢˜å¯¼è‡´)
+* å®Œå–„å’Œä¿®å¤EthernetMgmç½‘å¡ç®¡ç†ç±»bugs
+* StreamWriter æ„é€ å¢åŠ åˆ¤æ–­æ–‡ä»¶æ˜¯å¦å­˜åœ¨
+* Stringå¢åŠ  formatv (const tchar_t* fmt, va_list ap) æ¥å£
+* å®Œå–„ Daemon åå°æœåŠ¡ç±»ï¼Œå¯ä»¥è®¾ç½® ps æŸ¥çœ‹è¿›ç¨‹çš„æè¿°ä¿¡æ¯
+* å¢åŠ  Environment ç¯å¢ƒå˜é‡è·å–å’Œè®¾ç½®ç±»å®ç°
+* å¢åŠ  Runtime ç³»ç»Ÿè¿è¡Œæ—¶ç±»å®ç°
 
 
 Version 1.0.6
 -----------------------
-* MD5É¢ÁĞËã·¨toString ½Ó¿ÚÔö¼ÓuppercaseÖ§³Ö£¬¿ØÖÆ×Ö·û´óĞ¡Ğ´
-* ĞŞ¸´Íø¿¨¹ÜÀí´úÂëÒ»Ğ©bugs
-* StreamReaderÔö¼Ó read() Ò»´ÎĞÔ¶ÁÈ¡ËùÓĞÄÚÈİ½Ó¿Ú
-* ÓÅ»¯httpSocketÒì³£´¦Àí£¬ĞŞ¸´httpsocket´¦ÀíÎŞ·¨µ½´ï³ÌĞò±ÀÀ£µÄÎÊÌâ
-* ĞŞ¸´httpSocket´«ÊäÊı¾İÁ¿½Ï´óÊ±³öÏÖÂÒÂëµÄÎÊÌâ¡£Ô­Òò£ºÊı¾İÃ»½ÓÊÕÍêÕûÇ°Ê¹ÓÃÁË²¿·Öbuffer¹¹Ôìstring
-* ¼ÓÃÜ¿âĞÂÔö sha1 ºÍ sha1-hmac É¢ÁĞËã·¨ÊµÏÖ
-* util Ä£¿éĞÂÔö Guid È«ÇòÎ¨Ò»±êÊ¶·ûËã·¨ÊµÏÖ
-* ĞÂÔö Deamon ºóÌ¨·şÎñ¿ª·¢ÀàÊµÏÖ
-* ĞÂÔö dtVersion£¬ dtGetMajorVersion µÈ°æ±¾¹ÜÀí½Ó¿ÚÊµÏÖ
-* ²¹³ä Library,EthernetMgmµÈunittest²âÊÔÓÃÀı
+* MD5æ•£åˆ—ç®—æ³•toString æ¥å£å¢åŠ uppercaseæ”¯æŒï¼Œæ§åˆ¶å­—ç¬¦å¤§å°å†™
+* ä¿®å¤ç½‘å¡ç®¡ç†ä»£ç ä¸€äº›bugs
+* StreamReaderå¢åŠ  read() ä¸€æ¬¡æ€§è¯»å–æ‰€æœ‰å†…å®¹æ¥å£
+* ä¼˜åŒ–httpSocketå¼‚å¸¸å¤„ç†ï¼Œä¿®å¤httpsocketå¤„ç†æ— æ³•åˆ°è¾¾ç¨‹åºå´©æºƒçš„é—®é¢˜
+* ä¿®å¤httpSocketä¼ è¾“æ•°æ®é‡è¾ƒå¤§æ—¶å‡ºç°ä¹±ç çš„é—®é¢˜ã€‚åŸå› ï¼šæ•°æ®æ²¡æ¥æ”¶å®Œæ•´å‰ä½¿ç”¨äº†éƒ¨åˆ†bufferæ„é€ string
+* åŠ å¯†åº“æ–°å¢ sha1 å’Œ sha1-hmac æ•£åˆ—ç®—æ³•å®ç°
+* util æ¨¡å—æ–°å¢ Guid å…¨çƒå”¯ä¸€æ ‡è¯†ç¬¦ç®—æ³•å®ç°
+* æ–°å¢ Deamon åå°æœåŠ¡å¼€å‘ç±»å®ç°
+* æ–°å¢ dtVersionï¼Œ dtGetMajorVersion ç­‰ç‰ˆæœ¬ç®¡ç†æ¥å£å®ç°
+* è¡¥å…… Library,EthernetMgmç­‰unittestæµ‹è¯•ç”¨ä¾‹
 
 Version 1.0.5
 -----------------------
-* ĞŞ¸´linux ±àÒërude/config.h²»´æÔÚµÄÎÊÌâ
-* È¡Ïû¶Ôlibmysqlclient.so µÄ±àÒëÒÀÀµ£¬Í¨¹ıLibrary¿âÊµÏÖ¶¯Ì¬¼ÓÔØ
-* ĞŞ¸´¼ÓÔØÓïÑÔÖ»ÄÜ¼ÓÔØÖĞÎÄÓïÑÔµÄÎÊÌâ, Í¨¹ıÅäÖÃ dtl.config langÅäÖÃÏî×Ô¶¯¼ÓÔØ²»Í¬ÓïÑÔ×ÊÔ´
-* MakefileÔö¼Ó CONFIG_FILES = dtl.config ±àÒëºó×Ô¶¯¿½±´ÅäÖÃÎÄ¼ş
+* ä¿®å¤linux ç¼–è¯‘rude/config.hä¸å­˜åœ¨çš„é—®é¢˜
+* å–æ¶ˆå¯¹libmysqlclient.so çš„ç¼–è¯‘ä¾èµ–ï¼Œé€šè¿‡Libraryåº“å®ç°åŠ¨æ€åŠ è½½
+* ä¿®å¤åŠ è½½è¯­è¨€åªèƒ½åŠ è½½ä¸­æ–‡è¯­è¨€çš„é—®é¢˜, é€šè¿‡é…ç½® dtl.config langé…ç½®é¡¹è‡ªåŠ¨åŠ è½½ä¸åŒè¯­è¨€èµ„æº
+* Makefileå¢åŠ  CONFIG_FILES = dtl.config ç¼–è¯‘åè‡ªåŠ¨æ‹·è´é…ç½®æ–‡ä»¶
 
 
 Version 1.0.4
 -----------------------
 * add DTL_CDECL defines
-* LinuxÏÂ£¬UInt Ôö¼Ó getValue½Ó¿Ú
-* add dtl version mgm ÓÃÓÚDTL°æ±¾¹ÜÀíºÍ¼æÈİĞÔ´¦Àí: dtGetDTLVersion
+* Linuxä¸‹ï¼ŒUInt å¢åŠ  getValueæ¥å£
+* add dtl version mgm ç”¨äºDTLç‰ˆæœ¬ç®¡ç†å’Œå…¼å®¹æ€§å¤„ç†: dtGetDTLVersion
 													dtGetDTLMajorVersion
 													dtGetDTLMinorVersion
 													dtGetDTLPatchVersion
 													dtCompairDTLVersion
-* add Thread Ïß³Ì¿âÖ§³Ö
+* add Thread çº¿ç¨‹åº“æ”¯æŒ
 * update DT Dev Guid.docx document
-* add IResourceReader, DoResourceReader ÓïÑÔ×ÊÔ´¶ÁĞ´½Ó¿ÚÊµÏÖ
-* remove version.h, version.cpp Ô­À´²úÆ·°æ±¾¹ÜÀíÀà
-* Ôö¼Ó ConfigFile ÅäÖÃÎÄ¼ş¶ÁĞ´Àà , ÈçÒÔÏÂ¸ñÊ½µÄ¶ÁĞ´£º
+* add IResourceReader, DoResourceReader è¯­è¨€èµ„æºè¯»å†™æ¥å£å®ç°
+* remove version.h, version.cpp åŸæ¥äº§å“ç‰ˆæœ¬ç®¡ç†ç±»
+* å¢åŠ  ConfigFile é…ç½®æ–‡ä»¶è¯»å†™ç±» , å¦‚ä»¥ä¸‹æ ¼å¼çš„è¯»å†™ï¼š
 
 		[Strong Body Parts]
 		arm=2
@@ -122,9 +122,9 @@ Version 1.0.4
 		eyes=2
 		belly=1
 	
-* ĞŞ¸´²¿·ÖÎÄ¼ş²»ÊÇ utf8±àÂëÎÊÌâ
-* dtlÔö¼ÓÒÀÀµ mysqlclient¿â£¬£¨ºóÃæµ÷ÕûÎª¶¯Ì¬¼ÓÔØ½Ó¿Ú·½Ê½£¬È¡Ïû±àÒëÒÀÀµ£©
-* add Library ¶¯Ì¬¿â·ûºÅ¼ÓÔØÄ£¿éÀàÊµÏÖ (Library::load ("libxxx.so")....)
+* ä¿®å¤éƒ¨åˆ†æ–‡ä»¶ä¸æ˜¯ utf8ç¼–ç é—®é¢˜
+* dtlå¢åŠ ä¾èµ– mysqlclientåº“ï¼Œï¼ˆåé¢è°ƒæ•´ä¸ºåŠ¨æ€åŠ è½½æ¥å£æ–¹å¼ï¼Œå–æ¶ˆç¼–è¯‘ä¾èµ–ï¼‰
+* add Library åŠ¨æ€åº“ç¬¦å·åŠ è½½æ¨¡å—ç±»å®ç° (Library::load ("libxxx.so")....)
 
 			  
 Version 1.0.3
@@ -134,9 +134,9 @@ Version 1.0.3
 * fix bugs of Base16
 * fix a wrong default param value of String::findLastOf, change pos = 0 to pos = NO_POSITION
 * fix some bugs of Driectory
-* ĞŞ¸´ rc4Ç±ÔÚµÄÄÚ´æĞ¹Â©ÎÊÌâ
-* add HttpSocket Í¨ĞÅÀà
-* add cJSON Àà
+* ä¿®å¤ rc4æ½œåœ¨çš„å†…å­˜æ³„æ¼é—®é¢˜
+* add HttpSocket é€šä¿¡ç±»
+* add cJSON ç±»
 
 			  
 Version 1.0.2
@@ -149,12 +149,12 @@ Version 1.0.2
 Version 1.0.1
 -----------
 * Add Some Moduls			  
-	sys/TimeZone       Ê±Çø
-	sys/TimeFormat     Ê±¼äÊä³ö¸ñÊ½»¯
-	sys/TimeDiff       Ê±¼ä²î¼ÆËã
-	sys/Process        ½ø³Ì
-	lang/Char          ×Ö·û
-* Fix Some bugs of  Date¡¢Process
+	sys/TimeZone       æ—¶åŒº
+	sys/TimeFormat     æ—¶é—´è¾“å‡ºæ ¼å¼åŒ–
+	sys/TimeDiff       æ—¶é—´å·®è®¡ç®—
+	sys/Process        è¿›ç¨‹
+	lang/Char          å­—ç¬¦
+* Fix Some bugs of  Dateã€Process
 	
 			  
 Version 1.0
