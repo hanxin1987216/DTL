@@ -1,0 +1,523 @@
+#
+# Configuration file for building Source Code with C++ on linux
+# Author: Lyre
+#
+
+# -------------------------------------------------------------------------
+# These are configurable options:
+# -------------------------------------------------------------------------
+
+include $(DTSRC)/make/begin.mk
+include $(DTSRC)/make/compiler.mk
+
+
+OS_NAME = $(shell uname)
+OS_LEVEL = $(shell oslevel)
+
+UNIX_OS_LEVEL = $(shell (uname -r))
+#
+# Whether copy the generated binary files to test path.
+#
+
+ifeq ("$(TO_TEST)", "")
+TO_TEST = 1
+endif
+
+
+#
+# If $ENABLE_TRACE is 1, enable TRACE feature.
+#
+ifeq ("$(ENABLE_TRACE)", "1")
+LOG_CXXFLAGS = -D__ENABLE_TRACE__=1
+endif
+
+
+# Compile Unicode build? [0,1]
+UNICODE = 0
+
+# linux librarys
+COMMON_WINLIBS = 
+
+# The basic path of objects file when compiled.
+ifeq ("$(AB_OBJS_BASIC_PATH)", "")
+AB_OBJS_BASIC_PATH = $(DTSRC)/obj
+endif
+
+#
+# 编译文件生成目录结构
+#
+
+BUILD_PATH  = $(AB_OBJS_BASIC_PATH)/$(BUILD)/$(CPU)
+MODULE_PATH = $(BUILD_PATH)/$(MODULE_NAME)_objs
+OBJS_PATH   = $(MODULE_PATH)
+LIB_PATH = $(BUILD_PATH)
+BIN_PATH = $(BUILD_PATH)
+COMP_PATH = $(BUILD_PATH)
+
+#
+# 资源文件目录 = src/obj/release/i386/test/locale
+#
+
+RES_PATH = $(MODULE_PATH)/locale
+
+
+EN_US = en_US
+ZH_CN = zh_CN
+ZH_TW_CN = zh_TW_CN
+
+RES_EN_US_PATH = $(RES_PATH)/$(EN_US)
+RES_ZH_CN_PATH = $(RES_PATH)/$(ZH_CN)
+RES_ZH_TW_CN_PATH = $(RES_PATH)/$(ZH_TW_CN)
+
+ifneq ("$(CUSTOM_COPY_PATH)", "")
+CUSTOM_COPY_PATH_LOCALE = $(CUSTOM_COPY_PATH)/locale
+CUSTOM_COPY_PATH_IMAGES = $(CUSTOM_COPY_PATH)/images
+CUSTOM_COPY_PATH_COMPONENTS = $(CUSTOM_COPY_PATH)/components
+endif
+
+#
+# Defines the file name which determined by the target type.
+#
+
+ifeq ("$(TARGET_TYPE)", "component")
+LIBFILE = $(BIN_PATH)/$(MODULE_NAME).so
+ifeq ("$(PLATFORM)", "linux")
+PIC_FLAG = -fPIC -DPIC
+else
+PIC_FLAG = -DPIC
+endif
+endif
+
+ifeq ("$(TARGET_TYPE)", "so")
+LIBFILE = $(BIN_PATH)/$(MODULE_NAME).so
+ifeq ("$(PLATFORM)", "linux")
+PIC_FLAG = -fPIC -DPIC
+else
+PIC_FLAG = -DPIC
+endif
+endif
+
+ifeq ("$(TARGET_TYPE)", "a")
+LIBFILE = $(LIB_PATH)/$(MODULE_NAME).a
+ifeq ("$(PLATFORM)", "linux")
+PIC_FLAG = -fPIC -DPIC
+else
+PIC_FLAG = -DPIC
+endif
+endif
+
+ifeq ("$(PLATFORM)", "linux")
+RDYNAMIC_FLAG = -rdynamic
+endif
+
+# Basic flags for C++ 
+
+ifeq ("$(CPU)", "x64")
+CXXBASIC_FLAGS = -Wall -c -Wunused -Wpointer-arith -Wno-cast-qual \
+                 -Wcast-align -Wwrite-strings -D__64BIT__ \
+                 -I/usr/include/glib-2.0 -I/usr/include/glib-2.0/glib \
+                 -I/usr/lib64/glib-2.0/include -I. $(RDYNAMIC_FLAG) $(PIC_FLAG) $(CUSTOM_LINUX_CXXFLAGS)\
+                 $(LOG_CXXFLAGS) -D__UNIX_LIKE__ -D_FILE_OFFSET_BITS=64 $(LINUX_VERS_INFO)
+endif
+
+ifeq ("$(CPU)", "i386")
+CXXBASIC_FLAGS = -Wall -c -Wunused -Wpointer-arith -Wno-cast-qual \
+                 -Wcast-align -Wwrite-strings \
+                 -I/usr/include/glib-2.0 -I/usr/include/glib-2.0/glib \
+                 -I/usr/lib/glib-2.0/include -I. $(RDYNAMIC_FLAG) $(PIC_FLAG) $(CUSTOM_LINUX_CXXFLAGS)\
+                 $(LOG_CXXFLAGS) -D__UNIX_LIKE__ -D_FILE_OFFSET_BITS=64 $(LINUX_VERS_INFO)
+endif
+
+
+
+ifeq ("$(TARGET_TYPE)", "cgi")
+LIBFILE = $(LIB_PATH)/$(MODULE_NAME).cgi
+endif
+
+ifeq ("$(TARGET_TYPE)", "")
+LIBFILE = $(BIN_PATH)/$(MODULE_NAME)
+endif
+
+ifeq ("$(TARGET_TYPE)", "console")
+LIBFILE = $(BIN_PATH)/$(MODULE_NAME)
+endif
+
+ifeq ("$(TARGET_TYPE)", "windows")
+LIBFILE = $(BIN_PATH)/$(MODULE_NAME)
+endif
+
+include $(DTSRC)/make/cmnlib.mk
+
+PDB_FILE_NAME = $(BIN_PATH)/$(MODULE_NAME).pdb
+
+ifeq ("$(BUILD)", "debug")
+BUILD_FLAGS = -g -D_DEBUG
+LDBUILD_FLAGS = 
+else
+ifeq ("$(PLATFORM)", "linux")
+BUILD_FLAGS = -O1 -DG_DISABLE_ASSERT
+else
+BUILD_FLAGS = -O2 -DG_DISABLE_ASSERT -qmaxmem=-1 -qalias=noansi
+endif
+LDBUILD_FLAGS = 
+endif
+
+ifeq ("$(TARGET_TYPE)", "windows")
+SUBSYS_FLAGS = 
+else
+ifeq ("$(TARGET_TYPE)", "console")
+SUBSYS_FLAGS = 
+endif
+endif
+
+ifeq ("$(TARGET_TYPE)", "console")
+CONSOLE_CXXFLAGS = -D_CONSOLE
+endif
+
+#hhf: XPCOM interface never generate virtual dtor, so add -Wno-non-virtual-dtor
+ifeq ("$(PLATFORM)", "linux")
+IDL_VIRTUAL_DTOR = -Wno-non-virtual-dtor
+endif
+
+INCLUDE_PATH = -I$(DTSRC) $(CMN_LIB_INCLUDE)
+
+
+# Precompile options
+
+ifeq ("$(PRE_COMP)", "none")
+PRE_COMP_FLAG =
+endif
+
+ifeq ("$(PRE_COMP)", "test")
+PRE_COMP_FLAG = -D__USING_TEST__
+endif
+
+
+
+# Compiler flags for C++
+
+CXXFLAGS = $(CXXBASIC_FLAGS) $(BUILD_FLAGS) $(UNICODE_FIAGS) $(CONSOLE_CXXFLAGS) $(INCLUDE_PATH) $(VER_FLAG) $(PRE_COMP_FLAG)
+
+ifeq ("$(PLATFORM)", "linux")
+RDYNAMIC_LD_FLAG = -rdynamic
+endif
+
+# Linker flags for AnyBackup
+
+LDFLAGS = $(LDBASIC_FLAGS) $(LDBUILD_FLAGS) $(CMN_LIB)
+
+#
+# Verify options, output settings.检查各选项设置，并输出。
+#
+
+ifeq ("$(TARGET_TYPE)", "windows")
+MSG_NAME = Windows application $(MODULE_NAME)
+endif
+
+ifeq ("$(TARGET_TYPE)", "console")
+MSG_NAME = Console application $(MODULE_NAME)
+endif
+
+ifeq ("$(TARGET_TYPE)", "so")
+MSG_NAME= $(MODULE_NAME).so 
+endif
+
+ifeq ("$(TARGET_TYPE)", "sl")
+MSG_NAME= $(MODULE_NAME).sl 
+endif
+
+ifeq ("$(TARGET_TYPE)", "a")
+MSG_NAME= Static lib $(MODULE_NAME).a
+endif
+
+ifeq ("$(TARGET_TYPE)", "component")
+ifeq ("$(PLATFORM)", "HP-UX")
+MSG_NAME= Component $(MODULE_NAME).sl
+else
+MSG_NAME= Component $(MODULE_NAME).so
+endif
+endif
+
+ifeq ("$(TARGET_TYPE)", "cgi")
+MSG_NAME= $(MODULE_NAME).cgi 
+endif
+
+ifeq ("$(MSG_NAME)", "")
+	MESSAGE += "Error: Unknown target type "$(TARGET_TYPE)".\n"
+endif
+
+ifeq ("$(BUILD)", "release")
+	MESSAGE += "$(MSG_NAME) compile as Release.\n"
+else
+ifeq ("$(BUILD)", "debug")
+	MESSAGE += "$(MSG_NAME) compile as Debug.\n"
+else
+	MESSAGE += "BUILD is $(BUILD), unknown, please specify as debug or release.\n"
+endif
+endif
+
+#
+# 测试项
+#
+
+ifeq ("$(COMPILE_TEST)", "1")
+MAKE_TEST_DIR = make_test_dir
+MAKE_TEST_DIR_CLEAN = make_test_dir_clean
+endif
+
+ifeq ("$(TO_TEST)", "1")
+COPY_TEST_FILES = copy_test_files
+endif
+
+#
+# 判断是生成 DLL, LIB 还是 EXE
+#
+
+ifeq ("$(TARGET_TYPE)", "windows")
+MAKE_FILE_CMD = $(EXE_LINKER) $(LDFLAGS) $(EXE_BASIC_FLAGS) $^ -o $@
+endif
+
+ifeq ("$(TARGET_TYPE)", "console")
+MAKE_FILE_CMD = $(EXE_LINKER) $(LDFLAGS) $(EXE_BASIC_FLAGS) $^ -o $@
+endif
+
+ifeq ("$(PLATFORM)", "linux")
+PIC_LD_FLAG = -fPIC -DPIC 
+endif
+
+ifeq ("$(TARGET_TYPE)", "component")
+MAKE_FILE_CMD = $(SO_LINKER) $(SO_BASIC_FLAGS) $(LDFLAGS) $(PIC_LD_FLAG) $^ -o $@ $(IMPLIB)
+endif
+
+ifeq ("$(TARGET_TYPE)", "so")
+MAKE_FILE_CMD = $(SO_LINKER) $(SO_BASIC_FLAGS) $(LDFLAGS) $(PIC_LD_FLAG) $^ -o $@ $(IMPLIB)
+endif
+
+ifeq ("$(TARGET_TYPE)", "sl")
+MAKE_FILE_CMD = $(SO_LINKER) $(SO_BASIC_FLAGS) $(LDFLAGS) $(PIC_LD_FLAG) $^ -o $@ $(IMPLIB)
+endif
+
+ifeq ("$(TARGET_TYPE)", "a")
+MAKE_FILE_CMD = $(LIBLINKER) $(STATICLIB_BASIC_FLAG) $@ $^ 
+endif
+
+ifeq ("$(TARGET_TYPE)", "cgi")
+MAKE_FILE_CMD = $(EXE_LINKER) $(LDFLAGS) $(EXE_BASIC_FLAGS) $^ -o $@
+endif
+
+ifeq ("$(MAKE_FILE_CMD)", "")
+ERROR Error:  TARGET_TYPE is $(TARGET_TYPE), unknown.
+endif
+
+#
+# 如果 DO_RES_FILES 不存在则不编译 MO 文件
+#
+
+DEF_DO_NOT_EXITS = 
+
+ifneq ("$(DO_RES_FILES)", "")
+MAKE_DO_FILES = make_do_files
+else
+DO_RES_FILES = $(DEF_DO_NOT_EXITS)
+endif
+
+#
+# 如果 DO_RFA_FILES 不存在则不编译 RFA 文件
+#
+
+DEF_RFA_NOT_EXITS = ~rfa_res_files~
+
+ifneq ("$(RFA_RES_FILES)", "")
+MAKE_RFA_FILES = make_rfa_files
+else
+RFA_RES_FILES = $(DEF_RFA_NOT_EXITS)
+endif
+
+
+#
+# 如果 CONFIG_FILES 存在则复制配置文件
+#
+
+DEF_CONFIG_NOT_EXITS = 
+
+ifneq ("$(CONFIG_FILES)", "")
+COPY_CONFIG_FILES = copy_config_files
+else
+CONFIG_FILES = $(DEF_CONFIG_NOT_EXITS)
+endif
+
+#
+# 编译和清除指定目录
+#     1. 先在 MAKEFILE_DIR 第一个节点前添加 "| |" 三个字符串
+#     2. 然后去除 "|" 字符串
+#     3. 将每个目录的空格替换为 make\ 组合成新的 MAKEFILE_DIR_MAKE 目标
+#     4. 将每个目录的空格替换为 clean\ 组合成新的 MAKEFILE_DIR_CLEAN 目标
+#
+
+DEF_SUB_DIR_NOT_EXITS = ~make_sub_dirs~
+ifneq ("$(MAKEFILE_DIR)", "")
+MAKEFILE_DIR2 = | |$(MAKEFILE_DIR)
+MAKEFILE_DIR3 = $(MAKEFILE_DIR2:|=)
+MAKEFILE_DIR_MAKE = $(MAKEFILE_DIR3: =make\)
+MAKEFILE_DIR_CLEAN = $(MAKEFILE_DIR3: =clean\)
+else
+MAKEFILE_DIR_MAKE = $(DEF_SUB_DIR_NOT_EXITS)
+MAKEFILE_DIR_CLEAN = $(DEF_SUB_DIR_NOT_EXITS)
+endif
+
+#
+# 1. 在响应 all 之前先调用 mkdir
+# 2. 在 COMPILE_TEST 选项打开时自动进入 samples, unittest, test 目录编译
+# 3. 在 TO_TEST 选项打开时自动复制生成内容到测试目录
+#
+#
+# ---------------------------------------------
+# -                                           -
+# - 每个 makefile 文件不需要再编写 目录创建** -
+# -                                           -
+# ---------------------------------------------
+#
+
+all: check_dir $(CUSTOM_ALL_EXTRAN) $(MAKE_DO_FILES) $(MAKE_RFA_FILES) $(LIBFILE) $(MAKEFILE_DIR_MAKE) $(COPY_TEST_FILES) $(COPY_CONFIG_FILES) $(MAKE_TEST_DIR) $(CUSTOM_COPY_FILES)
+
+#
+# 清除编译生成的文件
+#
+# ------------------------------------------
+# -                                        -
+# - 每个 makefile 文件不需要再编写 clean** -
+# -                                        -
+# ------------------------------------------
+#
+
+clean: cleanobjs cleanlibs cleanres  $(MAKEFILE_DIR_CLEAN) $(MAKE_TEST_DIR_CLEAN)
+
+ALL_C_OBJECTS = $(patsubst %.c, %.o, $(ALL_C_FILES))
+ALL_CPP_OBJECTS = $(patsubst %.cpp, %.o, $(ALL_CPP_FILES))
+
+#
+# 将 .o 文件与 .cpp 文件关联起来，避免一个 cpp 文件变化导致所有 .o 重新生成
+#
+%.o: %.cpp
+	$(CXX) $(*D)/$(*F).cpp $(BUILDFLAGS) $(CXXFLAGS) $(CXXBUILDFLAGS) $(CUSTOM_CXXFLAGS)  -o $@
+
+%.o: %.c
+	$(CC) $(*D)/$(*F).c $(BUILDFLAGS) $(CXXBASIC_FLAGS) $(INCLUDE_PATH) $(CBUILDFLAGS) $(BUILD_FLAGS) $(CUSTOM_CXXFLAGS)  -o $@
+	
+#
+# 生成 a, so, exe 文件
+#
+
+$(LIBFILE): $(ALL_C_OBJECTS) $(ALL_CPP_OBJECTS) $(ALL_RC_FILES) $(CUSTOM_IMPLIB)
+	$(MAKE_FILE_CMD) $(CUSTOM_LIB_FLAGS)
+	
+#--------------------------------------------------------------------
+
+#
+# 创建依赖目录
+#
+
+check_dir:check_test_dir
+	@test -z "$(OBJS_PATH)" || mkdir -p -- "$(OBJS_PATH)"
+	@test -z "$(LIB_PATH)" || mkdir -p -- "$(LIB_PATH)"
+	@test -z "$(BIN_PATH)" || mkdir -p -- "$(BIN_PATH)"
+	@test -z "$(COMP_PATH)" || mkdir -p -- "$(COMP_PATH)"
+	@test -z "$(RES_PATH)" || mkdir -p -- "$(RES_PATH)"
+	@test -z "$(RES_EN_US_PATH)" || mkdir -p -- "$(RES_EN_US_PATH)"
+	@test -z "$(RES_ZH_CN_PATH)" || mkdir -p -- "$(RES_ZH_CN_PATH)"
+	@test -z "$(RES_ZH_TW_CN_PATH)" || mkdir -p -- "$(RES_ZH_TW_CN_PATH)"
+
+#
+# mo 资源文件路径
+#
+# 生成 mo 资源
+#
+
+make_do_files: $(DO_RES_FILES)
+
+RES_FILES_PATH = $(CURDIR)/res
+
+ifeq ("$(DEPS_RES_PATH)","")
+DEPS_RES_US_EN_PATH = $(RES_FILES_PATH)/$(EN_US)
+DEPS_RES_ZH_CN_PATH = $(RES_FILES_PATH)/$(ZH_CN)
+DEPS_RES_ZH_TW_CN_PATH = $(RES_FILES_PATH)/$(ZH_TW_CN)
+else
+DEPS_RES_US_EN_PATH := $(foreach n, $(DEPS_RES_PATH), -D$(n)/res/en_US)
+DEPS_RES_ZH_CN_PATH := $(foreach n, $(DEPS_RES_PATH), -D$(n)/res/zh_CN)
+DEPS_RES_ZH_TW_CN_PATH := $(foreach n, $(DEPS_RES_PATH), -D$(n)/res/zh_TW_CN)
+endif  # $(DEPS_res_PATH)
+
+#
+# 如果 DO_RES_FILES == DEF_DO_NOT_EXITS 则不调用 DO 创建
+#
+
+$(DO_RES_FILES):
+ifneq ("$(DO_RES_FILES)", "$(DEF_DO_NOT_EXITS)")
+ifneq ("$(DEPS_RES_FILES)", "")
+	@msgcat -o $(RES_EN_US_PATH)/$@  $(DEPS_RES_US_EN_PATH) -D$(RES_FILES_PATH)/$(EN_US) $(DEPS_RES_FILES) $(RES_FILES_PATH)/$(EN_US)/$@
+	@msgfmt -o $(RES_EN_US_PATH)/$(@:.res=).do		$(RES_EN_US_PATH)/$@
+
+	@msgcat -o $(RES_ZH_CN_PATH)/$@  $(DEPS_RES_ZH_CN_PATH) -D$(RES_FILES_PATH)/$(ZH_CN) $(DEPS_RES_FILES) $(RES_FILES_PATH)/$(ZH_CN)/$@
+	@msgfmt -o $(RES_ZH_CN_PATH)/$(@:.res=).do		$(RES_ZH_CN_PATH)/$@
+	
+	@msgcat -o $(RES_ZH_TW_CN_PATH)/$@  $(DEPS_RES_ZH_TW_CN_PATH) -D$(RES_FILES_PATH)/$(ZH_TW_CN) $(DEPS_RES_FILES) $(RES_FILES_PATH)/$(ZH_TW_CN)/$@
+	@msgfmt -o $(RES_ZH_TW_CN_PATH)/$(@:.res=).do		$(RES_ZH_TW_CN_PATH)/$@
+else
+	@msgfmt -o $(RES_EN_US_PATH)/$(@:.res=).do		$(RES_FILES_PATH)/$(EN_US)/$@
+	@msgfmt -o $(RES_ZH_CN_PATH)/$(@:.res=).do		$(RES_FILES_PATH)/$(ZH_CN)/$@
+	@msgfmt -o $(RES_ZH_TW_CN_PATH)/$(@:.res=).do	$(RES_FILES_PATH)/$(ZH_TW_CN)/$@
+endif
+endif
+
+#
+# 复制配置文件
+#
+
+
+
+#
+# 编译命令
+#
+	
+$(MAKEFILE_DIR_MAKE):
+ifneq ("$(MAKEFILE_DIR_MAKE)", "$(DEF_SUB_DIR_NOT_EXITS)")
+	cd $(MAKEDIR)/$(@B)
+	$(MAKE) $(MAKEARGS) all
+endif
+
+#
+# 清除命令
+#
+
+$(MAKEFILE_DIR_CLEAN):
+ifneq ("$(MAKEFILE_DIR_CLEAN)", "$(DEF_SUB_DIR_NOT_EXITS)")
+	cd $(MAKEDIR)/$(@B)
+	$(MAKE) $(MAKEARGS) clean
+endif
+
+#
+# 复制生成的文件到测试目录
+#
+
+ifeq ("$(IMPLIB)", "")
+IMPLIB =
+endif
+
+include $(DTSRC)/make/test.mk
+
+
+cleanobjs:
+	@-if test -n "$(ALL_C_OBJECTS)"; then rm -rf $(ALL_C_OBJECTS); fi;
+	@-if test -n "$(ALL_CPP_OBJECTS)"; then rm -rf $(ALL_CPP_OBJECTS); fi;
+	@-if test -d $(IDL_SOURCE_PATH); then rm -rf $(IDL_SOURCE_PATH)/*.xpt; fi;
+
+cleanlibs:
+	@-rm $(LIBFILE)
+#	if test -e $(LIBFILE); then rm $(LIBFILE); fi;\
+	@-if test -n "$(IMPLIB)" -a -e "$(IMPLIB)"; then rm $(IMPLIB); fi;\
+
+cleanres:
+	@-if test -d $(RES_EN_US_PATH); then rm -rf $(RES_EN_US_PATH)/*; fi;
+	@-if test -d $(RES_ZH_CN_PATH); then rm -rf $(RES_ZH_CN_PATH)/*; fi;
+	@-if test -d $(RES_ZH_TW_CN_PATH); then rm -rf $(RES_ZH_TW_CN_PATH)/*; fi;
+	

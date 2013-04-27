@@ -1,0 +1,29 @@
+#
+# Configuration file for building Source Code with linux C++
+# Author: han.xin@datatom.com
+#
+
+include $(DTSRC)/build.config
+
+MAKESUBDIR = \
+if test ! -d $(2); then \
+echo "Directory '$(2)' does not exist."; \
+exit 1; \
+fi; \
+if [ -f Makefile ]; then \
+echo ""; \
+make $(1) -C $(2); \
+if [ "$$?" != "0" ]; then \
+exit 1; \
+fi; \
+fi;
+
+
+LOOPMAKEFUNC = $(MAKEFUNC) $(foreach dir,$(MAKEFILE_DIR),$(call MAKESUBDIR,$(1),$(dir)))
+
+all:
+	$(call LOOPMAKEFUNC,all)
+
+clean:
+	$(call LOOPMAKEFUNC,clean)
+
